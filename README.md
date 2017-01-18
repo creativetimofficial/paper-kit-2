@@ -35,9 +35,9 @@ If you want to see the documentation for every element, head over to the [compon
 
 Quick start options:
 
-- [Download from Github](https://github.com/timcreative/paper-kit.git).
+- [Download from Github](https://github.com/creativetimofficial/paper-kit.git).
 - [Download from Creative Tim](http://www.creative-tim.com/product/paper-kit).
-- Clone the repo: `git clone https://github.com/timcreative/paper-kit.git`.
+- Clone the repo: `git clone https://github.com/creativetimofficial/paper-kit.git`.
 
 
 ### What's included
@@ -79,18 +79,18 @@ x_paper_kit/
 
 ### Version logs
 
-- V1.0 26.08.2015 Original Release
+-V1.0 26.08.2015 Original Release
 
-- V1.1 05.11.2015 Bugfixing
+-V1.1 05.11.2015 Bugfixing
 - input-group button fix
 - changed checkbox to square and changed hover effect
-  - fixed bug on register page cut-off
+- fixed bug on register page cut-off
 
 -V1.2 4.12.2015 Changes
- - updated Bootstrap to latest stable version(3.3.6)
- - added SASS and Less files
- - added style for off-canvas navigation
- - fixed small bugs.
+- updated Bootstrap to latest stable version(3.3.6)
+- added SASS and Less files
+- added style for off-canvas navigation
+- fixed small bugs.
 
 -V1.2.1 25.02.2016 Bugfixing
 - fix the issue with disappearing navbar on mobile screen
