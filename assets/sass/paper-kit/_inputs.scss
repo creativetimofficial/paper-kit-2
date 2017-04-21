@@ -13,7 +13,7 @@
 
 .form-control {
     background-color: $gray-input-bg;
-    border: medium none;
+    border: 1px solid $table-line-color;
     border-radius: $border-radius-base;
     color: $font-color;
     font-size: $font-size-base;
@@ -23,8 +23,13 @@
     
     &:focus{
            background-color: $white-bg;
+           border: 1px solid $table-line-color;
            @include box-shadow(none);
            outline: 0 !important;       
+    }
+    
+    &.no-border{
+        border: medium none;
     }
     
     .has-success &,
@@ -36,17 +41,21 @@
     
     .has-success &{
         background-color: $success-input-bg;
+        border: 1px solid $success-color;
         color: $success-color;
     }
     .has-success &:focus{
         background-color: $white-bg;
+        border: 1px solid $success-color;
     }
     .has-error &{
         background-color: $danger-input-bg;
+        border: 1px solid $danger-color;
         color: $danger-color;
     }
     .has-error &:focus{
         background-color: $white-bg;
+        border: 1px solid $danger-color;
     }
     
     & + .form-control-feedback{
@@ -84,7 +93,7 @@
 
 .input-group-addon {
     background-color: $gray-input-bg;
-    border: medium none;
+    border: solid 1px $table-line-color;
     border-radius: $border-radius-base;
     
     

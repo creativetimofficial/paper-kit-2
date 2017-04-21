@@ -3,12 +3,14 @@
     border-radius: $border-radius-btn-base;
     box-sizing: border-box;
     border-width: $border-thick;
-    background-color: $transparent-bg;
-//     line-height: $line-height;
     font-size: $font-size-base;
     font-weight: $font-weight-semi;
-    
     padding: $padding-base-vertical $padding-base-horizontal;
+    
+    &.btn-border,
+    &.btn-link{
+        background-color: $transparent-bg;
+    }
     
     @include btn-styles($default-color, $default-states-color);
     @include transition($fast-transition-time, linear);
@@ -48,21 +50,29 @@
 .navbar .navbar-nav > li > a.btn-info, .btn-info    { @include btn-styles($info-color, $info-states-color); }
 .navbar .navbar-nav > li > a.btn-warning, .btn-warning { @include btn-styles($warning-color, $warning-states-color); }
 .navbar .navbar-nav > li > a.btn-danger, .btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
+
 .btn-neutral { 
     @include btn-styles($white-color, $white-color);
-    
+    color: $default-color;
     &:hover,
     &:focus{
-        color: $default-color;
+        color: $default-states-color;
     }
     
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle{
-         background-color: $white-color;
-         color: $default-color;
-    }    
-    
+    &.btn-border{
+        &:hover,
+        &:focus{
+            color: $default-color;
+        }
+        
+        &:active,
+        &.active,
+        .open > &.dropdown-toggle{
+             background-color: $white-color;
+             color: $default-color;
+        }    
+    }
+/*
     &.btn-fill{
         color: $default-color;
     }
@@ -70,9 +80,10 @@
     &.btn-fill:focus{
         color: $default-states-color;
     }
+*/
     
-    &.btn-simple:active,
-    &.btn-simple.active{
+    &.btn-link:active,
+    &.btn-link.active{
         background-color: transparent;
     }
 }
@@ -84,14 +95,20 @@
         @include opacity(.5);
     }
 }
-.btn-simple{
+.btn-link{
     border: $none;
     padding: $padding-base-vertical $padding-base-horizontal;
+    
+    &:hover,
+    &:active{
+        text-decoration: none;
+    }
     
     &.btn-icon{
         padding: $padding-base-vertical;
     }
 }
+
 .btn-lg{
    @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $border-radius-btn-large, $line-height-small);
    font-weight: $font-weight-normal;

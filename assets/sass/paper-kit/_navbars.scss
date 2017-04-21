@@ -5,12 +5,13 @@
         > a:focus{
             background-color: transparent;
         }
-    } 
+    }
 }
 .navbar{
     border: $none;
     font-size: $font-size-navbar;
     padding: 10px;
+    z-index: 3;
     
     .navbar-brand{
         font-weight: $font-weight-bold;
@@ -30,7 +31,7 @@
 //              line-height: $line-height;
          }
          > li > a [class^="fa"]{
-             font-size: $font-size-large + 1;   
+             font-size: $font-size-large + 1;
              position: relative;
              top: 1px;
         }
@@ -45,7 +46,7 @@
     .caret{
        // @include center-item();
     }
-    
+
 
 }
 
@@ -54,11 +55,11 @@
     margin-top: -5px;
 }
 
-.navbar-transparent, [class*="navbar-ct"]{    
+.navbar-transparent, [class*="navbar-ct"]{
     .navbar-brand{
         color: $white-color;
         @include opacity(.9);
-    
+
         &:focus,
         &:hover{
             background-color: transparent;
@@ -85,14 +86,14 @@
         .nav > li > a.btn:hover{
             background-color: transparent;
         }
-        
+
         > .dropdown > a .caret,
         > .dropdown > a:hover .caret,
         > .dropdown > a:focus .caret{
             border-bottom-color: $white-color;
             border-top-color: $white-color;
-        } 
-        
+        }
+
         > .open > a,
         > .open > a:hover,
         > .open > a:focus {
@@ -101,7 +102,7 @@
             @include opacity(1);
         }
     }
-    
+
     .btn-default{
         color: $white-color;
         border-color: $white-color;
@@ -111,15 +112,15 @@
         background-color: $white-color;
         @include opacity(.9);
     }
-    .btn-default.btn-fill:hover, 
-    .btn-default.btn-fill:focus, 
+    .btn-default.btn-fill:hover,
+    .btn-default.btn-fill:focus,
     .btn-default.btn-fill:active,
-    .btn-default.btn-fill.active, 
+    .btn-default.btn-fill.active,
     .open .dropdown-toggle.btn-fill.btn-default{
         border-color: $white-color;
         @include opacity(1);
     }
-    
+
 }
 .navbar-transparent{
     .dropdown-menu .divider{
@@ -135,35 +136,35 @@
 .navbar-default {
     background-color: $bg-nude;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  
+
     .brand{
-        color: $font-color !important;   
+        color: $font-color !important;
     }
     .navbar-nav{
         > li > a:not(.btn){
             color: $dark-gray;
         }
-        
-        > .active > a, 
-        > .active > a:not(.btn):hover, 
-        > .active > a:not(.btn):focus, 
-        > li > a:not(.btn):hover, 
+
+        > .active > a,
+        > .active > a:not(.btn):hover,
+        > .active > a:not(.btn):focus,
+        > li > a:not(.btn):hover,
         > li > a:not(.btn):focus {
             background-color: transparent;
             border-radius: 3px;
             color: $info-color;
             @include opacity(1);
         }
-        
-        > .dropdown > a:hover .caret, 
+
+        > .dropdown > a:hover .caret,
         > .dropdown > a:focus .caret {
             border-bottom-color: $info-color;
             border-top-color: $info-color;
-            
+
         }
-        
-        > .open > a, 
-        > .open > a:hover, 
+
+        > .open > a,
+        > .open > a:hover,
         > .open > a:focus{
             background-color: transparent;
             color: $info-color;
@@ -172,9 +173,9 @@
         .navbar-toggle:hover,.navbar-toggle:focus {
             background-color: transparent;
         }
-        
-    } 
-    
+
+    }
+
     &:not(.navbar-transparent) .btn-default:hover{
         color: $info-color;
         border-color: $info-color;
@@ -183,7 +184,7 @@
     &:not(.navbar-transparent) .btn-neutral:hover,
     &:not(.navbar-transparent) .btn-neutral:active{
             color: $dark-gray;
-        } 
+        }
 }
 
 /*      Navbar with icons            */
@@ -199,27 +200,27 @@
             padding: $navbar-padding-a-icons;
             margin: $navbar-margin-a-icons;
         }
-        
+
         [class^="pe"] {
             font-size: 30px;
             position: relative;
         }
         p {
             margin: 3px 0 0;
-        }    
-    }    
+        }
+    }
 }
 
 .navbar-form{
    @include box-shadow(none);
    .form-control{
-        @include light-form();       
+        @include light-form();
         height: 22px;
         font-size: $font-size-navbar;
         line-height: $line-height-general;
         color: $light-gray;
     }
-    .navbar-transparent & .form-control, 
+    .navbar-transparent & .form-control,
     [class*="navbar-ct"] & .form-control{
         color: $white-color;
         border: $none;
@@ -254,19 +255,17 @@
     margin-top: 19px;
     margin-bottom: 19px;
     border: $none;
-    
+
     .icon-bar {
         background-color: $white-color;
     }
-     .navbar-collapse, 
+     .navbar-collapse,
      .navbar-form {
         border-color: transparent;
     }
-    
+
     &.navbar-default .navbar-toggle:hover,
     &.navbar-default .navbar-toggle:focus {
         background-color: transparent;
     }
 }
-
-

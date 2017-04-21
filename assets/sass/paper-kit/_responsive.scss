@@ -133,7 +133,7 @@
                 line-height: $line-height-general;
                 padding: 15px 0;
                 &:hover,
-                &.active{
+                &:active{
                     color: $default-states-color;
                 }
             }

@@ -1,40 +1,8 @@
 // Mixin for generating new styles
 @mixin btn-styles($btn-color, $btn-states-color) {
-  border-color: $btn-color;
-  color: $btn-color;
-  
-  &:hover,
-  &:focus,
-  &:active,
-  &.active,
-  .open > &.dropdown-toggle {
     background-color: $btn-color;
-    color: $fill-font-color;
     border-color: $btn-color;
-    .caret{
-        border-top-color: $fill-font-color;
-    }
-  }
-  
-  &.disabled,
-  &:disabled,
-  &[disabled],
-  fieldset[disabled] & {
-    &,
-    &:hover,
-    &:focus,
-    &.focus,
-    &:active,
-    &.active {
-      background-color: $transparent-bg;
-      border-color: $btn-color;
-    }
-  }
-  
-
-  &.btn-fill {
     color: $white-color;
-    background-color: $btn-color;
     @include opacity(1);  
 
     &:hover,
@@ -50,33 +18,68 @@
     .caret{
         border-top-color: $white-color;
     }
-  }
-  
-  &.btn-simple {
-    &:hover,
-    &:focus,
-    &:active,
-    &.active,
-    .open > &.dropdown-toggle{
-        background-color: $transparent-bg;
-        color: $btn-states-color;
-    }
     
-    .caret{
-        border-top-color: $white-color;
+    &.btn-border{
+      color: $btn-color;
+      
+      &:hover,
+      &:focus,
+      &:active,
+      &.active,
+      .open > &.dropdown-toggle {
+        background-color: $btn-color;
+        color: $fill-font-color;
+        border-color: $btn-color;
+        .caret{
+            border-top-color: $fill-font-color;
+        }
+      }
+      
+      &.disabled,
+      &:disabled,
+      &[disabled],
+      fieldset[disabled] & {
+        &,
+        &:hover,
+        &:focus,
+        &.focus,
+        &:active,
+        &.active {
+          background-color: $transparent-bg;
+          border-color: $btn-color;
+        }
+      }
+      .caret{
+          border-top-color: $white-color;
+       }
     }
-  }  
   
-  .caret{
-      border-top-color: $btn-color;
-  }
+    &.btn-link {
+        color: $btn-color;
+        
+        &:hover,
+        &:focus,
+        &:active,
+        &.active,
+        .open > &.dropdown-toggle{
+            background-color: $transparent-bg;
+            color: $btn-states-color;
+        }
+        
+        .caret{
+            border-top-color: $btn-color;
+        }
+    }  
+  
+    .caret{
+      border-top-color: $white-color;
+    }
 }
 
 
 @mixin btn-size($padding-vertical, $padding-horizontal, $font-size, $border, $line-height){
    font-size: $font-size;
    border-radius: $border;
-/*    line-height: $line-height; */
    padding: $padding-vertical $padding-horizontal;
     
    &.btn-simple{
