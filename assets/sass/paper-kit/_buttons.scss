@@ -56,8 +56,19 @@
 .navbar .navbar-nav > li > a.btn-warning, .btn-warning { @include btn-styles($warning-color, $warning-states-color); }
 .navbar .navbar-nav > li > a.btn-danger, .btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
 
+.btn-outline-default { @include btn-outline-styles($default-color, $default-states-color); }
 .btn-outline-primary { @include btn-outline-styles($primary-color, $primary-states-color); }
-
+.btn-outline-success { @include btn-outline-styles($success-color, $success-states-color); }
+.btn-outline-info    { @include btn-outline-styles($info-color, $info-states-color); }
+.btn-outline-warning { @include btn-outline-styles($warning-color, $warning-states-color); }
+.btn-outline-danger  { @include btn-outline-styles($danger-color, $danger-states-color); }
+.btn-outline-neutral { @include btn-outline-styles($white-color, $default-states-color);
+    &:hover,
+    &:focus{
+        color: $default-states-color;
+        background-color: $white-color;
+    }
+}
 .btn-neutral {
     @include btn-styles($white-color, $white-color);
     color: $default-color;
