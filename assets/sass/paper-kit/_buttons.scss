@@ -6,15 +6,15 @@
     font-size: $font-size-base;
     font-weight: $font-weight-semi;
     padding: $padding-base-vertical $padding-base-horizontal;
-    
+
     &.btn-border,
     &.btn-link{
         background-color: $transparent-bg;
     }
-    
+
     @include btn-styles($default-color, $default-states-color);
     @include transition($fast-transition-time, linear);
-    
+
     &:hover,
     &:focus{
         outline: 0 !important;
@@ -25,23 +25,28 @@
          @include box-shadow(none);
          outline: 0 !important;
     }
-    
+
     &.btn-icon{
         padding: $padding-base-vertical;
     }
-    
+
     i{
         margin-right: 5px;
     }
-    
+
+    &[class*="btn-outline-"]{
+        background-image: none;
+        background-color: transparent;
+    }
 }
 
-.btn-group .btn + .btn, 
-.btn-group .btn + .btn-group, 
-.btn-group .btn-group + .btn, 
+.btn-group .btn + .btn,
+.btn-group .btn + .btn-group,
+.btn-group .btn-group + .btn,
 .btn-group .btn-group + .btn-group{
     margin-left: -2px;
 }
+
 
 // Apply the mixin to the buttons
 //.btn-default { @include btn-styles($default-color, $default-states-color); }
@@ -51,26 +56,28 @@
 .navbar .navbar-nav > li > a.btn-warning, .btn-warning { @include btn-styles($warning-color, $warning-states-color); }
 .navbar .navbar-nav > li > a.btn-danger, .btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
 
-.btn-neutral { 
+.btn-outline-primary { @include btn-outline-styles($primary-color, $primary-states-color); }
+
+.btn-neutral {
     @include btn-styles($white-color, $white-color);
     color: $default-color;
     &:hover,
     &:focus{
         color: $default-states-color;
     }
-    
+
     &.btn-border{
         &:hover,
         &:focus{
             color: $default-color;
         }
-        
+
         &:active,
         &.active,
         .open > &.dropdown-toggle{
              background-color: $white-color;
              color: $default-color;
-        }    
+        }
     }
 /*
     &.btn-fill{
@@ -81,7 +88,7 @@
         color: $default-states-color;
     }
 */
-    
+
     &.btn-link:active,
     &.btn-link.active{
         background-color: transparent;
@@ -98,12 +105,12 @@
 .btn-link{
     border: $none;
     padding: $padding-base-vertical $padding-base-horizontal;
-    
+
     &:hover,
     &:active{
         text-decoration: none;
     }
-    
+
     &.btn-icon{
         padding: $padding-base-vertical;
     }
@@ -114,10 +121,7 @@
    font-weight: $font-weight-normal;
 }
 .btn-sm{
-    @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-btn-small, $line-height-small);    
-}
-.btn-xs {
-    @include btn-size($padding-xs-vertical, $padding-xs-horizontal, $font-size-xs, $border-radius-btn-small, $line-height-small);
+    @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-btn-small, $line-height-small);
 }
 .btn-wd {
     min-width: 140px;
