@@ -13,10 +13,11 @@
 }
 .modal-body{
     padding: 20px 50px;
+    color: #000;
 }
 .modal-footer {
-    border-top: 1px solid $medium-gray;     
-    padding: 0px;  
+    border-top: 1px solid $medium-gray;
+    padding: 0px;
 }
 .modal-footer .left-side, .modal-footer .right-side{
     display: inline-block;
@@ -49,6 +50,6 @@
 .modal-backdrop.in {
     opacity: 0.25;
 }
-
-
-
+.modal-title{
+    color: #000;
+}

@@ -17,7 +17,7 @@
 	<link href="assets/css/bootstrap-switch.min.css" rel="stylesheet" />
 
     <link href="assets/css/paper-kit.css" rel="stylesheet"/>
-    <!-- <link href="assets/css/demo.css" rel="stylesheet" /> -->
+    <link href="assets/css/demo.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
@@ -27,36 +27,42 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-toggleable-md navbar-transparent bg-faded">
-        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-        <a href="http://www.creative-tim.com" class="navbar-brand">
-            <div class="logo-container">
-                <div class="logo">
-                    <img src="assets/img/new_logo.png" alt="Creative Tim Logo" width="30" height="30" class="d-inline-block align-top">
-                </div>
-                <div class="brand">
-                    Creative Tim
-                </div>
+    <nav class="navbar navbar-toggleable-md sticky-top navbar-light navbar-inverse">
+        <div class="container">
+            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="mr-auto">
+                    <div class="navbar-header">
+                        <div class="logo-container">
+                            <div class="logo">
+                                <img src="assets/img/new_logo.png" alt="Creative Tim Logo" href="http://www.creative-tim.com" class="d-inline-block align-top">
+                            </div>
+                            <div class="brand">
+                                Creative Tim
+                          </div>
+                        </div>
+                    </div>
+                </ul>
+                <ul class="navbar-nav mt-2 mt-md-0">
+                    <li class="nav-item">
+                        <button href="paper-kit/components" class="btn btn-link btn-danger">Components</button>
+                    </li>
+                    <li class="nav-item">
+                        <button href="paper-kit/tutorial" target="_blank" class="btn btn-link btn-danger">Tutorial</button>
+                    </li>
+                    <li class="nav-item">
+                        <a href="http://www.creative-tim.com/product/paper-kit" target="_blank" class="btn btn-danger">Download</a>
+                    </li>
+                </ul>
             </div>
-        </a>
-        <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav navbar-toggler-right mr-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="components.html">Components</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="tutorial.html">Tutorial</a>
-                </li>
-                <a href="http://www.creative-tim.com/product/paper-kit" target="_blank" class="btn btn-danger">Download</a>
-            </ul>
         </div>
     </nav>
     <div class="wrapper">
         <div class="demo-header demo-header-image">
             <div class="motto">
-                <!-- <img src="http://assets.inhabitat.com/wp-content/blogs.dir/1/files/2017/01/New-York-City-Taxis-Full-Width-Tall.jpg" width=100%> -->
                 <h1 class="title-uppercase text-center">Paper Kit</h1>
                 <h3 class="text-center">Make your mark with a new design.</h3>
             </div>
@@ -106,6 +112,9 @@
                                 <button type="button" class="btn btn-outline-danger">Danger</button>
                                 <button type="button" class="btn btn-outline-neutral">Neutral</button>
 							</div>
+                        </div>
+                        <br/>
+                        <div class="row">
                             <div class="col-md-8 offset-md-2">
 								<button type="button" class="btn btn-default">Default</button>
                                 <button type="button" class="btn btn-primary">Primary</button>
@@ -257,7 +266,6 @@
                     </div>
                 </div>
             </div>
-            <br/>
             <div class="section section-navbars">
                 <div class="container" id="menu-dropdown">
                     <div class="title">
@@ -350,7 +358,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </nav><br/>
+                        </nav>
                         <nav class="navbar navbar-toggleable-md navbar-ct-info">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -371,7 +379,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </nav><br/>
+                        </nav>
                         <nav class="navbar navbar-toggleable-md navbar-ct-success">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-success" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -392,7 +400,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </nav><br/>
+                        </nav>
                         <nav class="navbar navbar-toggleable-md navbar-ct-warning">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-warning" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -416,7 +424,7 @@
                                     </ul>
                                 </div>
                             </div>
-                        </nav><br/>
+                        </nav>
                         <nav class="navbar navbar-toggleable-md navbar-ct-danger">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-danger" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -437,14 +445,14 @@
                                     </ul>
                                 </div>
                             </div>
-                        </nav><br/>
+                        </nav>
                         <nav class="navbar navbar-toggleable-md navbar-transparent">
                             <div class="container">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-danger" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 							        <span class="navbar-toggler-icon"></span>
 							    </button>
                                 <a class="navbar-brand" href="#">Transparent</a>
-                                <div class="collapse navbar-collapse" id="navbar-danger">
+                                <div class="collapse navbar-collapse" id="navbar-transparent">
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item active">
                                             <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;Facebook</a>
@@ -458,11 +466,10 @@
                                     </ul>
                                 </div>
                             </div>
-                        </nav><br/>
+                        </nav>
                     </div>
                 </div>
             </div>
-            <br/>
             <div class="section section-pagination">
                 <div class="container">
                     <div class="row">
@@ -722,28 +729,31 @@
                                 <h3>Images</h3>
                             </div>
                             <div class="row">
-                                <div class="col-sm-2">
+                                <div class="col-xs-8 col-sm-6 col-md-3">
                                     <h4>Rounded Image</h4>
-                                    <img src="assets\img\chet_faker_1.jpg" class="img-rounded img-responsive" alt="Rounded Image">
+                                    <img src="assets/img/thinking_in_textures.png" class="img-rounded img-responsive" alt="Rounded Image">
+                                    <div class="img-details">
+                                        <div class="author">
+                                            <img src="assets/img/chet_faker_1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                        </div>
+                                        <p>Chet Faker</p>
+                                    </div>
                                 </div>
-                                <div class="col-sm-2 offset-sm-1">
+                                <div class="col-xs-6  col-sm-3 col-md-2 offset-md-1">
                                     <h4>Circle Image</h4>
-                                    <img src="assets\img\chet_faker_2.jpg" class="img-circle img-responsive" alt="Rounded Image">
+                                    <img src="assets/img/placeholder.jpg" class="img-circle img-no-padding img-responsive" alt="Rounded Image">
+                                    <p class="text-center">Placeholder</p>
                                 </div>
-                                <div class="col-sm-2 offset-sm-1">
-                                    <h4>Rounded Raised</h4>
-                                    <img src="assets\img\chet_faker_1.jpg" class="img-rounded img-responsive img-raised" alt="Rounded Image">
-                                </div>
-                                <div class="col-sm-2 offset-sm-1">
-                                    <h4>Circle Raised</h4>
-                                    <img src="assets\img\chet_faker_2.jpg" class="img-circle img-responsive img-raised" alt="Rounded Image">
+                                <div class="col-xs-6  col-sm-3 col-md-2 offset-md-1">
+                                    <h4>Thumbnail</h4>
+                                    <img src="assets/img/chet_faker_2.jpg" class="img-thumbnail img-responsive" alt="Rounded Image">
+                                    <p class="text-center">Chet Faker</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <br/>
             <div class="section section-dark-blue" class="javascript-components">
 				<div class="container">
 					<div class="title">
@@ -912,15 +922,22 @@
 							</div>
 						</div>
 						<div class="row sharing-area text-center">
-							<h3>Sharing is caring!</h3>
-							<button id="twitter" class="btn sharrre"><i class="fa fa-twitter"></i> Twitter</button>
-							<button id="facebook" class="btn sharrre"><i class="fa fa-facebook-square"></i> Facebook</button>
+                            <div class="container">
+                                <h3>Sharing is caring!</h3>
+                            </div>
+                            <br/>
+                        </div>
+                        <div class="row text-center">
+                            <div class="container">
+    							<button id="twitter" class="btn btn-outline-default "><i class="fa fa-twitter"></i> Twitter</button>
+    							<button id="facebook" class="btn btn-outline-default"><i class="fa fa-facebook-square"></i> Facebook</button>
+                            </div>
 						</div>
 					</div>
 				</div>
         </div>
 	</div>
-		<footer class="footer section-dark">
+		<footer class="footer">
 			<nav class="navbar navbar-toggleable-md navbar-fixed-bottom navbar-light bg-faded">
 				<div class="container">
 				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
@@ -944,7 +961,7 @@
 				  </div>
 				</div>
 			</nav>
-	</footer>
+	    </footer>
 </body>
 
 <script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
@@ -989,10 +1006,11 @@
 			});
 					 });
 		$('#ex1').slider({
-	formatter: function(value) {
-		return 'Current value: ' + value;
-	}
-});
+	        formatter: function(value) {
+		               return 'Current value: ' + value;
+	        }
+        });
+        
 </script>
 
 </html>

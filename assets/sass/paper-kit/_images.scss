@@ -2,10 +2,15 @@
     border-radius: $border-radius-extreme;
     box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
     transition: opacity 0.5s ease 0s;
+    max-width: 100%;
 }
 .img-details{
     min-height: 50px;
     padding: 0 4px 0.5em;
+
+}
+.img-details img{
+    width: 50px;
 }
 .img-details .author{
     margin-left: 10px;
@@ -16,6 +21,8 @@
     background-color: $white-color;
     margin-bottom: 10px;
     padding: 4px;
+    border-radius: 50%;
+        max-width: 100%;
 }
 .img-thumbnail{
     border: 0 none;

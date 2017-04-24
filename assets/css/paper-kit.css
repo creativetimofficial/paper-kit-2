@@ -576,7 +576,8 @@ input.ct-red + span + label + span.switch-right {
     background-color: #FFFFFF;
     color: #66615B; }
   .btn-neutral.btn-link:active, .btn-neutral.btn-link.active {
-    background-color: transparent; }
+    background-color: transparent;
+    box-shadow: 0 0 0 2px rgba(2, 117, 216, 0.25); }
 
 .btn:disabled, .btn[disabled], .btn.disabled {
   opacity: 0.5;
@@ -1408,6 +1409,180 @@ textarea.form-control {
     border-color: transparent; }
   .navbar-toggle.navbar-default .navbar-toggle:hover, .navbar-toggle.navbar-default .navbar-toggle:focus {
     background-color: transparent; }
+
+.img-rounded {
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+  transition: opacity 0.5s ease 0s;
+  max-width: 100%; }
+
+.img-details {
+  min-height: 50px;
+  padding: 0 4px 0.5em; }
+
+.img-details img {
+  width: 50px; }
+
+.img-details .author {
+  margin-left: 10px;
+  margin-top: -21px;
+  width: 40px; }
+
+.img-circle {
+  background-color: #FFFFFF;
+  margin-bottom: 10px;
+  padding: 4px;
+  border-radius: 50%;
+  max-width: 100%; }
+
+.img-thumbnail {
+  border: 0 none;
+  border-radius: 8px;
+  box-shadow: 0 1px 2px rgba(164, 158, 147, 0.6);
+  margin-bottom: 10px; }
+
+.img-no-padding {
+  padding: 0px; }
+
+.panel {
+  border: 0;
+  border-bottom: 1px solid #DDDDDD;
+  box-shadow: none; }
+
+.panel-default > .panel-heading {
+  background-color: #FFFFFF;
+  border-color: #FFFFFF; }
+
+.panel-group .panel {
+  border-radius: 0; }
+
+.panel-title {
+  font-size: 1.25em; }
+
+.panel-title a:hover, .panel-title a:focus {
+  text-decoration: none; }
+
+.gsdk-collapse {
+  display: block;
+  height: 0px;
+  visibility: visible;
+  overflow: hidden; }
+
+.panel-title a:hover, .panel-title a:focus {
+  color: #403D39; }
+
+.panel-default > .panel-heading + .panel-collapse.gsdk-collapse > .panel-body {
+  box-shadow: inset 0 7px 10px -7px rgba(0, 0, 0, 0.14); }
+
+.carousel-control {
+  background-color: #EB5E28;
+  border-radius: 50%;
+  opacity: 1;
+  text-shadow: none; }
+  .carousel-control:hover, .carousel-control:focus {
+    opacity: 1;
+    background-color: #B33C12; }
+
+.carousel-control.left {
+  height: 30px;
+  top: 50%;
+  width: 30px;
+  left: 8%; }
+
+.carousel-control.right {
+  height: 30px;
+  right: 8%;
+  top: 50%;
+  width: 30px; }
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .fa, .carousel-control .fa {
+  display: inline-block;
+  z-index: 5; }
+
+.carousel-control .fa {
+  font-size: 26px;
+  margin: 2px; }
+
+.carousel-control.left, .carousel-control.right {
+  background-image: none; }
+
+.carousel-inner {
+  background-color: #d6d2cc; }
+
+.carousel-inner > .item {
+  padding: 50px; }
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  border-radius: 8px;
+  box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+  margin-left: 25%;
+  max-width: 50%; }
+
+.carousel-indicators {
+  bottom: 0px; }
+
+.carousel-indicators > li {
+  background-color: #FFFFFF;
+  border: 0 none; }
+
+.carousel-indicators .active {
+  background-color: #EB5E28; }
+
+.modal-header {
+  border-bottom: 1px solid #DDDDDD;
+  padding: 20px;
+  text-align: center; }
+
+.modal-content {
+  border: 0 none;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1); }
+
+.modal-dialog {
+  padding-top: 60px; }
+
+.modal-body {
+  padding: 20px 50px;
+  color: #000; }
+
+.modal-footer {
+  border-top: 1px solid #DDDDDD;
+  padding: 0px; }
+
+.modal-footer .left-side, .modal-footer .right-side {
+  display: inline-block;
+  text-align: center;
+  width: 49%; }
+
+.modal-footer .btn-link {
+  padding: 20px;
+  width: 100%; }
+
+.modal-footer .divider {
+  background-color: #DDDDDD;
+  display: inline-block;
+  float: inherit;
+  height: 63px;
+  margin: 0px -3px;
+  position: absolute;
+  width: 1px; }
+
+.modal.fade .modal-dialog {
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none; }
+
+.modal.in .modal-dialog {
+  transform: none;
+  -webkit-transform: none;
+  -moz-transform: none; }
+
+.modal-backdrop.in {
+  opacity: 0.25; }
+
+.modal-title {
+  color: #000; }
 
 /*!
  * Datetimepicker for Bootstrap 3
