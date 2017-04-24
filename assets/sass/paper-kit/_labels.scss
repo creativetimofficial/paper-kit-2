@@ -1,6 +1,6 @@
 /*           Labels & Progress-bar              */
 .label{
-    padding: 0.4em 0.6em;
+    padding: 0.2em 0.6em;
     border-radius: 10px;
     color: #FFFFFF;
     font-weight: 500;
@@ -23,4 +23,7 @@
 }
 .label-danger{
     background-color: $danger-color;
+}
+.label-default{
+    background-color: $default-color;
 }

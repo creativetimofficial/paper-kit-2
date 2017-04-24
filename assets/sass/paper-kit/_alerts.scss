@@ -4,10 +4,10 @@
     color: #FFFFFF;
     padding: 10px 15px;
     font-size: 14px;
-    
+
     .container &{
         border-radius: 4px;
-    
+
     }
     .navbar &{
         border-radius: 0;
@@ -38,4 +38,3 @@
     background-color: $bg-danger;
     color: $danger-states-color;
 }
-

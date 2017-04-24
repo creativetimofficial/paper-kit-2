@@ -1,7 +1,7 @@
 .tooltip {
     font-size: $font-size-small;
     font-weight: $font-weight-normal;
-    
+
     &.top {
         margin-top: -11px;
         padding: 0;
@@ -139,7 +139,7 @@
     margin-left: 0;
 }
 .popover.bottom .arrow:after{
-    border-bottom-color: $bg-danger; 
+    border-bottom-color: $bg-danger;
 }
 .popover-filter{
     position: fixed;
@@ -151,7 +151,7 @@
     background-color: #000000;
     @include opacity(0);
     visibility: hidden;
-    
+
     transition: visibility 0s linear 0.3s,opacity 0.3s linear;
 }
 .popover-filter.in{

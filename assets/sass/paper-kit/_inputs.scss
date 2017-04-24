@@ -3,10 +3,10 @@
 }
 .form-control:-moz-placeholder{
    @include placeholder($medium-gray,1);
-}  
+}
 .form-control::-webkit-input-placeholder{
-   @include placeholder($medium-gray,1); 
-} 
+   @include placeholder($medium-gray,1);
+}
 .form-control:-ms-input-placeholder{
    @include placeholder($medium-gray,1);
 }
@@ -20,54 +20,54 @@
     transition: background-color 0.3s ease 0s;
     @include input-size($padding-base-vertical, $padding-base-horizontal, $height-base);
     @include box-shadow(none);
-    
+
     &:focus{
            background-color: $white-bg;
            border: 1px solid $table-line-color;
            @include box-shadow(none);
-           outline: 0 !important;       
+           outline: 0 !important;
     }
-    
+
     &.no-border{
         border: medium none;
     }
-    
+
     .has-success &,
     .has-error &,
     .has-success &:focus,
     .has-error &:focus{
         @include box-shadow(none);
     }
-    
+
     .has-success &{
-        background-color: $success-input-bg;
+        // background-color: $success-input-bg;
         border: 1px solid $success-color;
         color: $success-color;
     }
     .has-success &:focus{
-        background-color: $white-bg;
+        background-color: $success-input-bg;
         border: 1px solid $success-color;
     }
-    .has-error &{
-        background-color: $danger-input-bg;
+    .has-danger &{
+        background-color: $white-color;
         border: 1px solid $danger-color;
         color: $danger-color;
     }
-    .has-error &:focus{
-        background-color: $white-bg;
+    .has-danger &:focus{
+        background-color: $danger-input-bg;
         border: 1px solid $danger-color;
     }
-    
+
     & + .form-control-feedback{
         border-radius: $border-radius-large;
         font-size: $font-size-base;
-        margin-top: -7px;
+        // margin-top: -7px;
         position: absolute;
-        right: 10px;
+        // right: 10px;
         top: 50%;
         vertical-align: middle;
     }
-    
+
     .open &{
         border-radius: $border-radius-base $border-radius-base 0 0;
         border-bottom-color: transparent;
@@ -95,8 +95,8 @@
     background-color: $gray-input-bg;
     border: solid 1px $table-line-color;
     border-radius: $border-radius-base;
-    
-    
+
+
     .has-success &,
     .has-error &{
         background-color: $white-color;
@@ -113,15 +113,15 @@
     }
 }
 
-.input-group .form-control:first-child, 
-.input-group-addon:first-child,  
-.input-group-btn:first-child > .dropdown-toggle, 
+.input-group .form-control:first-child,
+.input-group-addon:first-child,
+.input-group-btn:first-child > .dropdown-toggle,
 .input-group-btn:last-child > .btn:not(:last-child):not(.dropdown-toggle) {
     border-right: 0 none;
 }
-.input-group .form-control:last-child, 
-.input-group-addon:last-child,  
-.input-group-btn:last-child > .dropdown-toggle, 
+.input-group .form-control:last-child,
+.input-group-addon:last-child,
+.input-group-btn:last-child > .dropdown-toggle,
 .input-group-btn:first-child > .btn:not(:first-child) {
     border-left: 0 none;
 }
