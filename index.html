@@ -82,10 +82,10 @@
                         </div>
                         <div class="row">
                             <div class="col-md-8 offset-md-2">
-                                <button type="button" class="btn btn-info">Default</button>
-                                <button type="button" class="btn btn-info btn-round">Round</button>
-                                <button type="button" class="btn btn-info btn-round">♥ With Icon</button>
-                                <button type="button" class="btn btn-info btn-round btn-just-icon">♥</button>
+                                <button type="button" class="btn btn-info btn-square">Default</button>
+                                <button type="button" class="btn btn-info">Round</button>
+                                <button type="button" class="btn btn-info">♥ With Icon</button>
+                                <button type="button" class="btn btn-info btn-just-icon">♥</button>
                                 <button type="button" class="btn btn-link">Simple</button>
                             </div>
                         </div>
@@ -165,7 +165,7 @@
                             <div class="col-sm-3">
                                 <div class="input-group">
                                     <input type="text" class="form-control" placeholder="Username" aria-describedby="basic-addon1">
-                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-user" aria-hidden="true"></i></span>
+                                    <span class="input-group-addon" id="basic-addon1"><i class="fa fa-group" aria-hidden="true"></i></span>
                                 </div>
                             </div>
                         </div>
@@ -175,7 +175,31 @@
                                 <div class="title">
                                     <h3>Checkboxes</h3>
                                 </div>
-                                <div class="form-check">
+                                <div class="checkbox">
+                                    <input id="checkbox1" type="checkbox">
+                                    <label for="checkbox1">
+                                        Unchecked
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                   <input id="checkbox2" type="checkbox" checked="">
+                                   <label for="checkbox2">
+                                        Checked
+                                    </label>
+                                 </div>
+                                <div class="checkbox">
+                                    <input id="checkbox3" type="checkbox" disabled="">
+                                    <label for="checkbox3">
+                                        Disabled unchecked
+                                    </label>
+                                </div>
+                                <div class="checkbox">
+                                   <input id="checkbox4" type="checkbox" checked="" disabled="">
+                                   <label for="checkbox4">
+                                       Disabled checked
+                                   </label>
+                                </div>
+                                <!-- <div class="form-check">
                                     <label class="form-check-label">
 								     <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
 								   </label> Unchecked
@@ -196,13 +220,40 @@
 									    <input class="form-check-input" checked="" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
 									   </label> Disabled Checked
                                     </div>
-                                </fieldset>
+                                </fieldset> -->
                             </div>
                             <div class="col-sm-3">
                                 <div class="title">
                                     <h3>Radio Buttons</h3>
                                 </div>
-                                <div class="form-check">
+                                <div class="radio">
+                                    <input type="radio" name="radio1" id="radio1" value="option1">
+                                    <label for="radio1">
+                                        Radio is off
+                                    </label>
+                                </div>
+
+                                <div class="radio">
+                                    <input type="radio" name="radio1" id="radio2" value="option2" checked="">
+                                    <label for="radio2">
+                                        Radio is on
+                                    </label>
+                                </div>
+
+                                <div class="radio">
+                                    <input type="radio" name="radio3" id="radio3" value="option3" disabled="">
+                                    <label for="radio3">
+                                        Disabled radio is off
+                                    </label>
+                                </div>
+
+                                <div class="radio">
+                                    <input type="radio" name="radio4" id="radio4" value="option4" checked="" disabled="">
+                                    <label for="radio4">
+                                        Disabled radio is on
+                                    </label>
+                                </div>
+                                <!-- <div class="form-check">
                                     <label class="form-check-label">
 								    <input class="form-check-input" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
 								  </label> Unchecked
@@ -223,7 +274,7 @@
 											<input class="form-check-input" checked="" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
 										</label> Disabled Checked
                                     </div>
-                                </fieldset>
+                                </fieldset> -->
                             </div>
                             <div class="col-sm-3">
                                 <div class="title">
@@ -275,20 +326,19 @@
                         <div class="col-md-6">
                             <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
                                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-									    <span class="navbar-toggler-icon"></span>
-									  </button>
+								    <span class="navbar-toggler-icon"></span>
+								</button>
                                 <a class="navbar-brand" href="#">Menu</a>
-
                                 <div class="collapse navbar-collapse" id="navbar-menu">
                                     <ul class="navbar-nav mr-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="#">Link <span class="sr-only">(current)</span></a>
+                                            <a class="nav-link" href="#">Link</a>
                                         </li>
                                         <li class="nav-item">
                                             <a class="nav-link" href="#">Link</a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link btn btn-primary dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                                             <div class="dropdown-menu">
                                                 <a class="dropdown-item" href="#">Action</a>
                                                 <a class="dropdown-item" href="#">Another action</a>
@@ -304,8 +354,8 @@
                         <div class="col-md-6">
                             <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu-icon" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-									    <span class="navbar-toggler-icon"></span>
-									  </button>
+								    <span class="navbar-toggler-icon"></span>
+								</button>
                                 <a class="navbar-brand" href="#">Icons</a>
                                 <div class="collapse navbar-collapse" id="navbar-menu-icon">
                                     <ul class="nav ml-auto">
@@ -315,8 +365,11 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
                                         </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                        </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link btn btn-danger dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
                                             <div class="dropdown-menu">
                                                 <a class="dropdown-item" href="#">Action</a>
                                                 <a class="dropdown-item" href="#">Another action</a>
@@ -333,9 +386,11 @@
                 </div>
                 <br/>
                 <div id="navbar">
-                    <div class="title">
-                        <h3>Navigation</h3>
-                        <br/>
+                    <div class="container">
+                        <div class="title">
+                            <h3>Navigation</h3>
+                            <br/>
+                        </div>
                     </div>
                     <div class="navigation-example">
                         <nav class="navbar navbar-toggleable-md navbar-ct-primary">
@@ -346,7 +401,7 @@
                                 <a class="navbar-brand" href="#">Primary Color</a>
                                 <div class="collapse navbar-collapse" id="navbar-primary">
                                     <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
+                                        <li class="nav-item">
                                             <a class="nav-link" href="#"><i class="fa fa-compass" aria-hidden="true"></i>&nbsp;Discover</a>
                                         </li>
                                         <li class="nav-item">
@@ -362,12 +417,12 @@
                         <nav class="navbar navbar-toggleable-md navbar-ct-info">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-							    <span class="navbar-toggler-icon"></span>
-							  </button>
+    							    <span class="navbar-toggler-icon"></span>
+							    </button>
                                 <a class="navbar-brand" href="#">Info Color</a>
                                 <div class="collapse navbar-collapse" id="navbar-info">
                                     <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
+                                        <li class="nav-item">
                                             <a class="nav-link" href="#">Discover</a>
                                         </li>
                                         <li class="nav-item">
@@ -383,12 +438,12 @@
                         <nav class="navbar navbar-toggleable-md navbar-ct-success">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-success" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-							    <span class="navbar-toggler-icon"></span>
-							  </button>
+    							    <span class="navbar-toggler-icon"></span>
+    							</button>
                                 <a class="navbar-brand" href="#">Success Color</a>
                                 <div class="collapse navbar-collapse" id="navbar-success">
                                     <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
+                                        <li class="nav-item">
                                             <a class="nav-link" href="#"><i class="fa fa-compass" aria-hidden="true"></i></a>
                                         </li>
                                         <li class="nav-item">
@@ -404,12 +459,12 @@
                         <nav class="navbar navbar-toggleable-md navbar-ct-warning">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-warning" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-							    <span class="navbar-toggler-icon"></span>
-							  </button>
+    							    <span class="navbar-toggler-icon"></span>
+							    </button>
                                 <a class="navbar-brand" href="#">Warning Color</a>
                                 <div class="collapse navbar-collapse" id="navbar-warning">
                                     <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
+                                        <li class="nav-item">
                                             <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i></a>
                                         </li>
                                         <li class="nav-item">
@@ -428,19 +483,19 @@
                         <nav class="navbar navbar-toggleable-md navbar-ct-danger">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-danger" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-							    <span class="navbar-toggler-icon"></span>
-							  </button>
+		                            <span class="navbar-toggler-icon"></span>
+							    </button>
                                 <a class="navbar-brand" href="#">Danger Color</a>
                                 <div class="collapse navbar-collapse" id="navbar-danger">
                                     <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;Share</a>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Share</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;Tweet</a>
+                                            <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Tweet</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><i class="fa fa-pinterest" aria-hidden="true">&nbsp;Pin</i></a>
+                                            <a class="nav-link" href="#"><i class="fa fa-pinterest" aria-hidden="true"></i> Pin</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -454,14 +509,14 @@
                                 <a class="navbar-brand" href="#">Transparent</a>
                                 <div class="collapse navbar-collapse" id="navbar-transparent">
                                     <ul class="navbar-nav ml-auto">
-                                        <li class="nav-item active">
-                                            <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i>&nbsp;Facebook</a>
+                                        <li class="nav-item">
+                                            <a class="nav-link" href="#"><i class="fa fa-facebook-official" aria-hidden="true"></i> Facebook</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i>&nbsp;Twitter</a>
+                                            <a class="nav-link" href="#"><i class="fa fa-twitter" aria-hidden="true"></i> Twitter</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true">&nbsp;Instagram</i></a>
+                                            <a class="nav-link" href="#"><i class="fa fa-instagram" aria-hidden="true"></i> Instagram</a>
                                         </li>
                                     </ul>
                                 </div>
@@ -522,7 +577,7 @@
                             <br/>
                             <nav aria-label="...">
                                 <ul class="pagination">
-                                    <li class="page-item disabled">
+                                    <li class="page-item">
                                         <a class="page-link" href="#" tabindex="-1">Previous</a>
                                     </li>
                                     <li class="page-item"><a class="page-link" href="#">1</a></li>
@@ -564,7 +619,6 @@
                                     </div>
                                 </li>
                             </ul>
-
                             <!-- Tab panes -->
                             <div class="tab-content">
                                 <div class="tab-pane active" id="home" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales dignissim semper. In rhoncus pretium nibh, ut molestie nulla. Cras dapibus mi vel arcu vulputate, eu pharetra sapien cursus. </div>
@@ -577,18 +631,18 @@
                             <div class="title">
                                 <h3>Navigation Pills</h3>
                             </div>
-                            <ul class="nav nav-pills">
+                            <ul class="nav nav-pills nav-pills-danger">
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#0"><i class="fa fa-th-large" aria-hidden="true"></i> Dashboard</a>
+                                    <a class="nav-link active" data-toggle="tab" href="#0"><i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Dashboard</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-clock-o" aria-hidden="true"></i> Schedule</a>
+                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Schedule</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-list" aria-hidden="true"></i> Tasks</a>
+                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Tasks</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-usd" aria-hidden="true"></i>	 Payments</a>
+                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-usd" aria-hidden="true"></i>&nbsp;Payments</a>
                                 </li>
                             </ul>
                             <!-- Pill panes -->
@@ -613,8 +667,12 @@
                     </div>
                 </div>
             </div>
-            <br/>
             <div class="section section-notifications" id="notifications">
+                <div class="container">
+                    <div class="title">
+                        <h3>Notification</div>
+                    </div>
+                </div>
                 <div class="notifications">
                     <div class="alert alert-success" role="alert">
                         <div class="container">
@@ -650,37 +708,37 @@
                         <div class="row">
                             <div class="tim-typo">
                                 <h1>
-                                    <span class="tim-note">Header 1</span> The Life of Paper Kit
+                                    <span class="tim-note">Header 1</span> Thinking in textures
                                 </h1>
                             </div>
                             <div class="tim-typo">
                                 <h2>
-                                    <span class="tim-note">Header 2</span> The Life of Paper Kit
+                                    <span class="tim-note">Header 2</span> Thinking in textures
                                 </h2>
                             </div>
                             <div class="tim-typo">
                                 <h3>
-                                    <span class="tim-note">Header 3</span> The Life of Paper Kit
+                                    <span class="tim-note">Header 3</span> Thinking in textures
                                 </h3>
                             </div>
                             <div class="tim-typo">
                                 <h4>
-                                    <span class="tim-note">Header 4</span> The Life of Paper Kit
+                                    <span class="tim-note">Header 4</span> Thinking in textures
                                 </h4>
                             </div>
                             <div class="tim-typo">
                                 <h5>
-                                    <span class="tim-note">Header 5</span> The Life of Paper Kit
+                                    <span class="tim-note">Header 5</span> Thinking in textures
                                 </h5>
                             </div>
                             <div class="tim-typo">
                                 <h6>
-                                    <span class="tim-note">Header 6</span> The Life of Paper Kit
+                                    <span class="tim-note">Header 6</span> Thinking in textures
                                 </h6>
                             </div>
                             <div class="tim-typo">
                                 <p>
-                                    <span class="tim-note">Paragraph</span> The Life of Paper Kit
+                                    <span class="tim-note">Paragraph</span> Thinking in textures
                                 </p>
                             </div>
                             <div class="tim-typo">
@@ -781,164 +839,167 @@
 							      <div class="modal-body">
 							        ...
 							      </div>
-							      <div class="modal-footer">
-							        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-							        <button type="button" class="btn btn-primary">Save changes</button>
-							      </div>
+                                  <div class="modal-footer">
+                                    <div class="left-side">
+                                        <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Never mind</button>
+                                    </div>
+                                    <div class="divider"></div>
+                                    <div class="right-side">
+                                        <button type="button" class="btn btn-danger btn-simple">Delete</button>
+                                    </div>
+                                  </div>
 							    </div>
 							  </div>
 							</div>
 						</div>
-							<div class="col-md-6">
-								<div class="title">
-									<h3>Popovers</h3>
-								</div>
-								<button type="button" class="btn btn-outline-neutral" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on left</button>
-								<button type="button" class="btn btn-outline-neutral" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on top</button>
-								<button type="button" class="btn btn-outline-neutral" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on right</button>
-								<button type="button" class="btn btn-outline-neutral" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on bottom</button>
+						<div class="col-md-6">
+							<div class="title">
+								<h3>Popovers</h3>
 							</div>
-							<br/>
-							<div class="col-md-6">
-								<div class="title">
-									<h3>Datepicker</h3>
-								</div>
-								<div class="container">
-    							    <div class="row">
-    							        <div class='col-sm-6'>
-    							            <div class="form-group">
-    							                <div class='input-group date' id='datetimepicker1'>
-    							                    <input type='text' class="form-control" placeholder="4/20/2017" />
-    							                    <span class="input-group-addon">
-    							                        <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-    							                    </span>
-    							                </div>
-    							            </div>
-    							        </div>
-    							    </div>
-                                </div>
+							<button type="button" class="btn btn-outline-neutral" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on left</button>
+							<button type="button" class="btn btn-outline-neutral" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on top</button>
+							<button type="button" class="btn btn-outline-neutral" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on right</button>
+							<button type="button" class="btn btn-outline-neutral" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on bottom</button>
+						</div>
+						<br/>
+						<div class="col-md-6">
+							<div class="title">
+								<h3>Datepicker</h3>
 							</div>
-							<div class="col-md-6">
-								<div class="title">
-									<h3>Tooltips</h3>
-								</div>
-								<button type="button" class="btn btn-outline-neutral" data-toggle="tooltip" data-placement="left" title="Tooltip on left">On left</button>
-								<button type="button" class="btn btn-outline-neutral" data-toggle="tooltip" data-placement="top" title="Tooltip on top">On top</button>
-								<button type="button" class="btn btn-outline-neutral" data-toggle="tooltip" data-placement="right" title="Tooltip on right">On right</button>
-								<button type="button" class="btn btn-outline-neutral" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">On bottom</button>
+							<div class="container">
+							    <div class="row">
+							        <div class='col-sm-6'>
+							            <div class="form-group">
+							                <div class='input-group date' id='datetimepicker'>
+							                    <input type='text' class="form-control" placeholder="4/20/2017" />
+							                    <span class="input-group-addon">
+							                        <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+							                    </span>
+							                </div>
+							            </div>
+							        </div>
+							    </div>
+                            </div>
+						</div>
+						<div class="col-md-6">
+							<div class="title">
+								<h3>Tooltips</h3>
 							</div>
+							<button type="button" class="btn btn-outline-neutral" data-toggle="tooltip" data-placement="left" title="Tooltip on left">On left</button>
+							<button type="button" class="btn btn-outline-neutral" data-toggle="tooltip" data-placement="top" title="Tooltip on top">On top</button>
+							<button type="button" class="btn btn-outline-neutral" data-toggle="tooltip" data-placement="right" title="Tooltip on right">On right</button>
+							<button type="button" class="btn btn-outline-neutral" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">On bottom</button>
+						</div>
 					</div>
 					<div class="title">
 						<h3>Carousel</h3>
 					</div>
 				</div>
 			</div>
-				<div class="section" id="carousel">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-8 offset-md-2">
-								<div class="card card-raised card-carousel">
-									<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-									  <ol class="carousel-indicators">
-									    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-									    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-									    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-									  </ol>
-									  <div class="carousel-inner" role="listbox">
-									    <div class="carousel-item active">
-									      <img class="d-block img-fluid" src="http://www.hudsonmgmt.com/hms/images/slider-img-1.jpg" alt="First slide">
-												<div class="carousel-caption d-none d-md-block">
-											    <p>Somewhere</p>
-											  </div>
-									    </div>
-									    <div class="carousel-item">
-									      <img class="d-block img-fluid" src="http://96bda424cfcc34d9dd1a-0a7f10f87519dba22d2dbc6233a731e5.r41.cf2.rackcdn.com/ermu/sliders-1/fall-residential-faders/Fall_Fader2.jpg" alt="Second slide">
-												<div class="carousel-caption d-none d-md-block">
-											    <p>Somewhere else</p>
-											  </div>
-											</div>
-									    <div class="carousel-item">
-									      <img class="d-block img-fluid" src="http://www.jveroassociates.com/images/slider/slider-02.jpg" alt="Third slide">
-												<div class="carousel-caption d-none d-md-block">
-											    <p>Here it is</p>
-											  </div>
-											</div>
-									  </div>
-									  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-									    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-									    <span class="sr-only">Previous</span>
-									  </a>
-									  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-									    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-									    <span class="sr-only">Next</span>
-									  </a>
-									</div>
+			<div class="section" id="carousel">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 offset-md-2">
+							<div class="card card-raised card-carousel">
+								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+								    <ol class="carousel-indicators">
+    								    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    								    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    								    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+								    </ol>
+                                    <div class="carousel-inner" role="listbox">
+                                    <div class="carousel-item active">
+                                        <img class="d-block img-fluid" src="http://www.hudsonmgmt.com/hms/images/slider-img-1.jpg" alt="First slide">
+                                    	<div class="carousel-caption d-none d-md-block">
+                                            <p>Somewhere</p>
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://96bda424cfcc34d9dd1a-0a7f10f87519dba22d2dbc6233a731e5.r41.cf2.rackcdn.com/ermu/sliders-1/fall-residential-faders/Fall_Fader2.jpg" alt="Second slide">
+                                    	<div class="carousel-caption d-none d-md-block">
+                                    	    <p>Somewhere else</p>
+                                    	</div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img class="d-block img-fluid" src="http://www.jveroassociates.com/images/slider/slider-02.jpg" alt="Third slide">
+                                    	<div class="carousel-caption d-none d-md-block">
+                                    	    <p>Here it is</p>
+                                    	</div>
+                                    </div>
+                                    </div>
+                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Previous</span>
+                                    </a>
+                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="sr-only">Next</span>
+                                    </a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
-				<br/>
-				<div class="section section-white">
-					<div class="container tim-container">
-						<div class="row">
-							<div class="col-md-8 offset-md-2 text-center">
-								<h2>Completed with examples</h2>
-								<p>The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. More importantly, looking at them will give you a picture of what you can built with this powerful kit.</p>
-							</div>
+			</div>
+			<div class="section section-white">
+				<div class="container tim-container">
+					<div class="row">
+						<div class="col-md-8 offset-md-2 text-center">
+							<h2>Completed with examples</h2>
+							<p>The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. More importantly, looking at them will give you a picture of what you can built with this powerful kit.</p>
 						</div>
-						<div class="row example-page">
-							<div class="col-md-4">
-								<a href="http://demos.creative-tim.com/paper-kit/landing-page" target="_blank">
-									<img src="assets\img\examples\landing.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-									<h5 class="text-center">Landing Page</h5>
-								</a>
-							</div>
-							<div class="col-md-4">
-								<a href="http://demos.creative-tim.com/paper-kit/register" target="_blank">
-									<img src="assets\img\examples\profile.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-									<h5 class="text-center">Register</h5>
-								</a>
-							</div>
-							<div class="col-md-4">
-								<a href="http://demos.creative-tim.com/paper-kit/profile" target="_blank">
-									<img src="assets\img\examples\register.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-									<h5 class="text-center">Profile</h5>
-								</a>
-							</div>
+					</div>
+					<div class="row example-page">
+						<div class="col-md-4">
+							<a href="http://demos.creative-tim.com/paper-kit/landing-page" target="_blank">
+								<img src="assets\img\examples\landing.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
+								<h5 class="text-center">Landing Page</h5>
+							</a>
+						</div>
+						<div class="col-md-4">
+							<a href="http://demos.creative-tim.com/paper-kit/register" target="_blank">
+								<img src="assets\img\examples\profile.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
+								<h5 class="text-center">Register</h5>
+							</a>
+						</div>
+						<div class="col-md-4">
+							<a href="http://demos.creative-tim.com/paper-kit/profile" target="_blank">
+								<img src="assets\img\examples\register.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
+								<h5 class="text-center">Profile</h5>
+							</a>
 						</div>
 					</div>
 				</div>
-				<br/>
-				<div class="section section-nude section-with-space">
-					<div class="container tim-container">
-						<div class="row">
-							<div class="col-md-8 offset-md-2 text-center">
-								<h2>Do you like what you see?</h2>
-								<p>Cause if you do, it can be yours for free. Hit the button below to navigate to Creative Tim where you can find the kit. Start a new project or give an old Bootstrap project a new look, we've got you covered.</p>
-							</div>
-							<div class="col-xs-8 offset-xs-2 col-sm-4 offset-sm-4 col-md-4 offset-md-4 download-area">
-								<a href="http://www.creative-tim.com/product/paper-kit" class="btn btn-danger btn-fill btn-block btn-round">Download</a>
-							</div>
+			</div>
+			<div class="section section-nude section-with-space">
+				<div class="container tim-container">
+					<div class="row">
+						<div class="col-md-8 offset-md-2 text-center">
+							<h2>Do you like what you see?</h2>
+							<p>Cause if you do, it can be yours for free. Hit the button below to navigate to Creative Tim where you can find the kit. Start a new project or give an old Bootstrap project a new look, we've got you covered.</p>
 						</div>
-						<div class="row sharing-area text-center">
-                            <div class="container">
-                                <h3>Sharing is caring!</h3>
-                            </div>
-                            <br/>
+						<div class="col-xs-8 offset-xs-2 col-sm-4 offset-sm-4 col-md-4 offset-md-4 download-area">
+							<a href="http://www.creative-tim.com/product/paper-kit" class="btn btn-danger btn-fill btn-block btn-round">Download</a>
+						</div>
+					</div>
+					<div class="row sharing-area text-center">
+                        <div class="container">
+                            <h3>Sharing is caring!</h3>
                         </div>
-                        <div class="row text-center">
-                            <div class="container">
-    							<button id="twitter" class="btn btn-outline-default "><i class="fa fa-twitter"></i> Twitter</button>
-    							<button id="facebook" class="btn btn-outline-default"><i class="fa fa-facebook-square"></i> Facebook</button>
-                            </div>
-						</div>
+                        <br/>
+                    </div>
+                    <div class="row text-center">
+                        <div class="container">
+							<button id="twitter" class="btn btn-outline-default "><i class="fa fa-twitter"></i> Twitter</button>
+							<button id="facebook" class="btn btn-outline-default"><i class="fa fa-facebook-square"></i> Facebook</button>
+                        </div>
 					</div>
 				</div>
+			</div>
         </div>
 	</div>
 		<footer class="footer">
-			<nav class="navbar navbar-toggleable-md navbar-fixed-bottom navbar-light bg-faded">
+			<nav class="navbar navbar-toggleable-md navbar-fixed-bottom navbar-light navbar-inverse bg-inverse">
 				<div class="container">
 				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
 				    <span class="navbar-toggler-icon"></span>
@@ -956,7 +1017,7 @@
 				      </li>
 				    </ul>
 				    <span class="navbar-text">
-				      © 2017, made with ♥ by Creative Tim
+				      © 2017, made with <span class="red">♥</span> by Creative Tim
 				    </span>
 				  </div>
 				</div>
@@ -974,8 +1035,8 @@
 <script src="assets/js/bootstrap-switch.min.js"></script>
 
 <!--  Plugins -->
-<script src="assets/js/ct-paper-checkbox.js"></script>
-<script src="assets/js/ct-paper-radio.js"></script>
+<!-- <script src="assets/js/paper-kit-checkbox.js"></script> -->
+<!-- <script src="assets/js/paper-kit-radio.js"></script> -->
 <script src="assets/js/bootstrap-select.js"></script>
 <script src="assets/js/moment.min.js"></script>
 <script src="assets/js/bootstrap-datetimepicker.js"></script>
@@ -991,7 +1052,7 @@
 		  $('[data-toggle="tooltip"]').tooltip();
 		});
 		$(function () {
-			$('#datetimepicker1').datetimepicker({
+			$('#datetimepicker').datetimepicker({
 				icons: {
 					time: "fa fa-clock-o",
 					date: "fa fa-calendar",
@@ -1010,7 +1071,16 @@
 		               return 'Current value: ' + value;
 	        }
         });
-        
+        // Top Navbar bg-color change
+        $(document).ready(function(){
+        $(window).scroll(function() {
+            if ($(document).scrollTop() > 500) {
+              $(".sticky-top").css("background-color", "rgba(0, 0, 0, 0.7)");
+            } else {
+              $(".sticky-top").css("background-color", "transparent");
+            }
+            });
+        });
 </script>
 
 </html>

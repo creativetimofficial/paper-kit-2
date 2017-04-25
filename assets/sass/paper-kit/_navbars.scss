@@ -11,8 +11,8 @@
     border: $none;
     font-size: $font-size-navbar;
     padding: 10px;
-    z-index: 3;
-    
+    // z-index: 3;
+
     .navbar-brand{
         font-weight: $font-weight-bold;
         margin: $navbar-margin-brand;
@@ -268,4 +268,20 @@
     &.navbar-default .navbar-toggle:focus {
         background-color: transparent;
     }
+}
+
+// stefan making edits
+
+.navbar-light .navbar-nav .nav-link:hover{
+    color: $info-color;
+}
+.dropdown-item:focus,
+.dropdown-item:hover{
+    color: $white-color;
+    background-color: $info-color;
+}
+.red{
+    font-size: 24px;
+    color: #ff0000;
+    line-height: 55px;
 }
