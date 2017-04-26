@@ -32,7 +32,6 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="mr-auto">
                     <div class="navbar-header">
@@ -131,7 +130,7 @@
                         </div>
                         <div class="row">
                             <div class="col-md-8 offset-md-2">
-								<button href="#fakelink" class="btn btn-link btn-default">Default</button>
+								<button class="btn btn-link btn-default"><a href="#0">Default</a></button>
                                 <button href="#fakelink" class="btn btn-link btn-primary">Primary</button>
                                 <button href="#fakelink" class="btn btn-link btn-success">Success</button>
                                 <button href="#fakelink" class="btn btn-link btn-info">Info</button>
@@ -199,28 +198,6 @@
                                        Disabled checked
                                    </label>
                                 </div>
-                                <!-- <div class="form-check">
-                                    <label class="form-check-label">
-								     <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-								   </label> Unchecked
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-								     <input class="form-check-input" checked="" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-								   </label> Checked
-                                </div>
-                                <fieldset disabled>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-									    <input class="form-check-input" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-									   </label> Disabled Unchecked
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-									    <input class="form-check-input" checked="" type="checkbox" id="blankCheckbox" value="option1" aria-label="...">
-									   </label> Disabled Checked
-                                    </div>
-                                </fieldset> -->
                             </div>
                             <div class="col-sm-3">
                                 <div class="title">
@@ -253,28 +230,6 @@
                                         Disabled radio is on
                                     </label>
                                 </div>
-                                <!-- <div class="form-check">
-                                    <label class="form-check-label">
-								    <input class="form-check-input" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-								  </label> Unchecked
-                                </div>
-                                <div class="form-check">
-                                    <label class="form-check-label">
-								    <input class="form-check-input" checked="" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-								  </label> Checked
-                                </div>
-                                <fieldset disabled>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-											<input class="form-check-input" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-										</label> Disabled Unchecked
-                                    </div>
-                                    <div class="form-check">
-                                        <label class="form-check-label">
-											<input class="form-check-input" checked="" type="radio" name="blankRadio" id="blankRadio1" value="option1" aria-label="...">
-										</label> Disabled Checked
-                                    </div>
-                                </fieldset> -->
                             </div>
                             <div class="col-sm-3">
                                 <div class="title">
@@ -296,12 +251,12 @@
                                     <h3>Sliders</h3>
                                 </div>
 								<div id="slider-default" class="slider-info ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
-                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" style="width: 70%;"></div>
+                                    <div class="ui-slider-range ui-widget-header ui-corner-all ui-slider-range-min" ></div>
                                     <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 70%;"></a>
                                 </div>
                                 <br/>
                                 <div id="slider-range" class="slider-success ui-slider ui-slider-horizontal ui-widget ui-widget-content ui-corner-all" aria-disabled="false">
-                                    <div class="ui-slider-range ui-widget-header ui-corner-all" style="left: 15%; width: 45%;"></div>
+                                    <div class="ui-slider-range ui-widget-header ui-corner-all"></div>
                                     <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 15%;"></a>
                                     <a class="ui-slider-handle ui-state-default ui-corner-all" href="#" style="left: 60%;"></a>
                                 </div>
@@ -365,11 +320,8 @@
                                         <li class="nav-item">
                                             <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
                                         </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" href="#"><i class="fa fa-cog" aria-hidden="true"></i></a>
-                                        </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"></a>
+                                            <a class="nav-link dropdown-toggle btn-outline-danger" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
                                             <div class="dropdown-menu">
                                                 <a class="dropdown-item" href="#">Action</a>
                                                 <a class="dropdown-item" href="#">Another action</a>
@@ -633,16 +585,16 @@
                             </div>
                             <ul class="nav nav-pills nav-pills-danger">
                                 <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#0"><i class="fa fa-th-large" aria-hidden="true"></i>&nbsp;Dashboard</a>
+                                    <a class="nav-link active" data-toggle="tab" href="#0"><i class="fa fa-th-large" aria-hidden="true"></i>Dashboard</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-clock-o" aria-hidden="true"></i>&nbsp;Schedule</a>
+                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-clock-o" aria-hidden="true"></i>Schedule</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-list" aria-hidden="true"></i>&nbsp;Tasks</a>
+                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-list" aria-hidden="true"></i>Tasks</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-usd" aria-hidden="true"></i>&nbsp;Payments</a>
+                                    <a class="nav-link" data-toggle="tab" href="#0"><i class="fa fa-usd" aria-hidden="true"></i>Payments</a>
                                 </li>
                             </ul>
                             <!-- Pill panes -->
@@ -828,28 +780,27 @@
 							</button>
 							<!-- Modal -->
 							<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-							  <div class="modal-dialog" role="document">
-							    <div class="modal-content">
-							      <div class="modal-header">
-							        <h5 class="modal-title" id="exampleModalLabel">Modal title</h5>
-							        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-							          <span aria-hidden="true">&times;</span>
-							        </button>
-							      </div>
-							      <div class="modal-body">
-							        ...
-							      </div>
-                                  <div class="modal-footer">
-                                    <div class="left-side">
-                                        <button type="button" class="btn btn-default btn-simple" data-dismiss="modal">Never mind</button>
+                                <div class="modal-dialog" role="document">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="modal-title text-center" id="exampleModalLabel">Modal title</h5>
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body"> Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+                                        </div>
+                                        <div class="modal-footer">
+                                            <div class="left-side">
+                                                <button type="button" class="btn btn-default btn-link" data-dismiss="modal">Never mind</button>
+                                            </div>
+                                            <div class="divider"></div>
+                                            <div class="right-side">
+                                                <button type="button" class="btn btn-danger btn-link">Delete</button>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="divider"></div>
-                                    <div class="right-side">
-                                        <button type="button" class="btn btn-danger btn-simple">Delete</button>
-                                    </div>
-                                  </div>
-							    </div>
-							  </div>
+                                </div>
 							</div>
 						</div>
 						<div class="col-md-6">
@@ -1071,6 +1022,7 @@
 		               return 'Current value: ' + value;
 	        }
         });
+
         // Top Navbar bg-color change
         $(document).ready(function(){
         $(window).scroll(function() {
