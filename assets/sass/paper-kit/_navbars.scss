@@ -9,9 +9,10 @@
 }
 .navbar{
     border: $none;
-    font-size: $font-size-navbar;
-    padding: 10px;
-    // z-index: 3;
+    font-size: $font-size-base;
+    transition: all 0.4s;
+    -webkit-transition: all 0.4s;
+    padding: 5px;
 
     .navbar-brand{
         font-weight: $font-weight-bold;
@@ -246,7 +247,7 @@
 }
 
 .navbar-transparent{
-    padding-top: 15px;
+    // padding-top: 15px;
     background-color: transparent;
     border-bottom: 1px solid transparent;
 }
@@ -273,7 +274,7 @@
 // stefan making edits
 
 .navbar-light .navbar-nav .nav-link:hover{
-    color: $info-color;
+    color: $light-gray;
 }
 .dropdown-item:focus,
 .dropdown-item:hover{
@@ -281,7 +282,8 @@
     background-color: $info-color;
 }
 .red{
-    font-size: 24px;
     color: #ff0000;
+}
+.collapse .navbar-text{
     line-height: 55px;
 }

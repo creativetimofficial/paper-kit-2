@@ -14,7 +14,7 @@
  */
 /*      light colors - used for select dropdown         */
 /*           Font Smoothing      */
-h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td {
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   font-family: 'Montserrat', "Helvetica", Arial, sans-serif; }
@@ -226,14 +226,16 @@ input.ct-red + span.switch-left,
 input.ct-red + span + label + span.switch-right {
   background-color: #EB5E28; }
 
+.pagination .page-item .page-link .fa {
+  width: auto; }
+
 .btn,
 .navbar .navbar-nav > li > a.btn {
-  border-radius: 20px;
   box-sizing: border-box;
   border-width: 2px;
   font-size: 16px;
   font-weight: 500;
-  padding: 7px 18px;
+  padding: 0.5rem 18px;
   background-color: #66615B;
   border-color: #66615B;
   color: #FFFFFF;
@@ -621,15 +623,18 @@ input.ct-red + span + label + span.switch-right {
   right: 8px; }
 
 .btn-just-icon {
-  border-radius: 50%;
-  font-size: 24px;
+  border-radius: 50px;
   height: 37px;
   min-width: 37px;
   width: 37px;
-  padding: 0px; }
+  padding: 8px; }
 
-.btn-square {
-  border-radius: 3px; }
+.btn-round {
+  border-radius: 20px; }
+
+.btn.btn-link:focus {
+  box-shadow: none !important;
+  text-decoration: none; }
 
 .form-control::-moz-placeholder {
   color: #DDDDDD;
@@ -641,8 +646,8 @@ input.ct-red + span + label + span.switch-right {
   opacity: 1;
   filter: alpha(opacity=100); }
 
-.form-control::-webkit-input-placeholder {
-  color: #DDDDDD;
+.form-control.has-error::-webkit-input-placeholder {
+  color: #fff;
   opacity: 1;
   filter: alpha(opacity=100); }
 
@@ -677,20 +682,23 @@ input.ct-red + span + label + span.switch-right {
     border: 1px solid #7AC29A;
     color: #7AC29A; }
   .has-success .form-control:focus {
-    background-color: #ABF3CB;
-    border: 1px solid #7AC29A; }
+    border: 1px solid #7AC29A;
+    color: #7AC29A; }
   .has-danger .form-control {
-    background-color: #FFFFFF;
+    background-color: #FFC0A4;
     border: 1px solid #EB5E28;
     color: #EB5E28; }
   .has-danger .form-control:focus {
-    background-color: #FFC0A4;
+    background-color: #FFFFFF;
     border: 1px solid #EB5E28; }
   .form-control + .form-control-feedback {
     border-radius: 6px;
     font-size: 16px;
+    color: #EB5E28;
+    font-size: .8rem;
     position: absolute;
-    top: 50%;
+    right: 10px;
+    top: 70%;
     vertical-align: middle; }
   .open .form-control {
     border-radius: 4px 4px 0 0;
@@ -1259,7 +1267,7 @@ textarea.form-control {
 
 .checkbox,
 .radio {
-  padding-left: 20px;
+  margin-left: -3px;
   margin-bottom: 12px; }
 
 .checkbox label {
@@ -1458,7 +1466,9 @@ textarea.form-control {
 .navbar {
   border: 0;
   font-size: 16px;
-  padding: 10px; }
+  transition: all 0.4s;
+  -webkit-transition: all 0.4s;
+  padding: 5px; }
   .navbar .navbar-brand {
     font-weight: 600;
     margin: 5px 0px;
@@ -1639,7 +1649,6 @@ textarea.form-control {
   background-color: #FF8F5E; }
 
 .navbar-transparent {
-  padding-top: 15px;
   background-color: transparent;
   border-bottom: 1px solid transparent; }
 
@@ -1656,7 +1665,7 @@ textarea.form-control {
     background-color: transparent; }
 
 .navbar-light .navbar-nav .nav-link:hover {
-  color: #68B3C8; }
+  color: #E3E3E3; }
 
 .dropdown-item:focus,
 .dropdown-item:hover {
@@ -1664,8 +1673,9 @@ textarea.form-control {
   background-color: #68B3C8; }
 
 .red {
-  font-size: 24px;
-  color: #ff0000;
+  color: #ff0000; }
+
+.collapse .navbar-text {
   line-height: 55px; }
 
 .img-rounded {
@@ -1771,10 +1781,10 @@ textarea.form-control {
   background-color: #66615B;
   color: #FFFFFF; }
 .nav-pills > li:first-child > a {
-  border-radius: 30px 0 0 30px;
+  border-radius: 30px 0 0 30px !important;
   margin: 0; }
 .nav-pills > li:last-child > a {
-  border-radius: 0 30px 30px 0; }
+  border-radius: 0 30px 30px 0 !important; }
 
 .pagination > li > a,
 .pagination > li > span,
@@ -2027,6 +2037,9 @@ textarea.form-control {
   background-color: #EB5E28;
   color: white;
   border-color: #EB5E28; }
+
+.nav-pills .nav-link {
+  border-radius: 0; }
 
 .panel {
   border: 0;

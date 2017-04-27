@@ -4,8 +4,8 @@
 .form-control:-moz-placeholder{
    @include placeholder($medium-gray,1);
 }
-.form-control::-webkit-input-placeholder{
-   @include placeholder($medium-gray,1);
+.form-control.has-error::-webkit-input-placeholder{
+   @include placeholder(#fff,1);
 }
 .form-control:-ms-input-placeholder{
    @include placeholder($medium-gray,1);
@@ -40,31 +40,31 @@
     }
 
     .has-success &{
-        // background-color: $success-input-bg;
         border: 1px solid $success-color;
         color: $success-color;
     }
     .has-success &:focus{
-        background-color: $success-input-bg;
         border: 1px solid $success-color;
+        color: $success-color;
     }
     .has-danger &{
-        background-color: $white-color;
+        background-color: $danger-input-bg;
         border: 1px solid $danger-color;
         color: $danger-color;
     }
     .has-danger &:focus{
-        background-color: $danger-input-bg;
+        background-color: $white-color;
         border: 1px solid $danger-color;
     }
 
     & + .form-control-feedback{
         border-radius: $border-radius-large;
         font-size: $font-size-base;
-        // margin-top: -7px;
+        color: $danger-color;
+        font-size: .8rem;
         position: absolute;
-        // right: 10px;
-        top: 50%;
+        right: 10px;
+        top: 70%;
         vertical-align: middle;
     }
 

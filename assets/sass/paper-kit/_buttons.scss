@@ -1,11 +1,10 @@
 .btn,
 .navbar .navbar-nav > li > a.btn{
-    border-radius: $border-radius-btn-base;
     box-sizing: border-box;
     border-width: $border-thick;
     font-size: $font-size-base;
     font-weight: $font-weight-semi;
-    padding: $padding-base-vertical $padding-base-horizontal;
+    padding: .5rem $padding-base-horizontal;
 
     &.btn-border,
     &.btn-link{
@@ -151,13 +150,16 @@
     right: 8px;
 }
 .btn-just-icon{
-    border-radius: 50%;
-    font-size: 24px;
+    border-radius: $border-radius-btn-large;
     height: 37px;
     min-width: 37px;
     width: 37px;
-    padding: 0px;
+    padding: 8px;
 }
-.btn-square{
-    border-radius: 3px;
+.btn-round{
+    border-radius: $border-radius-btn-base;
+}
+.btn.btn-link:focus{
+    box-shadow: none !important;
+    text-decoration: none;
 }

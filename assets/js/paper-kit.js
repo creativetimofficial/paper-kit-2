@@ -43,7 +43,7 @@ $(document).ready(function(){
     }
     //      Activate regular switches
     if($("[data-toggle='switch']").length != 0){
-         $("[data-toggle='switch']").bootstrapSwitch();     
+         $("[data-toggle='switch']").bootstrapSwitch();
     }
 
     //    Activate bootstrap-select
@@ -60,6 +60,11 @@ $(document).ready(function(){
              weekStart:1,
              color: '{color}'
          });
+    }
+
+    // Navbar color change on scroll
+    if($('.navbar[color-on-scroll]').length != 0){
+        $(window).on('scroll', gsdk.checkScrollForTransparentNavbar)
     }
 
 
@@ -82,9 +87,6 @@ $(document).ready(function(){
      // Make the images from the card fill the hole space
     gsdk.fitBackgroundForCards();
 
-    // Init icon search action for the navbar
-    gsdk.initNavbarSearch();
-
     // Init popovers
     gsdk.initPopovers();
 
@@ -94,8 +96,6 @@ $(document).ready(function(){
     // Init Sliders
     gsdk.initSliders();
 
-    //  Init video card actions
-    gsdk.initVideoCards();
 
 });
 
@@ -180,12 +180,12 @@ gsdk = {
         	if($(document).scrollTop() > 260 ) {
                 if(transparent) {
                     transparent = false;
-                    $('nav[role="navigation"]').removeClass('navbar-transparent');
+                    $('.sticky-top').addClass('bg-danger');
                 }
             } else {
                 if( !transparent ) {
                     transparent = true;
-                    $('nav[role="navigation"]').addClass('navbar-transparent');
+                    $('.sticky-top').removeClass('bg-danger');
                 }
             }
     }, 17),
@@ -277,22 +277,9 @@ gsdk = {
         		values: [ 75, 300 ],
         	});
         }
-        if($('#refine-price-range').length != 0){
-        	 $( "#refine-price-range" ).slider({
-        		range: true,
-        		min: 0,
-        		max: 999,
-        		values: [ 100, 850 ],
-        		slide: function( event, ui ) {
-        		    min_price = ui.values[0];
-        		    max_price = ui.values[1];
-            		$(this).siblings('.price-left').html('&euro; ' + min_price);
-            		$(this).siblings('.price-right').html('&euro; ' + max_price)
-        		}
-        	});
-        }
-        if($('#slider-default').length != 0 || $('#slider-default2').length != 0){
-        	$( "#slider-default, #slider-default2" ).slider({
+
+        if($('#slider-default').length != 0 ){
+        	$( "#slider-default").slider({
         			value: 70,
         			orientation: "horizontal",
         			range: "min",
@@ -300,42 +287,8 @@ gsdk = {
         	});
         }
     },
-    initVideoCards: function(){
-        $('[data-toggle="video"]').click(function(){
-            id_video = $(this).data('video');
-            video = $('#' + id_video).get(0);
 
-            card_parent = $(this).closest('.card');
 
-            if(video.paused){
-                video.play();
-                $(this).html('<i class="fa fa-pause"></i> Pause');
-                card_parent.addClass('state-play');
-            } else {
-                video.pause();
-                $(this).html('<i class="fa fa-play"></i> Play');
-                card_parent.removeClass('state-play');
-            }
-        });
-    },
-    initNavbarSearch: function(){
-        $('[data-toggle="search"]').click(function(){
-            if(searchVisible == 0){
-                searchVisible = 1;
-                $(this).parent().addClass('active');
-                $('.navbar-search-form').fadeIn(function(){
-                    $('.navbar-search-form input').focus();
-                });
-            } else {
-                searchVisible = 0;
-                $(this).parent().removeClass('active');
-                $(this).blur();
-                $('.navbar-search-form').fadeOut(function(){
-                    $('.navbar-search-form input').blur();
-                });
-            }
-        });
-    }
 }
 
 demo = {

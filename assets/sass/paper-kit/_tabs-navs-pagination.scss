@@ -89,11 +89,11 @@
         color: #FFFFFF;
     }
     > li:first-child > a{
-        border-radius: 30px 0 0 30px;
+        border-radius: 30px 0 0 30px !important;
         margin: 0;
     }
     > li:last-child > a{
-        border-radius: 0 30px 30px 0;
+        border-radius: 0 30px 30px 0 !important;
     }
 
 }
@@ -383,4 +383,7 @@
     background-color: $danger-color;
     color: white;
     border-color: $danger-color;
+}
+.nav-pills .nav-link{
+    border-radius: 0;
 }
