@@ -13,8 +13,9 @@
 
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/bootstrap-grid.min.css" rel="stylesheet" />
-    <link href="assets/css/bootstrap-reboot.min.css" rel="stylesheet" />
+    <!-- <link href="assets/css/bootstrap-reboot.min.css" rel="stylesheet" /> -->
 	<link href="assets/css/bootstrap-switch.min.css" rel="stylesheet" />
+
 
     <link href="assets/css/paper-kit.css" rel="stylesheet"/>
     <link href="assets/css/demo.css" rel="stylesheet" />
@@ -27,7 +28,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-toggleable-md sticky-top navbar-light navbar-inverse  navbar-transparent">
+    <nav class="navbar navbar-toggleable-md sticky-top bg-danger navbar-transparent">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -47,10 +48,10 @@
                 </ul>
                 <ul class="navbar-nav mt-2 mt-md-0">
                     <li class="nav-item">
-                        <a href="paper-kit/components" class="btn btn-link btn-danger">Components</a>
+                        <a href="paper-kit/components" class="btn btn-link btn-neutral">Components</a>
                     </li>
                     <li class="nav-item">
-                        <a href="paper-kit/tutorial" target="_blank" class="btn btn-link btn-danger">Tutorial</a>
+                        <a href="paper-kit/tutorial" target="_blank" class="btn btn-link btn-neutral">Tutorial</a>
                     </li>
                     <li class="nav-item">
                         <a href="http://www.creative-tim.com/product/paper-kit" target="_blank" class="btn btn-danger btn-round">Download</a>
@@ -266,14 +267,14 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
+                            <nav class="navbar navbar-toggleable-md navbar-default">
                                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 								    <span class="navbar-toggler-icon"></span>
 								</button>
                                 <a class="navbar-brand" href="#">Menu</a>
                                 <div class="collapse navbar-collapse" id="navbar-menu">
                                     <ul class="navbar-nav mr-auto">
-                                        <li class="nav-item active">
+                                        <li class="nav-item">
                                             <a class="nav-link" href="#">Link</a>
                                         </li>
                                         <li class="nav-item">
@@ -281,21 +282,21 @@
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            <ul class="dropdown-menu dropdown-menu-right">
+                                                <li class="dropdown-header" href="#">Dropdown header</li>
+                                                <li class="dropdown-item" href="#">Another action</li>
+                                                <li class="dropdown-item" href="#">Something else here</li>
                                                 <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
+                                                <li class="dropdown-item" href="#">Separated link</li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
                             </nav>
                         </div>
                         <div class="col-md-6">
-                            <nav class="navbar navbar-toggleable-md navbar-light bg-faded">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-menu-icon" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                            <nav class="navbar navbar-toggleable-md navbar-default">
+                                <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu-icon" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
 								    <span class="navbar-toggler-icon"></span>
 								</button>
                                 <a class="navbar-brand" href="#">Icons</a>
@@ -308,14 +309,14 @@
                                             <a class="nav-link" href="#"><i class="fa fa-user" aria-hidden="true"></i></a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle btn-outline-danger" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
-                                            <div class="dropdown-menu">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            <a class="nav-link dropdown-toggle text-danger" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-cog" aria-hidden="true"></i></a>
+                                            <ul class="dropdown-menu dropdown-menu-right dropdown-danger">
+                                                <li class="dropdown-header" href="#">Dropdown header</li>
+                                                <li class="dropdown-item" href="#">Another action</li>
+                                                <li class="dropdown-item" href="#">Something else here</li>
                                                 <div class="dropdown-divider"></div>
-                                                <a class="dropdown-item" href="#">Separated link</a>
-                                            </div>
+                                                <li class="dropdown-item" href="#">Separated link</li>
+                                            </ul>
                                         </li>
                                     </ul>
                                 </div>
@@ -332,7 +333,7 @@
                         </div>
                     </div>
                     <div class="navigation-example">
-                        <nav class="navbar navbar-toggleable-md navbar-ct-primary">
+                        <nav class="navbar navbar-toggleable-md bg-primary">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 							    	<span class="navbar-toggler-icon"></span>
@@ -353,7 +354,7 @@
                                 </div>
                             </div>
                         </nav>
-                        <nav class="navbar navbar-toggleable-md navbar-ct-info">
+                        <nav class="navbar navbar-toggleable-md bg-info">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     							    <span class="navbar-toggler-icon"></span>
@@ -374,7 +375,7 @@
                                 </div>
                             </div>
                         </nav>
-                        <nav class="navbar navbar-toggleable-md navbar-ct-success">
+                        <nav class="navbar navbar-toggleable-md bg-success">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-success" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     							    <span class="navbar-toggler-icon"></span>
@@ -395,7 +396,7 @@
                                 </div>
                             </div>
                         </nav>
-                        <nav class="navbar navbar-toggleable-md navbar-ct-warning">
+                        <nav class="navbar navbar-toggleable-md bg-warning">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-warning" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
     							    <span class="navbar-toggler-icon"></span>
@@ -419,7 +420,7 @@
                                 </div>
                             </div>
                         </nav>
-                        <nav class="navbar navbar-toggleable-md navbar-ct-danger">
+                        <nav class="navbar navbar-toggleable-md bg-danger">
                             <div class="container">
                                 <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-danger" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 		                            <span class="navbar-toggler-icon"></span>
@@ -473,18 +474,18 @@
                                 <br/>
                             </div>
                             <div class="progress">
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
                             </div><br/>
                             <div class="progress">
-                                <div class="progress-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar progress-bar-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
                             </div><br/>
                             <div class="progress">
-                                <div class="progress-bar bg-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar progress-bar-danger" role="progressbar" style="width: 100%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"></div>
                             </div><br/>
                             <div class="progress">
                                 <div class="progress-bar" role="progressbar" style="width: 15%" aria-valuenow="15" aria-valuemin="0" aria-valuemax="100"></div>
-                                <div class="progress-bar bg-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar progress-bar-success" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                <div class="progress-bar progress-bar-warning" role="progressbar" style="width: 20%" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                         </div>
                         <div class="col-md-6">
@@ -540,31 +541,36 @@
                                 <h3>Navigation Tabs</h3>
                             </div>
                             <!-- Nav tabs -->
-                            <ul class="nav nav-tabs" role="tablist">
-                                <li class="nav-item">
-                                    <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
-                                </li>
-                                <li class="nav-item dropdown">
-                                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Settings</a>
-                                    <div class="dropdown-menu">
-                                        <a class="dropdown-item" data-toggle="tab" href="#action">Action</a>
-                                        <a class="dropdown-item" data-toggle="tab" href="#another-action">Another action</a>
-                                    </div>
-                                </li>
-                            </ul>
+                            <div class="nav-tabs-navigation">
+                                <div class="nav-tabs-wrapper">
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item">
+                                            <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
+                                        </li>
+                                        <li class="nav-item dropdown">
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Settings</a>
+                                            <ul class="dropdown-menu">
+                                                <li class="dropdown-header" data-toggle="tab" href="#action">Header</li>
+                                                <li class="dropdown-item" data-toggle="tab" href="#action">Action</li>
+                                                <li class="dropdown-item" data-toggle="tab" href="#another-action">Another action</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
                             <!-- Tab panes -->
-                            <div class="tab-content">
-                                <div class="tab-pane active" id="home" role="tabpanel">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean sodales dignissim semper. In rhoncus pretium nibh, ut molestie nulla. Cras dapibus mi vel arcu vulputate, eu pharetra sapien cursus. </div>
-                                <div class="tab-pane" id="profile" role="tabpanel">Maecenas efficitur arcu eget porta venenatis. Nulla facilisi. Cras et nunc eu mauris ultrices consectetur. Vestibulum feugiat tincidunt tortor, ut bibendum massa luctus ac. Pellentesque aliquam vel ligula ut semper. </div>
-                                <div class="tab-pane" id="messages" role="tabpanel">Donec tristique ante ut vehicula bibendum. Maecenas aliquet lectus id facilisis dapibus. Sed eu mattis enim. Sed sed dui non lorem ullamcorper viverra faucibus nec ante. </div>
-                                <div class="tab-pane" id="action" role="tabpanel">Vestibulum ex velit, cursus in mauris in, egestas tempor orci. Vivamus laoreet sagittis elit, in vehicula ligula feugiat ut. Nunc lobortis, nulla in laoreet malesuada, tortor risus congue ipsum, et interdum turpis arcu id nisl.</div>
-                                <div class="tab-pane" id="another-action" role="tabpanel">Ut sem metus, lacinia id lobortis vel, mollis ut quam. Maecenas posuere metus nec lacus dignissim pretium. In auctor nisl nec augue faucibus egestas.</div>
+                            <div class="tab-content text-center">
+                                <div class="tab-pane active" id="home" role="tabpanel">Here is information about home.</div>
+                                <div class="tab-pane" id="profile" role="tabpanel">Here is your profile.</div>
+                                <div class="tab-pane" id="messages" role="tabpanel">Here are your messages.</div>
+                                <div class="tab-pane" id="action" role="tabpanel">Vestibulum ex velit, cursus in mauris in, egestas tempor orci.</div>
+                                <div class="tab-pane" id="another-action" role="tabpanel">Ut sem metus, lacinia id lobortis vel, mollis ut quam.</div>
                             </div>
                             <br/>
                             <div class="title">
@@ -862,15 +868,18 @@
                                     	</div>
                                     </div>
                                     </div>
-                                    <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+
+                                    <a class="left carousel-control carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                                        <span class="fa fa-angle-left"></span>
                                         <span class="sr-only">Previous</span>
                                     </a>
-                                    <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                    <a class="right carousel-control carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                                        <span class="fa fa-angle-right"></span>
                                         <span class="sr-only">Next</span>
                                     </a>
+
 								</div>
+
 							</div>
 						</div>
 					</div>
@@ -952,7 +961,8 @@
 				      </li>
 				    </ul>
 				    <span class="navbar-text">
-	                    © <script>document.write(new Date().getFullYear())</script>, made with <span class="red"><i class="fa fa-heart"></i></span> by Creative Tim
+	                    © <script>document.write(new Date().getFullYear())</script>, made with <svg class="heart" viewBox="0 0 32 29.6">
+<path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2 c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/></svg> by Creative Tim
 				    </span>
 				  </div>
 				</div>
@@ -998,7 +1008,7 @@
 					close: 'fa fa-remove'
 				}
 			});
-					 });
+		});
 		$('#ex1').slider({
 	        formatter: function(value) {
 		               return 'Current value: ' + value;

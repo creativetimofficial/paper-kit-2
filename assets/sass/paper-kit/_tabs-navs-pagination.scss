@@ -22,23 +22,28 @@
         border-bottom: 0 none;
         font-size: $font-size-base;
         font-weight: $font-weight-bold;
-        > li{
-            > a{
+        > .nav-item{
+            > .nav-link{
                 border: 0 none;
                 color: $other-medium-gray;
+                background-color: transparent;
             }
-            > a:hover{
+            > .nav-link:hover{
+                color: $font-color;
+            }
+            > .nav-link.active{
                 color: $font-color;
             }
         }
 
-        > li.active{
+        > .nav-item.active{
             color: $font-color;
             position: relative;
 
-            > a,
-            > a:hover,
-            > a:focus{
+
+            > .nav-link,
+            > .nav-link:hover,
+            > .nav-link:focus{
                 background-color: transparent;
                 border: 0 none;
                 //height: 50px;
@@ -65,6 +70,20 @@
                 right: 40%;
                 bottom: 1px;
             }
+        }
+        .nav-item.show .nav-link{
+            background-color: transparent;
+        }
+        .dropdown-menu{
+            margin-top: 33px;
+            border-radius: 8px;
+
+            .dropdown-item:hover,
+            .dropdown-item.active{
+                color: #FFFFFF;
+                background-color: #68B3C8;
+            }
+
         }
 }
 
@@ -362,8 +381,9 @@
     border-bottom-right-radius: 20px;
     border-top-right-radius: 20px;
 }
-.nav-pills .nav-item.show .nav-link, .nav-pills .nav-link.active{
-    background-color: $danger-color;
+.nav-pills .nav-item.show .nav-link,
+.nav-pills .nav-link.active{
+    background-color: $danger-color !important;
 }
 .pagination > li > a:hover,
 .pagination > li > a:focus,

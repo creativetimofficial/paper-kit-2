@@ -26,7 +26,7 @@ $(document).ready(function(){
 
     // Init navigation toggle for small screens
     if(window_width < 768){
-        gsdk.initRightMenu();
+        pk.initRightMenu();
     }
 
     // Activate Morpghing Buttons
@@ -63,8 +63,8 @@ $(document).ready(function(){
     }
 
     // Navbar color change on scroll
-    if($('.navbar[color-on-scroll]').length != 0){
-        $(window).on('scroll', gsdk.checkScrollForTransparentNavbar)
+    if($('.bg-danger').length != 0){
+        $(window).on('scroll', pk.checkScrollForTransparentNavbar)
     }
 
 
@@ -85,16 +85,16 @@ $(document).ready(function(){
     demo.initPickColor();
 
      // Make the images from the card fill the hole space
-    gsdk.fitBackgroundForCards();
+    pk.fitBackgroundForCards();
 
     // Init popovers
-    gsdk.initPopovers();
+    pk.initPopovers();
 
     // Init Collapse Areas
-    gsdk.initCollapseArea();
+    pk.initCollapseArea();
 
     // Init Sliders
-    gsdk.initSliders();
+    pk.initSliders();
 
 
 });
@@ -102,11 +102,11 @@ $(document).ready(function(){
 // activate collapse right menu when the windows is resized
 $(window).resize(function(){
     if($(window).width() < 768){
-        gsdk.initRightMenu();
+        pk.initRightMenu();
     }
 });
 
-gsdk = {
+pk = {
     misc:{
         navbar_menu_visible: 0
     },
@@ -143,9 +143,9 @@ gsdk = {
              $navbar.find('button').addClass('btn-simple btn-block');
 
              $toggle.click(function (){
-                if(gsdk.misc.navbar_menu_visible == 1) {
+                if(pk.misc.navbar_menu_visible == 1) {
                     $('html').removeClass('nav-open');
-                    gsdk.misc.navbar_menu_visible = 0;
+                    pk.misc.navbar_menu_visible = 0;
                     $('#bodyClick').remove();
                      setTimeout(function(){
                         $toggle.removeClass('toggled');
@@ -159,7 +159,7 @@ gsdk = {
                     div = '<div id="bodyClick"></div>';
                     $(div).appendTo("body").click(function() {
                         $('html').removeClass('nav-open');
-                        gsdk.misc.navbar_menu_visible = 0;
+                        pk.misc.navbar_menu_visible = 0;
                         $('#bodyClick').remove();
                          setTimeout(function(){
                             $toggle.removeClass('toggled');
@@ -167,7 +167,7 @@ gsdk = {
                     });
 
                     $('html').addClass('nav-open');
-                    gsdk.misc.navbar_menu_visible = 1;
+                    pk.misc.navbar_menu_visible = 1;
 
                 }
             });
@@ -177,15 +177,15 @@ gsdk = {
     },
 
     checkScrollForTransparentNavbar: debounce(function() {
-        	if($(document).scrollTop() > 260 ) {
+        	if($(document).scrollTop() > 500 ) {
                 if(transparent) {
                     transparent = false;
-                    $('.sticky-top').addClass('bg-danger');
+                    $('.bg-danger').removeClass('navbar-transparent');
                 }
             } else {
                 if( !transparent ) {
                     transparent = true;
-                    $('.sticky-top').removeClass('bg-danger');
+                    $('.bg-danger').addClass('navbar-transparent');
                 }
             }
     }, 17),
@@ -224,12 +224,12 @@ gsdk = {
         }
     },
     initCollapseArea: function(){
-        $('[data-toggle="gsdk-collapse"]').each(function () {
+        $('[data-toggle="pk-collapse"]').each(function () {
             var thisdiv = $(this).attr("data-target");
-            $(thisdiv).addClass("gsdk-collapse");
+            $(thisdiv).addClass("pk-collapse");
         });
 
-        $('[data-toggle="gsdk-collapse"]').hover(function(){
+        $('[data-toggle="pk-collapse"]').hover(function(){
             var thisdiv = $(this).attr("data-target");
             if(!$(this).hasClass('state-open')){
                 $(this).addClass('state-hover');

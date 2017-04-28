@@ -3,7 +3,7 @@
     border-radius: 50%;
     opacity: 1;
     text-shadow: none;
-    
+
     &:hover,
     &:focus{
         opacity: 1;
@@ -40,7 +40,7 @@
 .carousel-inner > .item {
     padding: 50px;
 }
-.carousel-inner > .item > img, 
+.carousel-inner > .item > img,
 .carousel-inner > .item > a > img{
     border-radius: $border-radius-extreme;
     box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);

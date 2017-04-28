@@ -54,6 +54,7 @@
 .navbar .navbar-nav > li > a.btn-info, .btn-info    { @include btn-styles($info-color, $info-states-color); }
 .navbar .navbar-nav > li > a.btn-warning, .btn-warning { @include btn-styles($warning-color, $warning-states-color); }
 .navbar .navbar-nav > li > a.btn-danger, .btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
+.navbar .navbar-nav > li > a.btn-neutral, .btn-neutral  { @include btn-styles($white-color, $default-states-color); }
 
 .btn-outline-default { @include btn-outline-styles($default-color, $default-states-color); }
 .btn-outline-primary { @include btn-outline-styles($primary-color, $primary-states-color); }

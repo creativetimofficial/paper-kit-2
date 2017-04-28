@@ -3,13 +3,13 @@
  =========================================================
  * Paper Kit - v1.2.2
  =========================================================
- 
+
  * Product Page: http://www.creative-tim.com/product/paper-kit
  * Copyright 2016 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/timcreative/paper-kit/blob/master/LICENSE.md)
- 
+
  =========================================================
- 
+
  * The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
  */
 
@@ -1671,20 +1671,22 @@ textarea.form-control {
   border-bottom: 0 none;
   font-size: 16px;
   font-weight: 600; }
-  .nav-tabs > li > a {
+  .nav-tabs .nav-item .nav-link {
     border: 0 none;
     color: #A49E93; }
-  .nav-tabs > li > a:hover {
+  .nav-tabs .nav-item .nav-link:hover {
     color: #66615b; }
-  .nav-tabs > li.active {
+  .nav-item.active {
     color: #66615b;
-    position: relative; }
-    .nav-tabs > li.active > a,
-    .nav-tabs > li.active > a:hover,
-    .nav-tabs > li.active > a:focus {
+    position: relative;
+    
+ }
+    .nav-tabs .nav-item.active .nav-link,
+    .nav-tabs .nav-item.active .nav-link:hover,
+    .nav-tabs .nav-item.active .nav-link:focus {
       background-color: transparent;
       border: 0 none; }
-    .nav-tabs > li.active :after {
+    .nav-tabs .nav-item.active :after {
       border-bottom: 11px solid #FFFCF5;
       border-left: 11px solid transparent;
       border-right: 11px solid transparent;
@@ -1693,7 +1695,7 @@ textarea.form-control {
       position: absolute;
       right: 40%;
       bottom: -1px; }
-    .nav-tabs > li.active :before {
+    .nav-tabs .nav-item.active :before {
       border-bottom: 11px solid #F1EAE0;
       border-left: 11px solid transparent;
       border-right: 11px solid transparent;
@@ -1702,6 +1704,7 @@ textarea.form-control {
       position: absolute;
       right: 40%;
       bottom: 1px; }
+
 
 /*             Navigation Pills               */
 .nav-pills > li + li {
@@ -2569,11 +2572,11 @@ textarea.form-control {
  * http://www.apache.org/licenses/LICENSE-2.0
  *
  */
-/*  
+/*
  *
  *   SCSS by Creative Tim
  *   http://www.creative-tim.com
- *   
+ *
  */
 .datepicker {
   top: 0;

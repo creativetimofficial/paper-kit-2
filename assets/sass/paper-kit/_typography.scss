@@ -81,3 +81,21 @@ blockquote small{
 .glyphicon{
     line-height: 1;
 }
+
+// Pulsing Heart (footer)
+.heart {
+  fill: red;
+  position: relative;
+  top: 5px;
+  width: 20px;
+  animation: pulse 1s ease infinite,
+}
+
+@keyframes pulse {
+  0% { transform: scale( .75 ); }
+  20% { transform: scale( 1 ); }
+  40% { transform: scale( .75 ); }
+  60% { transform: scale( 1 ); }
+  80% { transform: scale( .75 ); }
+  100% { transform: scale( .75 ); }
+}

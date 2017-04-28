@@ -170,3 +170,8 @@
 .popover.right > .arrow::after{
     border-right-color: $bg-danger;
 }
+
+.popover.left::before{
+    border-left-color: $bg-danger;
+    bottom: -20px;
+}

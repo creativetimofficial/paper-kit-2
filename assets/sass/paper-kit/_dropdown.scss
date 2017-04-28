@@ -105,6 +105,10 @@
     }
 
 }
+.dropdown-menu.dropdown-danger > .dropdown-item:hover{
+    background-color: #EB5E28;
+}
+
 
 //fix bug for the select items in btn-group
 .btn-group.select{
