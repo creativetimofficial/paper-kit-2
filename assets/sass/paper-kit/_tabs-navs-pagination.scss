@@ -6,7 +6,7 @@
     border-bottom: 1px solid $medium-pale-bg;
     margin-bottom: 30px;
 
-    .nav > li > a{
+    .nav > .nav-item > .nav-link{
         padding-bottom: 20px;
     }
 }
@@ -22,54 +22,54 @@
         border-bottom: 0 none;
         font-size: $font-size-base;
         font-weight: $font-weight-bold;
-        > .nav-item{
-            > .nav-link{
+        .nav-item{
+            .nav-link{
                 border: 0 none;
                 color: $other-medium-gray;
                 background-color: transparent;
             }
-            > .nav-link:hover{
+            .nav-link:hover{
                 color: $font-color;
             }
-            > .nav-link.active{
+            .nav-link.active{
                 color: $font-color;
             }
         }
 
-        > .nav-item.active{
+         .nav-item{
             color: $font-color;
             position: relative;
 
 
-            > .nav-link,
-            > .nav-link:hover,
-            > .nav-link:focus{
+            .nav-link.active,
+            .nav-link.active:hover,
+            .nav-link.active:focus{
                 background-color: transparent;
                 border: 0 none;
                 //height: 50px;
+                &:after{
+                    border-bottom: 11px solid $bg-nude;
+                    border-left: 11px solid rgba(0, 0, 0, 0);
+                    border-right: 11px solid rgba(0, 0, 0, 0);
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    right: 40%;
+                    bottom: 5px;
+                }
+
+                &:before{
+                    border-bottom: 11px solid $medium-pale-bg;
+                    border-left: 11px solid rgba(0, 0, 0, 0);
+                    border-right: 11px solid rgba(0, 0, 0, 0);
+                    content: "";
+                    display: inline-block;
+                    position: absolute;
+                    right: 40%;
+                    bottom: 6px;
+                }
             }
 
-            :after{
-                border-bottom: 11px solid $bg-nude;
-                border-left: 11px solid rgba(0, 0, 0, 0);
-                border-right: 11px solid rgba(0, 0, 0, 0);
-                content: "";
-                display: inline-block;
-                position: absolute;
-                right: 40%;
-                bottom: -1px;
-            }
-
-            :before{
-                border-bottom: 11px solid $medium-pale-bg;
-                border-left: 11px solid rgba(0, 0, 0, 0);
-                border-right: 11px solid rgba(0, 0, 0, 0);
-                content: "";
-                display: inline-block;
-                position: absolute;
-                right: 40%;
-                bottom: 1px;
-            }
         }
         .nav-item.show .nav-link{
             background-color: transparent;

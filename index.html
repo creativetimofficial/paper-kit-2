@@ -28,7 +28,7 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-toggleable-md sticky-top bg-danger navbar-transparent">
+    <nav class="navbar navbar-toggleable-md sticky-top bg-danger navbar-transparent" color-on-scroll="500">
         <div class="container">
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -335,7 +335,7 @@
                     <div class="navigation-example">
                         <nav class="navbar navbar-toggleable-md bg-primary">
                             <div class="container">
-                                <button class="navbar-toggler " type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 							    	<span class="navbar-toggler-icon"></span>
 							  	</button>
                                 <a class="navbar-brand" href="#">Primary Color</a>
@@ -465,7 +465,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section section-pagination">
+            <div class="section section-nude">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -798,8 +798,8 @@
 								<h3>Popovers</h3>
 							</div>
 							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on left</button>
+                            <button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on right</button>
 							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on top</button>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on right</button>
 							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on bottom</button>
 						</div>
 						<br/>
@@ -807,28 +807,26 @@
 							<div class="title">
 								<h3>Datepicker</h3>
 							</div>
-							<div class="container">
-							    <div class="row">
-							        <div class='col-sm-6'>
-							            <div class="form-group">
-							                <div class='input-group date' id='datetimepicker'>
-							                    <input type='text' class="form-control" placeholder="4/20/2017" />
-							                    <span class="input-group-addon">
-							                        <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
-							                    </span>
-							                </div>
-							            </div>
-							        </div>
-							    </div>
-                            </div>
+						    <div class="row">
+						        <div class='col-sm-6'>
+						            <div class="form-group">
+						                <div class='input-group date' id='datetimepicker'>
+						                    <input type='text' class="form-control datetimepicker" placeholder="4/20/2017" />
+						                    <span class="input-group-addon">
+						                        <span class="glyphicon glyphicon-calendar"><i class="fa fa-calendar" aria-hidden="true"></i></span>
+						                    </span>
+						                </div>
+						            </div>
+						        </div>
+						    </div>
 						</div>
 						<div class="col-md-6">
 							<div class="title">
 								<h3>Tooltips</h3>
 							</div>
 							<button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="left" title="Tooltip on left">On left</button>
+                            <button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="right" title="Tooltip on right">On right</button>
 							<button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="top" title="Tooltip on top">On top</button>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="right" title="Tooltip on right">On right</button>
 							<button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">On bottom</button>
 						</div>
 					</div>
@@ -962,7 +960,7 @@
 				    </ul>
 				    <span class="navbar-text">
 	                    © <script>document.write(new Date().getFullYear())</script>, made with <svg class="heart" viewBox="0 0 32 29.6">
-<path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2 c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/></svg> by Creative Tim
+                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2 c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/></svg> by Creative Tim
 				    </span>
 				  </div>
 				</div>
@@ -1015,16 +1013,7 @@
 	        }
         });
 
-        // Top Navbar bg-color change
-        // $(document).ready(function(){
-        //     $(window).scroll(function() {
-        //         if ($(document).scrollTop() > 500) {
-        //           $(".sticky-top").css("background-color", "rgba(0, 0, 0, 0.7)");
-        //         } else {
-        //           $(".sticky-top").css("background-color", "transparent");
-        //         }
-        //         });
-        // });
+
 </script>
 
 </html>
