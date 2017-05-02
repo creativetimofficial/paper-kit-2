@@ -130,3 +130,23 @@ input.ct-red + span + label + span.switch-right{
 .pagination .page-item .page-link .fa{
     width: auto;
 }
+
+.bg-primary{
+    @include navbar-color($bg-primary !important);
+}
+.bg-info{
+    @include navbar-color($bg-info !important);
+}
+.bg-success{
+    @include navbar-color($bg-success !important);
+}
+.bg-warning{
+    @include navbar-color($bg-warning !important);
+}
+.bg-danger{
+    @include navbar-color($bg-danger !important);
+}
+.navbar-transparent{
+    background-color: transparent !important;
+    border-bottom: 1px solid transparent;
+}

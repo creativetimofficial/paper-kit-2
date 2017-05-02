@@ -63,7 +63,7 @@ $(document).ready(function(){
     }
 
     // Navbar color change on scroll
-    if($('.bg-danger').length != 0){
+    if($('.navbar[color-on-scroll]').length != 0){
         $(window).on('scroll', pk.checkScrollForTransparentNavbar)
     }
 
@@ -177,15 +177,15 @@ pk = {
     },
 
     checkScrollForTransparentNavbar: debounce(function() {
-        	if($(document).scrollTop() > 500 ) {
+        	if($(document).scrollTop() > $(".sticky-top").attr( "color-on-scroll") ) {
                 if(transparent) {
                     transparent = false;
-                    $('.bg-danger').removeClass('navbar-transparent');
+                    $('.sticky-top').removeClass('navbar-transparent');
                 }
             } else {
                 if( !transparent ) {
                     transparent = true;
-                    $('.bg-danger').addClass('navbar-transparent');
+                    $('.sticky-top').addClass('navbar-transparent');
                 }
             }
     }, 17),

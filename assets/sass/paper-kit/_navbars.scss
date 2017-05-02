@@ -51,10 +51,16 @@
 
 }
 
+// Dropdown menu positioning
 .navbar-nav > .nav-item > .dropdown-menu{
     border-radius: $border-radius-extreme;
     margin-top: 30px;
 }
+.nav > .nav-item > .dropdown-menu{
+    border-radius: $border-radius-extreme;
+    margin-top: 45px;
+}
+
 
 .navbar-transparent, [class*="bg"]{
     .navbar-brand{
@@ -230,28 +236,6 @@
 
 }
 
-.bg-primary{
-    @include navbar-color($bg-primary !important);
-}
-.bg-info{
-    @include navbar-color($bg-info !important);
-}
-.bg-success{
-    @include navbar-color($bg-success !important);
-}
-.bg-warning{
-    @include navbar-color($bg-warning !important);
-}
-.bg-danger{
-    @include navbar-color($bg-danger !important);
-}
-
-.navbar-transparent{
-    // padding-top: 15px;
-    background-color: transparent !important;
-    border-bottom: 1px solid transparent;
-}
-
 .navbar-toggle{
     margin-top: 19px;
     margin-bottom: 19px;
@@ -288,7 +272,7 @@
     line-height: 55px;
 }
 .dropdown-menu-right{
-    right: -7px;
+    right: -2px;
     left: auto;
 
 }
