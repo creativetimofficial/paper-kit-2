@@ -49,7 +49,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .tagsinput-remove-link,
 .filter,
 .btn-hover,
-[data-toggle="collapse"] i{
+[data-toggle="collapse"] i,
+.animation-transition-fast{
     @include transition($fast-transition-time, linear);
 }
 

@@ -47,10 +47,11 @@
     background-image: url('../img/landscape.jpg');
     background-position: center center;
     background-size: cover;
-    min-height: 100vh;
+    min-height: 101vh;
     overflow: hidden;
     position: absolute;
     width: 100%;
+    margin-top: -100px;
 }
 .register-background .filter-black::after{
     background-color: rgba(0, 0, 0, 0.5);

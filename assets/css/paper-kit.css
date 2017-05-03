@@ -93,10 +93,7 @@ blockquote small {
   line-height: 1; }
 
 .heart {
-  fill: #EB5E28;
-  position: relative;
-  top: 5px;
-  width: 20px;
+  color: #EB5E28;
   animation: pulse 1s ease infinite; }
 
 @keyframes pulse {
@@ -167,7 +164,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .tagsinput-remove-link,
 .filter,
 .btn-hover,
-[data-toggle="collapse"] i {
+[data-toggle="collapse"] i,
+.animation-transition-fast {
   -webkit-transition: all 150ms linear;
   -moz-transition: all 150ms linear;
   -o-transition: all 150ms linear;
@@ -816,7 +814,8 @@ input.ct-red + span + label + span.switch-right {
   margin-left: 0; }
 
 textarea.form-control {
-  padding: 10px 18px; }
+  padding: 10px 18px;
+  height: auto; }
 
 .progress {
   background-color: #DDDDDD;
@@ -1761,6 +1760,10 @@ textarea.form-control {
 .dropdown-danger .dropdown-item:hover,
 .dropdown-danger .dropdown-item:focus {
   background-color: #EB5E28 !important; }
+
+.bg-fade .navbar-brand,
+.bg-fade .navbar-brand:hover {
+  color: #66615B; }
 
 .img-rounded {
   border-radius: 8px;

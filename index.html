@@ -48,10 +48,10 @@
                 </ul>
                 <ul class="navbar-nav mt-2 mt-md-0">
                     <li class="nav-item">
-                        <a href="paper-kit/components" class="btn btn-link btn-neutral">Components</a>
+                        <a href="paper-kit/components" class="nav-link">Components</a>
                     </li>
                     <li class="nav-item">
-                        <a href="paper-kit/tutorial" target="_blank" class="btn btn-link btn-neutral">Tutorial</a>
+                        <a href="paper-kit/tutorial" target="_blank" class="nav-link">Tutorial</a>
                     </li>
                     <li class="nav-item">
                         <a href="http://www.creative-tim.com/product/paper-kit" target="_blank" class="btn btn-danger btn-round">Download</a>
@@ -443,7 +443,7 @@
                         </nav>
                         <nav class="navbar navbar-toggleable-md navbar-transparent">
                             <div class="container">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-danger" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-transparent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 							        <span class="navbar-toggler-icon"></span>
 							    </button>
                                 <a class="navbar-brand" href="#">Transparent</a>
@@ -949,18 +949,17 @@
 				  <div class="collapse navbar-collapse" id="navbarText">
 				    <ul class="navbar-nav mr-auto">
 				      <li class="nav-item">
-				        <a class="nav-link" href="#">Creative Tim</a>
+				        <a class="nav-link" href="http://www.creative-tim.com">Creative Tim</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#">Blog</a>
+				        <a class="nav-link" href="http://blog.creative-tim.com">Blog</a>
 				      </li>
 				      <li class="nav-item">
-				        <a class="nav-link" href="#">Licenses</a>
+				        <a class="nav-link" href="http://www.creative-tim.com/product/rubik">Licenses</a>
 				      </li>
 				    </ul>
 				    <span class="navbar-text">
-	                    © <script>document.write(new Date().getFullYear())</script>, made with <svg class="heart" viewBox="0 0 32 29.6">
-                            <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2 c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/></svg> by Creative Tim
+	                    © <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
 				    </span>
 				  </div>
 				</div>
@@ -968,7 +967,7 @@
 	    </footer>
 </body>
 
-<script src="assets/js/jquery-1.10.2.js" type="text/javascript"></script>
+<script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>
 <script src="assets/js/jquery-ui-1.10.4.custom.min.js" type="text/javascript"></script>
 
 
@@ -992,21 +991,7 @@
 		$(function(){
 		  $('[data-toggle="tooltip"]').tooltip();
 		});
-		$(function () {
-			$('#datetimepicker').datetimepicker({
-				icons: {
-					time: "fa fa-clock-o",
-					date: "fa fa-calendar",
-					up: "fa fa-chevron-up",
-					down: "fa fa-chevron-down",
-					previous: 'fa fa-chevron-left',
-					next: 'fa fa-chevron-right',
-					today: 'fa fa-screenshot',
-					clear: 'fa fa-trash',
-					close: 'fa fa-remove'
-				}
-			});
-		});
+
 		$('#ex1').slider({
 	        formatter: function(value) {
 		               return 'Current value: ' + value;

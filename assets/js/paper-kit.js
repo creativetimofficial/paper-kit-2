@@ -55,12 +55,21 @@ $(document).ready(function(){
         $(".tagsinput").tagsInput();
     }
 
-    if($('.datepicker').length != 0){
-        $('.datepicker').datepicker({
-             weekStart:1,
-             color: '{color}'
-         });
-    }
+    $(function () {
+        $('#datetimepicker').datetimepicker({
+            icons: {
+                time: "fa fa-clock-o",
+                date: "fa fa-calendar",
+                up: "fa fa-chevron-up",
+                down: "fa fa-chevron-down",
+                previous: 'fa fa-chevron-left',
+                next: 'fa fa-chevron-right',
+                today: 'fa fa-screenshot',
+                clear: 'fa fa-trash',
+                close: 'fa fa-remove'
+            }
+        });
+    });
 
     // Navbar color change on scroll
     if($('.navbar[color-on-scroll]').length != 0){
@@ -177,7 +186,7 @@ pk = {
     },
 
     checkScrollForTransparentNavbar: debounce(function() {
-        	if($(document).scrollTop() > $(".sticky-top").attr( "color-on-scroll") ) {
+        	if($(document).scrollTop() > $(".navbar").attr("color-on-scroll") ) {
                 if(transparent) {
                     transparent = false;
                     $('.sticky-top').removeClass('navbar-transparent');
