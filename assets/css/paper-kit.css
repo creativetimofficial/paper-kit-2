@@ -695,6 +695,9 @@ input.ct-red + span + label + span.switch-right {
   box-shadow: none !important;
   text-decoration: none; }
 
+.column .btn-link {
+  padding: 7px 0; }
+
 .form-control::-moz-placeholder {
   color: #DDDDDD;
   opacity: 1;
@@ -1761,8 +1764,8 @@ textarea.form-control {
 .dropdown-danger .dropdown-item:focus {
   background-color: #EB5E28 !important; }
 
-.bg-fade .navbar-brand,
-.bg-fade .navbar-brand:hover {
+.bg-danger .navbar-brand,
+.bg-danger .navbar-brand:hover {
   color: #66615B; }
 
 .img-rounded {
