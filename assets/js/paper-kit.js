@@ -55,7 +55,7 @@ $(document).ready(function(){
         $(".tagsinput").tagsInput();
     }
 
-    $(function () {
+    if($("#datetimepicker").length != 0){
         $('#datetimepicker').datetimepicker({
             icons: {
                 time: "fa fa-clock-o",
@@ -69,7 +69,7 @@ $(document).ready(function(){
                 close: 'fa fa-remove'
             }
         });
-    });
+    };
 
     // Navbar color change on scroll
     if($('.navbar[color-on-scroll]').length != 0){

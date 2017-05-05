@@ -7,9 +7,8 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4{
     font-weight: $font-weight-normal;
-    margin: $margin-large-vertical 0 $margin-base-vertical;
+    margin: $margin-large-vertical 0 0;
 }
-
 h1, .h1 {
     font-size: $font-size-h1;
 }
@@ -19,7 +18,7 @@ h2, .h2{
 h3, .h3{
     font-size: $font-size-h3;
     line-height: 1.4;
-    margin: 20px 0 10px;
+    margin: 20px 0 0px;
 }
 h4, .h4{
     font-size: $font-size-h4;
@@ -30,7 +29,7 @@ h5, .h5 {
     font-size: $font-size-h5;
     font-weight: $font-weight-normal;
     line-height: 1.4em;
-    margin-bottom: 15px;
+    // margin-bottom: 15px;
 }
 h6, .h6{
     font-size: $font-size-h6;
@@ -40,6 +39,8 @@ h6, .h6{
 p{
     font-size: $font-paragraph;
     line-height: $line-height-general;
+    margin-bottom: 5px;
+
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
@@ -95,4 +96,11 @@ blockquote small{
   60% { transform: scale( 1 ); }
   80% { transform: scale( .75 ); }
   100% { transform: scale( .75 ); }
+}
+.footer .credits,
+.footer-nav{
+    line-height: 85px;
+}
+.footer .btn{
+    margin-bottom: 0;
 }

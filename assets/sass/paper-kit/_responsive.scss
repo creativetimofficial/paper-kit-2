@@ -30,7 +30,7 @@
     }
     .navbar-nav > li > .dropdown-menu:after,
     .nav > li > .dropdown-menu:after {
-        border-bottom: 11px solid $pale-bg;
+        border-bottom: 11px solid $white-color;
         border-left: 11px solid rgba(0, 0, 0, 0);
         border-right: 11px solid rgba(0, 0, 0, 0);
         content: "";
@@ -338,6 +338,7 @@
     .modal-footer .btn-simple {
         padding: 15px;
     }
+
 }
 
 //overwrite table responsive for 768px screens
@@ -351,5 +352,8 @@
         border: 1px solid #dddddd;
         -ms-overflow-style: -ms-autohiding-scrollbar;
         -webkit-overflow-scrolling: touch;
+    }
+    .typography-line{
+        padding-left: 100px !important;
     }
 }

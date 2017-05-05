@@ -33,20 +33,18 @@
             <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarToggler">
-                <ul class="mr-auto">
-                    <div class="navbar-header">
-                        <div class="logo-container">
-                            <div class="logo">
-                                <img src="assets/img/new_logo.png" alt="Creative Tim Logo" href="http://www.creative-tim.com" class="d-inline-block align-top">
-                            </div>
-                            <div class="brand">
-                                Creative Tim
-                          </div>
-                        </div>
+            <div class="navbar-header">
+                <div class="logo-container">
+                    <div class="logo">
+                        <img src="assets/img/new_logo.png" alt="Creative Tim Logo" href="http://www.creative-tim.com" class="d-inline-block align-top">
                     </div>
-                </ul>
-                <ul class="navbar-nav mt-2 mt-md-0">
+                    <div class="brand">
+                        Creative Tim
+                  </div>
+                </div>
+            </div>
+            <div class="collapse navbar-collapse" id="navbarToggler">
+                <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
                         <a href="paper-kit/examples/components.html" target="_blank" class="nav-link">Components</a>
                     </li>
@@ -86,7 +84,7 @@
                                 <button type="button" class="btn btn-info btn-round">Round</button>
                                 <button type="button" class="btn btn-info btn-round"><i class="fa fa-heart"></i> With Icon</button>
                                 <button type="button" class="btn btn-info btn-just-icon"><i class="fa fa-heart"></i></button>
-                                <button type="button" class="btn btn-link btn-round">Simple</button>
+                                <button type="button" class="btn btn-info btn-link">Simple</button>
                             </div>
                         </div>
                         <div class="title">
@@ -139,7 +137,6 @@
                             <a href="#0" class="btn btn-link btn-warning">Warning</a>
                             <a href="#0" class="btn btn-link btn-danger">Danger</a>
                             <a href="#0" class="btn btn-link btn-neutral">Neutral</a>
-
                         </div>
                     </div>
                     <br/>
@@ -247,6 +244,15 @@
 				                	<input type="checkbox" data-toggle="switch"><span class="toggle"></span>Toggle is off
 				            	</label>
 				            </div>
+                            <!-- <div class="switch has-switch">
+                                <div class="switch-on">
+                                    <input type="checkbox" checked="" data-toggle="switch">
+                                    <span class="switch-left">ON</span>
+                                    <label>&nbsp;</label>
+                                    <span class="switch-right">OFF</span>
+                                </div>
+                            </div>  -->
+
                         </div>
                         <div class="col-sm-3">
                             <div class="title">
@@ -523,7 +529,7 @@
                                     <li class="page-item"><a class="page-link" href="#">1</a></li>
                                     <li class="page-item"><a class="page-link" href="#">2</a></li>
                                     <li class="page-item active">
-                                        <a class="page-link" href="#">3 <span class="sr-only">(current)</span></a>
+                                        <a class="page-link" href="#">3<span class="sr-only">(current)</span></a>
                                     </li>
                                     <li class="page-item"><a class="page-link" href="#">4</a></li>
                                     <li class="page-item"><a class="page-link" href="#">5</a></li>
@@ -797,9 +803,9 @@
 							<div class="title">
 								<h3>Popovers</h3>
 							</div>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="left" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on left</button>
+							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="left" data-title="Lorem ipsum dolor" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on left</button>
                             <button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on right</button>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="top" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on top</button>
+							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="top" data-title="Lorem ipsum dolor" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on top</button>
 							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on bottom</button>
 						</div>
 						<br/>
@@ -940,31 +946,24 @@
 			</div>
         </div>
 	</div>
-		<footer class="footer">
-			<nav class="navbar navbar-toggleable-md navbar-fixed-bottom navbar-light navbar-inverse bg-inverse">
-				<div class="container">
-				  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-				    <span class="navbar-toggler-icon"></span>
-				  </button>
-				  <div class="collapse navbar-collapse" id="navbarText">
-				    <ul class="navbar-nav mr-auto">
-				      <li class="nav-item">
-				        <a class="nav-link" href="http://www.creative-tim.com">Creative Tim</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="http://blog.creative-tim.com">Blog</a>
-				      </li>
-				      <li class="nav-item">
-				        <a class="nav-link" href="http://www.creative-tim.com/product/rubik">Licenses</a>
-				      </li>
-				    </ul>
-				    <span class="navbar-text">
-	                    © <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
-				    </span>
-				  </div>
-				</div>
-			</nav>
-	    </footer>
+    <footer class="footer section-dark">
+        <div class="container">
+            <div class="row">
+                <nav class="footer-nav">
+                    <ul>
+                        <li><a href="http://www.creative-tim.com">Creative Tim</a></li>
+                        <li><a href="http://blog.creative-tim.com">Blog</a></li>
+                        <li><a href="http://www.creative-tim.com/product/rubik">Licenses</a></li>
+                    </ul>
+                </nav>
+                <div class="credits ml-auto">
+                    <span class="copyright">
+                        © <script>document.write(new Date().getFullYear())</script>, made with <i class="fa fa-heart heart"></i> by Creative Tim
+                    </span>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 <script src="assets/js/jquery-3.2.1.js" type="text/javascript"></script>

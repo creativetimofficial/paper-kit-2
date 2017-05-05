@@ -14,7 +14,7 @@
     margin-bottom: 50px;
 }
 .typography-line{
-    padding-left: 25%;
+    padding-left: 180px;
     margin-bottom: 20px;
     position: relative;
     width: 100%;
@@ -110,37 +110,37 @@
 .txt-gray{
     color: #ddd !important;
 }
-.footer-demo{
+.footer{
     background-attachment: fixed;
     position: relative;
     line-height: 20px;
 }
-.footer-demo nav > ul {
+.footer nav > ul {
   list-style: none;
   margin: 0;
   padding: 0;
   font-weight: normal;
 }
-.footer-demo nav > ul > li{
+.footer nav > ul > li{
     display: inline-block;
     padding: 10px 15px;
     margin: 15px 3px;
     line-height: 20px;
     text-align: center;
 }
-.footer-demo nav > ul > li:first-child{
+.footer nav > ul > li:first-child{
     margin: 0;
     padding: 0;
 }
-.footer-demo nav > ul a:not(.btn) {
+.footer nav > ul a:not(.btn) {
   color: #777777;
   display: block;
   margin-bottom: 3px;
 }
-.footer-demo nav > ul a:not(.btn):hover, .footer nav > ul a:not(.btn):focus {
+.footer nav > ul a:not(.btn):hover, .footer nav > ul a:not(.btn):focus {
   color: #E3E3E3;
 }
-.footer-demo .copyright {
+.footer .copyright {
   color: #777777;
   padding: 10px 15px;
   font-size: 14px;
@@ -148,7 +148,7 @@
   line-height: 20px;
   text-align: center;
 }
-.footer-demo .heart{
+.footer .heart{
     color: #EB5E28;
 }
 
@@ -206,11 +206,11 @@
     float: left;
     margin-left: 10px;
     margin-top: 5px;
-    width: 50px;
+    width: 75px;
     height: 50px;
 }
 .logo-container{
-    margin-top: 10px;
+    margin-top: 5px;
 }
 .logo-container .logo img{
     width: 100%;
@@ -280,7 +280,7 @@
     }
 }
 
-@media (max-width: 768px){
+@media screen{
     .btn, .btn-morphing{
         margin-bottom: 10px;
     }
@@ -927,7 +927,7 @@
     fill: #75c3b6;
 }
 .navbar-header{
-    min-width: 120px;
+    min-width: 135px;
 }
 #notifications{
     background-color: #F5F2EC;

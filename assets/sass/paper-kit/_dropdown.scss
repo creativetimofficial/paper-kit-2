@@ -12,8 +12,8 @@
     @include opacity(0);
     @include box-shadow($dropdown-shadow);
 
-//     the style for opening dropdowns on mobile devices; for the desktop version check the _responsive.scss file
-    .open &{
+//     the style for showing dropdowns on mobile devices; for the desktop version check the _responsive.scss file
+    .show &{
         @include opacity(1);
         visibility: visible;
     }
@@ -38,7 +38,7 @@
        @include transition($fast-transition-time, $transition-linear);
        margin-top: -20px;
     }
-    .select.open &{
+    .select.show &{
         margin-top: -1px;
     }
 
@@ -77,10 +77,11 @@
 
     > li > a:hover,
     > li > a:focus {
-        background-color: $default-color;
-        color: $fill-font-color;
+        background-color: $info-bg;
+        color: $white-color;
         opacity: 1;
         text-decoration: none;
+        padding: 20px 15px;
     }
 
     &.dropdown-primary > li > a:hover,
@@ -114,6 +115,6 @@
 .btn-group.select{
     overflow: hidden;
 }
-.btn-group.select.open{
+.btn-group.select.show{
     overflow: visible;
 }
