@@ -17,13 +17,6 @@
         @include opacity(1);
         visibility: visible;
     }
-    .dropdown-animation{
-        @include opacity(1);
-        visibility: visible;
-        display: block;
-
-    }
-
     .divider{
         background-color: $medium-pale-bg;
         margin: 0px;
@@ -91,9 +84,11 @@
         background-color: $default-color;
         color: $fill-font-color;
         opacity: 1;
-        padding: 10px 15px;
         text-decoration: none;
+        // padding: 10px 15px;
+        // display: block;
     }
+
 
     &.dropdown-primary .dropdown-item a:hover,
     &.dropdown-primary .dropdown-item a:focus{
@@ -174,10 +169,6 @@
         right: 12px;
     }
 
-    // .navbar-nav.navbar-right li .dropdown-menu:after{
-    //     left: auto;
-    //     right: 12px;
-    // }
 
     .footer:not(.footer-big){
         nav ul{

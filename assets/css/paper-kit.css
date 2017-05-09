@@ -1125,7 +1125,8 @@ textarea.form-control {
   font-size: 0.75em;
   text-transform: uppercase;
   display: inline-block;
-  margin-bottom: 3px; }
+  margin-bottom: 3px;
+  line-height: 17px; }
 
 .label-primary {
   background-color: #7A9E9F; }
@@ -1878,11 +1879,6 @@ textarea.form-control {
     opacity: 1;
     filter: alpha(opacity=100);
     visibility: visible; }
-  .dropdown-menu .dropdown-animation {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    visibility: visible;
-    display: block; }
   .dropdown-menu .divider {
     background-color: #F1EAE0;
     margin: 0px; }
@@ -1947,7 +1943,6 @@ textarea.form-control {
     background-color: #66615B;
     color: rgba(255, 255, 255, 0.7);
     opacity: 1;
-    padding: 10px 15px;
     text-decoration: none; }
   .dropdown-menu.dropdown-primary .dropdown-item a:hover, .dropdown-menu.dropdown-primary .dropdown-item a:focus {
     background-color: #7A9E9F; }
@@ -2936,7 +2931,6 @@ textarea.form-control {
   height: 1px;
   margin: -1px;
   padding: 0;
-  overflow: hidden;
   clip: rect(0, 0, 0, 0);
   border: 0; }
 
