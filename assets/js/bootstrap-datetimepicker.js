@@ -1,4 +1,4 @@
-/*! version : 4.17.45
+/*! version : 4.17.47
  =========================================================
  bootstrap-datetimejs
  https://github.com/Eonasdan/bootstrap-datetimepicker
@@ -365,7 +365,7 @@
                     content.append(toolbar);
                 }
                 if (hasDate()) {
-                    content.append($('<li>').addClass((options.collapse && hasTime() ? 'collapse in' : '')).append(dateView));
+                    content.append($('<li>').addClass((options.collapse && hasTime() ? 'collapse show' : '')).append(dateView));
                 }
                 if (options.toolbarPlacement === 'default') {
                     content.append(toolbar);
@@ -470,12 +470,6 @@
                     left: horizontal === 'left' ? (parent === element ? 0 : position.left) : 'auto',
                     right: horizontal === 'left' ? 'auto' : parent.outerWidth() - element.outerWidth() - (parent === element ? 0 : position.left)
                 });
-
-                // Creative Tim Changes - we add after 180 ms the ".open" class, in this way the animations will be the same with the other dropdowns from the
-                setTimeout(function(){
-                    widget.addClass('open');
-                }, 180);
-
             },
 
             notifyEvent = function (e) {
@@ -752,9 +746,7 @@
                         date: currentDate,
                         classNames: clsNames
                     });
-
-                    // Creative Tim - we added a div inside each td for design purposes
-                    row.append('<td data-action="selectDay" data-day="' + currentDate.format('L') + '" class="' + clsNames.join(' ') + '"><div>' + currentDate.date() + '</div></td>');
+                    row.append('<td data-action="selectDay" data-day="' + currentDate.format('L') + '" class="' + clsNames.join(' ') + '">' + currentDate.date() + '</td>');
                     currentDate.add(1, 'd');
                 }
 
@@ -781,8 +773,7 @@
                         row = $('<tr>');
                         html.push(row);
                     }
-                    // Creative Tim - we added a div inside each class hour for design purposes
-                    row.append('<td data-action="selectHour" class="hour' + (!isValid(currentHour, 'h') ? ' disabled' : '') + '"><div>' + currentHour.format(use24Hours ? 'HH' : 'hh') + '</div></td>');
+                    row.append('<td data-action="selectHour" class="hour' + (!isValid(currentHour, 'h') ? ' disabled' : '') + '">' + currentHour.format(use24Hours ? 'HH' : 'hh') + '</td>');
                     currentHour.add(1, 'h');
                 }
                 table.empty().append(html);
@@ -800,8 +791,7 @@
                         row = $('<tr>');
                         html.push(row);
                     }
-                    // Creative Tim - we added a div inside each class minute for design purposes
-                    row.append('<td data-action="selectMinute" class="minute' + (!isValid(currentMinute, 'm') ? ' disabled' : '') + '"><div>' + currentMinute.format('mm') + '</div></td>');
+                    row.append('<td data-action="selectMinute" class="minute' + (!isValid(currentMinute, 'm') ? ' disabled' : '') + '">' + currentMinute.format('mm') + '</td>');
                     currentMinute.add(step, 'm');
                 }
                 table.empty().append(html);
@@ -818,8 +808,7 @@
                         row = $('<tr>');
                         html.push(row);
                     }
-                    // Creative Tim - we added a div inside each class seconds for design purposes
-                    row.append('<td data-action="selectSecond" class="second' + (!isValid(currentSecond, 's') ? ' disabled' : '') + '"><div>' + currentSecond.format('ss') + '</div></td>');
+                    row.append('<td data-action="selectSecond" class="second' + (!isValid(currentSecond, 's') ? ' disabled' : '') + '">' + currentSecond.format('ss') + '</td>');
                     currentSecond.add(5, 's');
                 }
 
@@ -942,33 +931,25 @@
                 if (component && component.hasClass('btn')) {
                     component.toggleClass('active');
                 }
+                widget.hide();
 
                 $(window).off('resize', place);
                 widget.off('click', '[data-action]');
                 widget.off('mousedown', false);
 
-                // Creative Tim Changes - we remove the ".open" class, then, fter 400 ms call the .hide() method, in this way the animations will be the same with the other dropdowns from the dashboard
+                widget.remove();
+                widget = false;
 
-                widget.removeClass('open');
+                notifyEvent({
+                    type: 'dp.hide',
+                    date: date.clone()
+                });
 
-                setTimeout(function(){
-                    widget.remove();
-                    widget.hide();
+                input.blur();
 
-                    widget = false;
+                viewDate = date.clone();
 
-                    notifyEvent({
-                        type: 'dp.hide',
-                        date: date.clone()
-                    });
-
-                    input.blur();
-
-                    currentViewMode = 0;
-                    viewDate = date.clone();
-
-                    return picker;
-                },400);
+                return picker;
             },
 
             clear = function () {
@@ -1119,8 +1100,8 @@
                 togglePicker: function (e) {
                     var $this = $(e.target),
                         $parent = $this.closest('ul'),
-                        expanded = $parent.find('.in'),
-                        closed = $parent.find('.collapse:not(.in)'),
+                        expanded = $parent.find('.show'),
+                        closed = $parent.find('.collapse:not(.show)'),
                         collapseData;
 
                     if (expanded && expanded.length) {
@@ -1132,8 +1113,8 @@
                             expanded.collapse('hide');
                             closed.collapse('show');
                         } else { // otherwise just toggle in class on the two views
-                            expanded.removeClass('in');
-                            closed.addClass('in');
+                            expanded.removeClass('show');
+                            closed.addClass('show');
                         }
                         if ($this.is('span')) {
                             $this.toggleClass(options.icons.time + ' ' + options.icons.date);

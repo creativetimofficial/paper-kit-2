@@ -45,22 +45,11 @@
         font-size: $font-size-medium;
     }
     .caret{
-       // @include center-item();
+       @include center-item();
     }
 
 
 }
-
-// Dropdown menu positioning
-.navbar-nav .nav-item .dropdown-menu{
-    border-radius: $border-radius-extreme;
-    margin-top: 30px;
-}
-.nav .nav-item .dropdown-menu{
-    border-radius: $border-radius-extreme;
-    margin-top: 45px;
-}
-
 
 .navbar-transparent, [class*="bg"]{
     .navbar-brand{
@@ -260,11 +249,7 @@
 .navbar-light .navbar-nav .nav-link:hover{
     color: $light-gray;
 }
-.dropdown-item:focus,
-.dropdown-item:hover{
-    color: $white-color;
-    background-color: $info-color;
-}
+
 .red{
     color: #ff0000;
 }

@@ -36,7 +36,7 @@
             }
         }
 
-         .nav-item{
+        .nav-item{
             color: $font-color;
             position: relative;
 
@@ -47,27 +47,7 @@
                 background-color: transparent;
                 border: 0 none;
                 //height: 50px;
-                &:after{
-                    border-bottom: 11px solid $bg-nude;
-                    border-left: 11px solid rgba(0, 0, 0, 0);
-                    border-right: 11px solid rgba(0, 0, 0, 0);
-                    content: "";
-                    display: inline-block;
-                    position: absolute;
-                    right: 40%;
-                    bottom: 5px;
-                }
 
-                &:before{
-                    border-bottom: 11px solid $medium-pale-bg;
-                    border-left: 11px solid rgba(0, 0, 0, 0);
-                    border-right: 11px solid rgba(0, 0, 0, 0);
-                    content: "";
-                    display: inline-block;
-                    position: absolute;
-                    right: 40%;
-                    bottom: 6px;
-                }
             }
 
         }
@@ -75,7 +55,8 @@
             background-color: transparent;
         }
         .dropdown-menu{
-            margin-top: 33px;
+            top: 46px;
+            left: -46px;
             border-radius: 8px;
 
             .dropdown-item:hover,
@@ -84,7 +65,27 @@
                 background-color: #68B3C8;
             }
 
+        :before{
+            border-bottom: 11px solid $medium-pale-bg;
+            border-left: 11px solid rgba(0, 0, 0, 0);
+            border-right: 11px solid rgba(0, 0, 0, 0);
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: 12px;
+            top: -11px;
         }
+        :after{
+            border-bottom: 11px solid $pale-bg;
+            border-left: 11px solid rgba(0, 0, 0, 0);
+            border-right: 11px solid rgba(0, 0, 0, 0);
+            content: "";
+            display: inline-block;
+            position: absolute;
+            right: 12px;
+            top: -10px;
+        }
+    }
 }
 
 /*             Navigation Pills               */

@@ -12,10 +12,16 @@
     @include opacity(0);
     @include box-shadow($dropdown-shadow);
 
-//     the style for showing dropdowns on mobile devices; for the desktop version check the _responsive.scss file
+//     the style for opening dropdowns on mobile devices; for the desktop version check the _responsive.scss file
     .show &{
         @include opacity(1);
         visibility: visible;
+    }
+    .dropdown-animation{
+        @include opacity(1);
+        visibility: visible;
+        display: block;
+
     }
 
     .divider{
@@ -42,7 +48,8 @@
         margin-top: -1px;
     }
 
-    > li > a {
+    .dropdown-item a,
+    .dropdown-item{
        color: $font-color;
        font-size: $font-size-base;
        padding: $padding-dropdown-vertical $padding-dropdown-horizontal;
@@ -52,7 +59,7 @@
            margin-top: -3px;
        }
     }
-    > li > a:focus{
+    .dropdown-item a:focus{
         outline: 0 !important;
     }
 
@@ -60,61 +67,133 @@
         min-width: 100%;
     }
 
-    > li:first-child > a{
+    .dropdown-item:first-child a,
+    .dropdown-item:first-child{
        border-top-left-radius: $border-radius-extreme;
        border-top-right-radius: $border-radius-extreme;
     }
 
-    > li:last-child > a{
+    .dropdown-item:last-child a,
+    .dropdown-item:last-child{
         border-bottom-left-radius: $border-radius-extreme;
         border-bottom-right-radius: $border-radius-extreme;
     }
 
-    .select & > li:first-child > a{
+    .select & .dropdown-item:first-child a{
         border-radius: 0;
         border-bottom: 0 none;
     }
 
-    > li > a:hover,
-    > li > a:focus {
-        background-color: $info-bg;
-        color: $white-color;
+    .dropdown-item a:hover,
+    .dropdown-item a:focus,
+    .dropdown-item:hover,
+    .dropdown-item:focus {
+        background-color: $default-color;
+        color: $fill-font-color;
         opacity: 1;
+        padding: 10px 15px;
         text-decoration: none;
-        padding: 20px 15px;
     }
 
-    &.dropdown-primary > li > a:hover,
-    &.dropdown-primary > li > a:focus{
+    &.dropdown-primary .dropdown-item a:hover,
+    &.dropdown-primary .dropdown-item a:focus{
         background-color: $primary-color;
     }
-    &.dropdown-info > li > a:hover,
-    &.dropdown-info > li > a:focus{
+    &.dropdown-info .dropdown-item a:hover,
+    &.dropdown-info .dropdown-item a:focus{
         background-color: $info-color;
     }
-    &.dropdown-success > li > a:hover,
-    &.dropdown-success > li > a:focus{
+    &.dropdown-success .dropdown-item a:hover,
+    &.dropdown-success .dropdown-item a:focus{
         background-color: $success-color;
     }
-    &.dropdown-warning > li > a:hover,
-    &.dropdown-warning > li > a:focus{
+    &.dropdown-warning .dropdown-item a:hover,
+    &.dropdown-warning .dropdown-item a:focus{
         background-color: $warning-color;
     }
-    &.dropdown-danger > li > a:hover,
-    &.dropdown-danger > li > a:focus{
+    &.dropdown-danger .dropdown-item a:hover,
+    &.dropdown-danger .dropdown-item a:focus{
         background-color: $danger-color;
     }
 
 }
-.dropdown-menu.dropdown-danger > .dropdown-item:hover{
-    background-color: #EB5E28;
-}
-
 
 //fix bug for the select items in btn-group
 .btn-group.select{
     overflow: hidden;
 }
-.btn-group.select.show{
+.btn-group.select.open{
     overflow: visible;
+}
+
+// code from _responsive
+
+
+@media (min-width: 768px){
+    .navbar-form {
+        margin-top: 21px;
+        margin-bottom: 21px;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+    .navbar-search-form{
+        display: none;
+    }
+    .navbar-nav .dropdown-item .dropdown-menu, .dropdown .dropdown-menu{
+        transform: translate3d(0px, -40px, 0px);
+        transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.3s ease 0s, height 0s linear 0.35s;
+    }
+    .navbar-nav .dropdown-item.show .dropdown-menu, .dropdown.show .dropdown-menu{
+        transform: translate3d(0px, 0px, 0px);
+    }
+
+    .navbar-nav li .dropdown-menu:before{
+        border-bottom: 11px solid $medium-pale-bg;
+        border-left: 11px solid rgba(0, 0, 0, 0);
+        border-right: 11px solid rgba(0, 0, 0, 0);
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 12px;
+        top: -11px;
+    }
+    .navbar-nav li .dropdown-menu:after {
+        border-bottom: 11px solid $pale-bg;
+        border-left: 11px solid rgba(0, 0, 0, 0);
+        border-right: 11px solid rgba(0, 0, 0, 0);
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 12px;
+        top: -10px;
+    }
+
+    .navbar-nav.navbar-right li .dropdown-menu:before,
+    .navbar-nav.navbar-right li .dropdown-menu:after{
+        left: auto;
+        right: 12px;
+    }
+
+    // .navbar-nav.navbar-right li .dropdown-menu:after{
+    //     left: auto;
+    //     right: 12px;
+    // }
+
+    .footer:not(.footer-big){
+        nav ul{
+           li:first-child{
+             margin-left: 0;
+           }
+        }
+    }
+
+    body > .navbar-collapse.collapse{
+        display: none !important;
+    }
+}
+
+// Dropdown menu positioning
+.navbar-nav .nav-item .dropdown-menu{
+    border-radius: $border-radius-extreme;
+    margin-top: -5px;
 }
