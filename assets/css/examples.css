@@ -1,19 +1,16 @@
 .landing-alert {
   margin-bottom: 0; }
 
-.page-header{
+.page-header {
   background-size: cover;
   min-height: 570px;
   margin-top: -83px;
-  padding-top: 83px;
-}
+  padddin-top: 83px; }
 
 .page-header .motto {
   padding-top: 8%;
   text-align: left;
-  z-index: 3;
-  color:#fff;
-}
+  z-index: 3; }
 
 .landing-section {
   padding: 100px 0; }
@@ -83,6 +80,28 @@
 .register-footer .fa-heart {
   color: #EB5E28; }
 
+.register-card {
+  background-color: #FF8F5E;
+  border-radius: 8px;
+  color: #fff;
+  max-width: 350px;
+  margin: 20px 0 70px;
+  min-height: 400px;
+  padding: 30px; }
+
+.register-card label {
+  margin-top: 15px; }
+
+.register-card .title {
+  color: #B33C12;
+  text-align: center; }
+
+.register-card .btn {
+  margin-top: 30px; }
+
+.register-card .forgot {
+  text-align: center; }
+
 .profile-background {
   background-image: url("../img/lamp.jpg");
   background-position: center center;
@@ -119,18 +138,12 @@
   min-height: 300px; }
 
 #following h3 {
-  margin: 20px 0 40px 0; }
+  margin: 40px 0; }
 
 .follows .unfollow {
   width: 15px; }
 
 .follows hr {
   margin-top: 10px; }
-
-.profile-content .tab-content{
-    height: 200px;
-}
-/*.alert h5 {
-  margin-bottom: 10px; }*/
 
 /*# sourceMappingURL=examples.css.map */
