@@ -1,11 +1,13 @@
 .landing-alert{
     margin-bottom: 0;
 }
-.landing-header{
+.page-header{
     background-size: cover;
     min-height: 570px;
+    margin-top: -83px;
+    padddin-top: 83px
 }
-.landing-header .motto{
+.page-header .motto{
     padding-top: 8%;
     text-align: left;
     z-index: 3;
@@ -147,5 +149,5 @@
     margin-top: 10px;
 }
 .alert h5{
-    margin-bottom: 10px;
+    // margin-bottom: 10px;
 }
