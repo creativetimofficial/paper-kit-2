@@ -10,7 +10,8 @@
 .page-header .motto {
   padding-top: 8%;
   text-align: left;
-  z-index: 3; }
+  z-index: 3;
+  color: #fff; }
 
 .landing-section {
   padding: 100px 0; }
@@ -138,20 +139,10 @@
   min-height: 300px; }
 
 #following h3 {
-  margin: 20px 0 40px 0; }
+  margin: 40px 0; }
 
 .follows .unfollow {
   width: 15px; }
 
 .follows hr {
   margin-top: 10px; }
-
-.page-header .motto .title-uppercase,
-.page-header .motto h3{
-    color: #fff;
-}
-.profile-content .tab-content{
-    height: 200px;
-}
-
-/*# sourceMappingURL=examples.css.map */
