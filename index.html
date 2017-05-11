@@ -312,12 +312,15 @@
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                                            <ul class="dropdown-menu dropdown-menu-right">
+                                            <ul class="dropdown-menu dropdown-menu-right dropdown-info">
                                                 <li class="dropdown-header">Dropdown header</li>
+                                                <li class="dropdown-item"><a href="#">Action</a></li>
                                                 <li class="dropdown-item"><a href="#">Another action</a></li>
                                                 <li class="dropdown-item"><a href="#">Something else here</a></li>
                                                 <div class="dropdown-divider"></div>
                                                 <li class="dropdown-item"><a href="#">Separated link</a></li>
+                                                <div class="dropdown-divider"></div>
+                                                <li class="dropdown-item"><a href="#">Another separated link</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -585,10 +588,16 @@
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Settings</a>
-                                            <ul class="dropdown-menu">
-                                                <li class="dropdown-header" data-toggle="tab" href="#action">Header</li>
-                                                <li class="dropdown-item" data-toggle="tab" href="#action">Action</li>
-                                                <li class="dropdown-item" data-toggle="tab" href="#another-action">Another action</li>
+                                            <ul class="dropdown-menu dropdown-info">
+                                                <li class="dropdown-header" data-toggle="tab" href="#action">
+                                                    <a href="#">Header</a>
+                                                </li>
+                                                <li class="dropdown-item" data-toggle="tab" href="#action">
+                                                    <a href="#">Action</a>
+                                                </li>
+                                                <li class="dropdown-item" data-toggle="tab" href="#another-action">
+                                                    <a href="#">Another action</a>
+                                                </li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -961,7 +970,7 @@
                         <br/>
                     </div>
                     <div class="row text-center">
-                        <div class="container">
+                        <div class="container share-buttons">
 							<button id="twitter" class="btn btn-outline-default btn-round"><i class="fa fa-twitter"></i> Twitter</button>
 							<button id="facebook" class="btn btn-outline-default btn-round"><i class="fa fa-facebook-square"></i> Facebook</button>
                         </div>
@@ -1004,6 +1013,7 @@
 <script src="assets/js/bootstrap-select.js"></script>
 
 <!--  Plugin for DateTimePicker   -->
+
 <script src="assets/js/moment.min.js"></script>
 <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
 

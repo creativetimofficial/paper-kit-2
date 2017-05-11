@@ -1,14 +1,17 @@
 .landing-alert {
   margin-bottom: 0; }
 
-.landing-header {
+.page-header {
   background-size: cover;
-  min-height: 570px; }
+  min-height: 570px;
+  margin-top: -83px;
+  padding-top: 83px; }
 
-.landing-header .motto {
+.page-header .motto {
   padding-top: 8%;
   text-align: left;
-  z-index: 3; }
+  z-index: 3;
+  color: #fff; }
 
 .landing-section {
   padding: 100px 0; }
@@ -143,8 +146,5 @@
 
 .follows hr {
   margin-top: 10px; }
-
-.alert h5 {
-  margin-bottom: 10px; }
 
 /*# sourceMappingURL=examples.css.map */
