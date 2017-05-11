@@ -5,7 +5,7 @@
   background-size: cover;
   min-height: 570px;
   margin-top: -83px;
-  padddin-top: 83px; }
+  padding-top: 83px; }
 
 .page-header .motto {
   padding-top: 8%;
@@ -138,12 +138,20 @@
   min-height: 300px; }
 
 #following h3 {
-  margin: 40px 0; }
+  margin: 20px 0 40px 0; }
 
 .follows .unfollow {
   width: 15px; }
 
 .follows hr {
   margin-top: 10px; }
+
+.page-header .motto .title-uppercase,
+.page-header .motto h3{
+    color: #fff;
+}
+.profile-content .tab-content{
+    height: 200px;
+}
 
 /*# sourceMappingURL=examples.css.map */
