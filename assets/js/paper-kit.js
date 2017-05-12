@@ -280,23 +280,28 @@ pk = {
     },
     initSliders: function(){
         // Sliders for demo purpose in refine cards section
-        if($('#slider-range').length != 0){
-            $( "#slider-range" ).slider({
-        		range: true,
-        		min: 0,
-        		max: 500,
-        		values: [ 75, 300 ],
-        	});
+        if($('#sliderRegular').length != 0 ){
+            var rangeSlider = document.getElementById('sliderRegular');
+            noUiSlider.create(rangeSlider, {
+            	start: [ 5000 ],
+            	range: {
+            		'min': [  2000 ],
+            		'max': [ 10000 ]
+            	}
+            });
+        }
+        if($('#sliderDouble').length != 0){
+            var slider = document.getElementById('sliderDouble');
+            noUiSlider.create(slider, {
+            	start: [20, 80],
+            	connect: true,
+            	range: {
+            		'min': 0,
+            		'max': 100
+            	}
+            });
         }
 
-        if($('#slider-default').length != 0 ){
-        	$( "#slider-default").slider({
-        			value: 70,
-        			orientation: "horizontal",
-        			range: "min",
-        			animate: true
-        	});
-        }
     },
 
 
