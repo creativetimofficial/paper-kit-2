@@ -274,9 +274,46 @@
 .navbar-default .navbar-brand:focus{
     color: #5e5e5e;
 }
+.navbar-collapse.show{
+    .navbar-nav{
+        .nav-item{
+            padding-right: 100px;
+        }
+    }
+}
 
 //menu bars
 
-.navbar-nav > li > .dropdown-menu, .dropdown .dropdown-menu{
+.navbar-nav > li > .dropdown-menu,
+.dropdown .dropdown-menu{
     transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.3s ease 0s, height 0s linear 0.35s;
+}
+
+.navbar-toggler-bar{
+    display: block;
+    position: relative;
+    background: #fff;
+    width: 24px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 0 auto;
+}
+.navbar-toggler .navbar-toggler-bar + .navbar-toggler-bar,
+.navbar-toggler .navbar-toggler-icon + .navbar-toggler-icon{
+    margin-top: 4px;
+}
+.navbar .navbar-toggler-right{
+    margin-top: 32px;
+}
+.navbar .navbar-burger{
+    margin-top: 20px;
+}
+.navbar-toggler-icon{
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 2px;
+    border-radius: 1px;
+    margin: 0 auto;
+    background: gray;
 }

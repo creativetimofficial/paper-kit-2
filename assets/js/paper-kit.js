@@ -35,7 +35,7 @@ $(document).ready(function(){
     });
 
     //  Activate the tooltips
-    $('[rel="tooltip"]').tooltip();
+    $('[data-toggle="tooltip"]').tooltip();
 
     //      Activate the switches with icons
     if($('.switch').length != 0){
@@ -191,12 +191,12 @@ pk = {
         	if($(document).scrollTop() > $(".navbar").attr("color-on-scroll") ) {
                 if(transparent) {
                     transparent = false;
-                    $('.sticky-top').removeClass('navbar-transparent');
+                    $('.navbar[color-on-scroll]').removeClass('navbar-transparent');
                 }
             } else {
                 if( !transparent ) {
                     transparent = true;
-                    $('.sticky-top').addClass('navbar-transparent');
+                    $('.navbar[color-on-scroll]').addClass('navbar-transparent');
                 }
             }
     }, 17),

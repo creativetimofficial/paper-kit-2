@@ -154,6 +154,7 @@
     .navbar-nav .dropdown-item.show .dropdown-menu,
     .dropdown.show .dropdown-menu{
         transform: translate3d(0px, 0px, 0px);
+        visibility: visible !important;
     }
 
     .bootstrap-datetimepicker-widget{
@@ -206,4 +207,12 @@
 .navbar-nav .nav-item .dropdown-menu{
     border-radius: $border-radius-extreme;
     margin-top: -5px;
+}
+
+#navbar {
+    .dropdown-menu {
+        .dropdown-item{
+            padding: 3px 1.5rem !important;
+        }
+    }
 }

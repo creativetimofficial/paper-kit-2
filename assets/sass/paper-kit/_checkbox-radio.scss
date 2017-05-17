@@ -8,6 +8,7 @@
   vertical-align: middle;
   position: relative;
   padding-left: 10px;
+  width: 67%;
 }
 
 .checkbox label::before,
@@ -131,6 +132,7 @@
   vertical-align: middle;
   position: relative;
   padding-left: 10px;
+  width: 64%;
 }
 
 .radio label::before,
@@ -157,7 +159,6 @@
   background-color: transparent;
   transition: opacity 0.2s linear;
 }
-
 
 .radio input[type="radio"]:not(:disabled):hover + label::before{
     font-family: 'FontAwesome';

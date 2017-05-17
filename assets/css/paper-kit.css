@@ -708,6 +708,9 @@ input.ct-red + span + label + span.switch-right {
 .share-buttons .btn-outline-default {
   margin-top: 24px; }
 
+#modals .btn-outline-neutral {
+  margin-bottom: 10px; }
+
 .form-control::-moz-placeholder {
   color: #DDDDDD;
   opacity: 1;
@@ -769,7 +772,6 @@ input.ct-red + span + label + span.switch-right {
     color: #EB5E28;
     font-size: .8rem;
     position: absolute;
-    right: 10px;
     top: 100%;
     vertical-align: middle; }
   .open .form-control {
@@ -1327,7 +1329,8 @@ textarea.form-control {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  padding-left: 10px; }
+  padding-left: 10px;
+  width: 67%; }
 
 .checkbox label::before,
 .checkbox label::after {
@@ -1423,7 +1426,8 @@ textarea.form-control {
   display: inline-block;
   vertical-align: middle;
   position: relative;
-  padding-left: 10px; }
+  padding-left: 10px;
+  width: 64%; }
 
 .radio label::before,
 .radio label::after {
@@ -1724,8 +1728,40 @@ textarea.form-control {
 .navbar-default .navbar-brand:focus {
   color: #5e5e5e; }
 
-.navbar-nav > li > .dropdown-menu, .dropdown .dropdown-menu {
+.navbar-collapse.show .navbar-nav .nav-item {
+  padding-right: 100px; }
+
+.navbar-nav > li > .dropdown-menu,
+.dropdown .dropdown-menu {
   transition: all 0.3s cubic-bezier(0.215, 0.61, 0.355, 1) 0s, opacity 0.3s ease 0s, height 0s linear 0.35s; }
+
+.navbar-toggler-bar {
+  display: block;
+  position: relative;
+  background: #fff;
+  width: 24px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 0 auto; }
+
+.navbar-toggler .navbar-toggler-bar + .navbar-toggler-bar,
+.navbar-toggler .navbar-toggler-icon + .navbar-toggler-icon {
+  margin-top: 4px; }
+
+.navbar .navbar-toggler-right {
+  margin-top: 32px; }
+
+.navbar .navbar-burger {
+  margin-top: 20px; }
+
+.navbar-toggler-icon {
+  display: block;
+  position: relative;
+  width: 24px;
+  height: 2px;
+  border-radius: 1px;
+  margin: 0 auto;
+  background: gray; }
 
 .img-rounded {
   border-radius: 8px;
@@ -1766,6 +1802,10 @@ textarea.form-control {
 
 .tim-container h2 {
   margin-bottom: 15px; }
+
+.images-title {
+  margin-bottom: 20px;
+  height: 50px; }
 
 .card-register {
   background-color: #FF8F5E;
@@ -1914,7 +1954,8 @@ textarea.form-control {
 
   .navbar-nav .dropdown-item.show .dropdown-menu,
   .dropdown.show .dropdown-menu {
-    transform: translate3d(0px, 0px, 0px); }
+    transform: translate3d(0px, 0px, 0px);
+    visibility: visible !important; }
 
   .bootstrap-datetimepicker-widget {
     visibility: visible !important;
@@ -1954,6 +1995,9 @@ textarea.form-control {
 .navbar-nav .nav-item .dropdown-menu {
   border-radius: 8px;
   margin-top: -5px; }
+
+#navbar .dropdown-menu .dropdown-item {
+  padding: 3px 1.5rem !important; }
 
 /*             Navigation menu                */
 /*             Navigation Tabs                 */
@@ -2363,13 +2407,15 @@ textarea.form-control {
   height: 30px;
   top: 50%;
   width: 30px;
-  left: -30%; }
+  left: 5px;
+  opacity: 0; }
 
 .carousel-control.right {
   height: 30px;
-  right: -30%;
+  right: 5px;
   top: 50%;
-  width: 30px; }
+  width: 30px;
+  opacity: 0; }
 
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .fa, .carousel-control .fa {
   display: inline-block;
@@ -2400,6 +2446,10 @@ textarea.form-control {
 
 .carousel-indicators .active {
   background-color: #EB5E28; }
+
+.card-carousel:hover .carousel-control.right,
+.card-carousel:hover .carousel-control.left {
+  opacity: 1; }
 
 .modal-header {
   border-bottom: 1px solid #DDDDDD;
