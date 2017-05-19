@@ -54,8 +54,7 @@
 //   outline-offset: -2px;
 // }
 
-.checkbox input[type="checkbox"]:checked + label::after,
-.checkbox input[type="checkbox"]:not(:disabled):hover + label::after{
+.checkbox input[type="checkbox"]:checked + label::after{
   font-family: 'FontAwesome';
   content: "\f00c";
 }

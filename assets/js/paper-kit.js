@@ -73,6 +73,19 @@ $(document).ready(function(){
         });
     };
 
+    // Change the collor of navbar collapse
+    $('#navbarToggler').on('show.bs.collapse', function () {
+        if( $('nav').hasClass('navbar-transparent') && $(document).scrollTop() < 50 ){
+            $('.navbar').addClass('no-transition');
+            $('nav').removeClass('navbar-transparent');
+        }
+    }).on('hidden.bs.collapse', function (){
+        if($(document).scrollTop() < 50 ){
+            $('.navbar').removeClass('no-transition');
+            $('nav').addClass('navbar-transparent');
+    }
+    });
+
     // Navbar color change on scroll
     if($('.navbar[color-on-scroll]').length != 0){
         $(window).on('scroll', pk.checkScrollForTransparentNavbar)

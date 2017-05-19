@@ -21,6 +21,7 @@
         font-size: $font-size-large-navbar;
     }
     .navbar-nav{
+        padding-left: 40px;
         .nav-item .nav-link {
              line-height: 1.42857;
              margin: $navbar-margin-a;
@@ -316,4 +317,11 @@
     border-radius: 1px;
     margin: 0 auto;
     background: gray;
+}
+.no-transition{
+    -webkit-transition: none;
+    -moz-transition: none;
+    -o-transition: none;
+    -ms-transition: none;
+    transition: none;
 }

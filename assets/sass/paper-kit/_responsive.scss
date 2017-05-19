@@ -2,7 +2,7 @@
 
 @media (max-width: 767px){
     .navbar-transparent{
-        padding-top: 15px;
+        // padding-top: 15px;
         background-color: rgba(0, 0, 0, 0.45);
     }
     body {
@@ -27,9 +27,11 @@
     .navbar .navbar-collapse.collapse,
     .navbar .navbar-collapse.collapse.in,
     .navbar .navbar-collapse.collapsing{
-        display: none !important;
+        // display: none !important;
     }
-
+    .demo-header .motto{
+        padding-top: 30% !important;
+    }
     body > .navbar-collapse {
         position: fixed;
         display: block;
@@ -273,12 +275,6 @@
     .modal-footer .btn-simple {
         padding: 15px;
     }
-
-}
-
-//overwrite table responsive for 768px screens
-
-@media (max-width: 768px){
     .table-responsive {
         width: 100%;
         margin-bottom: 15px;

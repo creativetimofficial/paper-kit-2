@@ -585,7 +585,7 @@
         -ms-backface-visibility: visible;
         backface-visibility: visible;
     }
-    .rotating-car .back {
+    .rotating-card .back {
         visibility: hidden;
         -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
     }
@@ -599,9 +599,11 @@
 }
 
 .fixed-section{
-    /*top: 90px;*/
     max-height: 71vh;
     /*overflow: scroll;*/
+}
+.fixed-section ul{
+    margin-left: -40px !important;
 }
 .fixed-section ul li{
     list-style: none;

@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8" />
-	<link rel="icon" type="image/png" href="../assets/paper_img/favicon.ico">
+	<link rel="icon" type="image/png" href="../assets/img/favicon.ico">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>Paper Kit Components by Creative Tim</title>
@@ -12,6 +12,7 @@
     <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="../assets/css/paper-kit.css" rel="stylesheet"/>
     <link href="../assets/css/demo.css" rel="stylesheet" />
+	<link href="../assets/css/examples.css" rel="stylesheet" />
 
 
     <!--     Fonts and icons     -->
@@ -73,19 +74,20 @@
 			                <div class="fixed-section affix-top" data-spy="affix" data-offset-top="480">
 			                    <ul>
 			                        <li><a href="#buttons-row">Buttons</a></li>
-			                        <li><a href="#checkbox-row">Checkbox/Radio</a></li>
+			                        <li><a href="#checkbox-row">Checkbox</a></li>
+									<li><a href="#radio-row">Radio</a></li>
 			                        <li><a href="#dropdown-row">Dropdown</a></li>
 			                        <li><a href="#inputs-row">Inputs</a></li>
 			                        <li><a href="#textarea-row">Textarea</a></li>
 			                        <li><a href="#navbar-row">Navigation</a></li>
-			                        <li><a href="#subscription-row">Footers</a></li>
 			                        <li><a href="#pagination-row">Pagination</a></li>
 			                        <li><a href="#progressbar-row">Progress Bars</a></li>
 			                        <li><a href="#sliders-row">Sliders</a></li>
 			                        <li><a href="#labels-row">Labels</a></li>
-			                        <li><a href="#datepicker-row">Datepicker</a></li>
+			                        <li><a href="#datetimepicker-row">Datetimepicker</a></li>
 			                        <li><a href="#modal-row">Modals</a></li>
-			                        <li><a href="#tooltip-row">Tooltips/Popovers</a></li>
+			                        <li><a href="#tooltip-row">Tooltips</a></li>
+									<li><a href="#popover-row">Popovers</a></li>
 			                        <li><a href="#notification-row">Notification</a></li>
 
 			                    </ul>
@@ -134,8 +136,8 @@
 		                    <p>
 		                        Let's take it one by one:
 		                    </p>
-<pre>
-Paper-Kit
+							<pre class="prettyprint">
+PAPER-KIT
 ├── CHANGELOG.md
 ├── LICENSE.md
 ├── README.md
@@ -148,30 +150,6 @@ Paper-Kit
 │   │   ├── paper-kit.css
 │   │   └── paper-kit.css.map
 │   ├── img
-│   │   ├── apple-icon.png
-│   │   ├── banks.jpg
-│   │   ├── bg_wall.jpg
-│   │   ├── built_on_glass.jpg
-│   │   ├── cat.jpg
-│   │   ├── chet_faker_1.jpg
-│   │   ├── chet_faker_2.jpg
-│   │   ├── city.jpg
-│   │   ├── examples
-│   │   │   ├── landing.jpg
-│   │   │   ├── profile.jpg
-│   │   │   └── register.jpg
-│   │   ├── favicon.ico
-│   │   ├── flume.jpg
-│   │   ├── lamp.jpg
-│   │   ├── landscape.jpg
-│   │   ├── new_logo.png
-│   │   ├── pencils.jpg
-│   │   ├── placeholder.jpg
-│   │   ├── red.jpg
-│   │   ├── shoes.jpg
-│   │   ├── thinking_in_textures.png
-│   │   ├── types.jpg
-│   │   └── wall-dark.jpg
 │   ├── js
 │   │   ├── bootstrap-datetimepicker.min.js
 │   │   ├── bootstrap-select.js
@@ -184,41 +162,6 @@ Paper-Kit
 │   │   ├── paper-kit.js
 │   │   └── tether.min.js
 │   └── sass
-│       ├── examples.scss
-│       ├── paper-kit
-│       │   ├── _alerts.scss
-│       │   ├── _buttons.scss
-│       │   ├── _card.scss
-│       │   ├── _carousel.scss
-│       │   ├── _checkbox-radio.scss
-│       │   ├── _collapse.scss
-│       │   ├── _dropdown.scss
-│       │   ├── _images.scss
-│       │   ├── _inputs.scss
-│       │   ├── _labels.scss
-│       │   ├── _misc.scss
-│       │   ├── _mixins.scss
-│       │   ├── _modal.scss
-│       │   ├── _navbars.scss
-│       │   ├── _progress-bars.scss
-│       │   ├── _responsive.scss
-│       │   ├── _sections.scss
-│       │   ├── _sliders.scss
-│       │   ├── _tabs-navs-pagination.scss
-│       │   ├── _tooltips-and-popovers.scss
-│       │   ├── _typography.scss
-│       │   ├── _variables.scss
-│       │   ├── mixins
-│       │   │   ├── _buttons.scss
-│       │   │   ├── _inputs.scss
-│       │   │   ├── _labels.scss
-│       │   │   ├── _navbars.scss
-│       │   │   ├── _tabs.scss
-│       │   │   ├── _transparency.scss
-│       │   │   └── _vendor-prefixes.scss
-│       │   └── plugins
-│       │       └── _datetimepicker.scss
-│       └── paper-kit.scss
 ├── documentation
 │   ├── style.css
 │   ├── tutorial-components.html
@@ -228,8 +171,7 @@ Paper-Kit
 │   ├── profile.html
 │   └── register.html
 ├── index.html
-└── template.html
-</pre>
+└── template.html</pre>
 		                </div>
 		            </div>
 		<!--         end row -->
@@ -277,11 +219,11 @@ Paper-Kit
 		                        <li> Checkboxes</li>
 		                        <li> Radio Buttons</li>
 		                        <li> Sliders</li>
-		                        <li> Datepicker</li>
+		                        <li> Datetimepicker</li>
 		                    </ul>
 		                    </p>
 		                    <p>
-		                        For more details regarding the components, go to our <a href="components.html">components page</a>.
+		                        For more details regarding the components, go to our <a href="../index.html">components page</a>.
 		                    </p>
 		                </div>
 		            </div>
@@ -348,20 +290,20 @@ Paper-Kit
                     <!-- <a data-target="#buttonStyle" href="javascript: void(0);" data-toggle="collapse">
                           See Full Implementation
                     </a> -->
-    <div id="buttonStyle" >
-    <pre class="prettyprint">
+	    				<div id="buttonStyle" >
+	    					<pre class="prettyprint">
 &lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Default&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-round&quot;&gt;Round&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-round&quot;&gt;&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt; With Icon&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-just-icon&quot;&gt;&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-link&quot;&gt;Simple&lt;/button&gt;</pre>
-    </div>
+    					</div>
                     </div>
                     <p class="space-top">
                         Button groups, toolbars, and disabled state all work like they are supposed to.
                     </p>
 
-        </div>
+        	</div>
     <!--     end row -->
 
     <!-- checkbox row -->
@@ -369,7 +311,7 @@ Paper-Kit
                 <h2> Checkboxes </h2>
                 <legend></legend>
                 <p class="space-top">
-                    To use the custom checkboxes, you need to import a separate Javascript file called 'ct-paper-checkbox.js'.
+                    To use the custom checkboxes, you need to import a separate Javascript file called <code>paper-kit-checkbox.js</code>.
                 </p>
                 <p>
 					<div class="checkbox">
@@ -400,8 +342,8 @@ Paper-Kit
                 <p>Usage can be done via Data Attributes:
 
                 </p>
-    <div id="checkboxDataAttribute">
-    <pre class="prettyprint">
+    			<div id="checkboxDataAttribute">
+    				<pre class="prettyprint">
 &lt;div class=&quot;checkbox&quot;&gt;
     &lt;input id=&quot;checkbox1&quot; type=&quot;checkbox&quot;&gt;
     &lt;label for=&quot;checkbox1&quot;&gt;
@@ -426,58 +368,14 @@ Paper-Kit
        Disabled checked
    &lt;/label&gt;
 &lt;/div&gt;</pre>
-    </div>
+    		</div>
                 <p>Or can be called via Javascript:
 
                 </p>
-    <div id="checkboxJavascript" >
-    <pre class="prettyprint">
+    			<div id="checkboxJavascript" >
+    				<pre class="prettyprint">
 $('.checkbox').checkbox();</pre>
-    </div>
-
-                <p>
-                    <h4>Methods</h4>
-                    <ul class="list-unstyled space-top">
-                        <li>
-                            <b>.checkbox('toggle')</b>
-                            is used to toggle the states between checked and unchecked.
-                        </li>
-                        <li>
-                            <b>.checkbox('check') </b>
-                            sets the checkbox state to checked.
-                        </li>
-                        <li>
-                            <b>.checkbox('uncheck') </b>
-                            sets the state to unchecked.
-                        </li>
-                    </ul>
-                    <div class="area-line">
-    				<div id="checkboxMethod">
-    <pre class="prettyprint">
-$(':checkbox').checkbox('check');</pre>
-    </div>
-                    </div>
-                    <h4>Events</h4>
-                    <ul class="list-unstyled space-top">
-                        <li>
-                            <b>.on('toggle') </b>
-                            gets activated when the checkbox state changes between checked and unchecked.
-                        </li>
-                        <li>
-                            <b>.on('change') </b>
-                            the same as toggle.
-                        </li>
-                    </ul>
-                </p>
-                <div class="area-line">
-    <div id="checkboxEvent">
-    <pre class="prettyprint">
-$(':checkbox').on('toggle', function() {
-    // Do something
-});</pre>
-    </div>
-                </div>
-
+    			</div>
         </div>
     <!-- end row -->
 
@@ -486,7 +384,7 @@ $(':checkbox').on('toggle', function() {
             <h2> Radio Buttons </h2>
             <legend></legend>
                 <p class="space-top">
-                    To use the custom radio buttons, you need to import a separate Javascript file called 'ct-paper-radio.js'.
+                    To use the custom radio buttons, you need to import a separate Javascript file called 'paper-kit-radio.js'.
                 </p>
                 <p>
 					<div class="radio">
@@ -518,8 +416,8 @@ $(':checkbox').on('toggle', function() {
  				   </div>
                 </p>
                 <!-- <p>Usage can be done via Data Attributes: <a data-target="#radioDataAttribute" href="javascript: void(0);" data-toggle="collapse">See example.</a></p> -->
-    <div id="radioDataAttribute">
-    <pre class="prettyprint">
+    			<div id="radioDataAttribute">
+    				<pre class="prettyprint">
 &lt;div class=&quot;radio&quot;&gt;
    &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; id=&quot;radio1&quot; value=&quot;option1&quot;&gt;
    &lt;label for=&quot;radio1&quot;&gt;
@@ -549,53 +447,11 @@ $(':checkbox').on('toggle', function() {
 &lt;/div&gt;</pre>
     </div>
                 <p>Or can be called via Javascript:  </p>
-    <div id="radioJavascript">
-    <pre class="prettyprint">
-$(':radio').radio();</pre>
-    </div>
-
-
+    			<div id="radioJavascript">
+    				<pre class="prettyprint">
+$('.radio').radio();</pre>
+    			</div>
         </div>
-
-        <p>
-            <h4>Methods</h4>
-            <ul class="list-unstyled space-top">
-
-                <li>
-                    <b>.radio('check') </b>
-                    sets the checkbox state to checked.
-                </li>
-                <li>
-                    <b>.radio('uncheck') </b>
-                    sets the state to unchecked.
-                </li>
-            </ul>
-            <div class="area-line">
-    <div id="radioMethod">
-    <pre class="prettyprint">
-$(':radio').radio('check');</pre>
-    </div>
-                    </div>
-                    <h4>Events</h4>
-                    <ul class="list-unstyled space-top">
-                        <li>
-                            <b>.on('toggle') </b>
-                            gets activated when the checkbox state changes between checked and unchecked.
-                        </li>
-                        <li>
-                            <b>.on('change') </b>
-                            the behaviour as the toggle, with the difference that the event is fired for each radio button that gets a state change.
-                        </li>
-                    </ul>
-                </p>
-                <div class="area-line">
-    <div id="radioEvent">
-    <pre class="prettyprint">
-$(':radio').on('toggle', function() {
-    // Do something
-});</pre>
-    </div>
-                </div>
     </div>
     <!-- end row -->
 
@@ -603,59 +459,49 @@ $(':radio').on('toggle', function() {
     <div class="tim-row" id="dropdown-row">
             <h2> Dropdown </h2>
             <legend></legend>
-            <p>
+            <p class="space-top">
             We are very proud to present the dropdown, we added a subtle animation resembling a piece of paper sliding down. Here is an example and the code:
             </p>
 
             <div class="row">
                 <div class="col-md-3 dropdown">
-                  <a href="#" class="btn dropdown-toggle" data-toggle="dropdown">
-                      Dropdown
-                      <b class="caret"></b>
-                  </a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Action</a></li>
-                    <li><a href="#">Another action</a></li>
-                    <li><a href="#">Something else here</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">Separated link</a></li>
-                    <li class="divider"></li>
-                    <li><a href="#">One more separated link</a></li>
-                  </ul>
+                    <a href="#" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                    	Dropdown
+                    	<b class="caret"></b>
+                	</a>
+					<ul class="dropdown-menu ">
+						<li class="dropdown-header">Dropdown header</li>
+						<li class="dropdown-item"><a href="#">Action</a></li>
+						<li class="dropdown-item"><a href="#">Another action</a></li>
+						<li class="dropdown-item"><a href="#">Something else here</a></li>
+						<div class="dropdown-divider"></div>
+						<li class="dropdown-item"><a href="#">Separated link</a></li>
+						<div class="dropdown-divider"></div>
+						<li class="dropdown-item"><a href="#">Another separated link</a></li>
+					</ul>
                 </div>
-              </div>
+            </div>
 
 
             <div class="area-line">
-            <a data-target="#dropdown" href="javascript: void(0);" data-toggle="collapse">See full implementation</a>
-    <div id="dropdown" class="collapse">
-    <pre class="prettyprint">
-    &lt;div class=&quot;dropdown&quot;&gt;
-
-      &lt;button class=&quot;btn dropdown-toggle&quot; type=&quot;button&quot; id=&quot;dropdownMenu1&quot; data-toggle=&quot;dropdown&quot;&gt;
-
+    			<div id="dropdown">
+    				<pre class="prettyprint">
+&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
         Dropdown
-
-        &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;
-
-      &lt;/button&gt;
-
-      &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;dropdownMenu1&quot;&gt;
-
-        &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
-
-        &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
-
-        &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-
-        &lt;li role=&quot;presentation&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
-
-        &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; tabindex=&quot;-1&quot; href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-
-      &lt;/ul&gt;
-
-    &lt;/div&gt;
-    </pre>
+        &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;
+    &lt;/a&gt;
+    &lt;ul class=&quot;dropdown-menu &quot;&gt;
+        &lt;li class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Another separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
     </div>
             </div>
 
@@ -759,6 +605,8 @@ $(':radio').on('toggle', function() {
 				<nav class="navbar navbar-toggleable-md navbar-default">
 					<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
 						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon"></span>
+						<span class="navbar-toggler-icon"></span>
 					</button>
 					<a class="navbar-brand" href="#">Navbar</a>
 					<div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -776,7 +624,7 @@ $(':radio').on('toggle', function() {
 						    	<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 						      		Dropdown link
 						    	</a>
-						    	<div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+						    	<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
 						    		<a class="dropdown-item" href="#">Action</a>
 						    		<a class="dropdown-item" href="#">Another action</a>
 						    		<a class="dropdown-item" href="#">Something else here</a>
@@ -828,7 +676,7 @@ $(':radio').on('toggle', function() {
             </p>
 
     <!-- navbar blue -->
-    <div id="navbar-primary">
+    <!-- <div id="navbar-primary"> -->
 		<nav class="navbar navbar-toggleable-md bg-primary">
 			<div class="container">
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-primary" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -852,10 +700,10 @@ $(':radio').on('toggle', function() {
 				</div>
 			</div>
 		</nav>
-    </div>
+    <!-- </div> -->
 	<br/>
     <!-- navbar azure -->
-    <div id="navbar-info">
+    <!-- <div id="navbar-info"> -->
 		<nav class="navbar navbar-toggleable-md bg-info">
 			<div class="container">
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-info" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -879,10 +727,10 @@ $(':radio').on('toggle', function() {
 				</div>
 			</div>
 		</nav>
-    </div>
+    <!-- </div> -->
 	<br/>
     <!-- navbar green -->
-    <div id="navbar-success">
+    <!-- <div id="navbar-success"> -->
 		<nav class="navbar navbar-toggleable-md bg-success">
 			<div class="container">
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-success" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -906,10 +754,10 @@ $(':radio').on('toggle', function() {
 				</div>
 			</div>
 		</nav>
-    </div>
+    <!-- </div> -->
 	<br/>
     <!-- navbar orange -->
-    <div id="navbar-warning">
+    <!-- <div id="navbar-warning"> -->
 		<nav class="navbar navbar-toggleable-md bg-warning">
 			<div class="container">
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-warning" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -936,10 +784,10 @@ $(':radio').on('toggle', function() {
 				</div>
 			</div>
 		</nav>
-    </div>
+    <!-- </div> -->
 	<br/>
     <!-- navbar red -->
-    <div id="navbar-danger">
+    <!-- <div id="navbar-danger"> -->
 		<nav class="navbar navbar-toggleable-md bg-danger">
 			<div class="container">
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-danger" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -966,7 +814,7 @@ $(':radio').on('toggle', function() {
     </div>
 	<br/>
 	<!-- navbar transparent -->
-	<div id="navbar-transparent"  class="navigation-example">
+	<div  class="navigation-example">
 		<nav class="navbar navbar-toggleable-md navbar-transparent">
 			<div class="container">
 				<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-transparent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -995,7 +843,7 @@ $(':radio').on('toggle', function() {
                 Besides all this customisation, we have an extra navbar. <code>navbar-transparent</code> is a special class that you can to use if you want the navbar to be transparent. We recommend that the part of your page that has the transparent navbar contains something non-cluttered, like an image.
             </p>
 
-    </div>
+    <!-- </div> -->
     <!-- end row -->
 
     <!--     nav tabs row -->
@@ -1321,8 +1169,8 @@ $(':radio').on('toggle', function() {
     <!-- end row -->
 
     <!-- datepicker row -->
-    <div class="tim-row" id="datepicker-row">
-        <h2>Datepicker</h2>
+    <div class="tim-row" id="datetimepicker-row">
+        <h2>Datetimepicker</h2>
         <legend></legend>
         <p class="space-top">The re-styled the Bootstrap datepicker and we added the Paper Kit colors, which you can give as parameter to the plugin: color = {blue,azure,green,orange,red}.</p>
         <div class="row">
@@ -1379,7 +1227,7 @@ $('#datetimepicker').datetimepicker({
         <p class="space-top">We restyled the classic Twitter Bootstrap and gave it a more simple look. TO have the footer splitted into 2 parts, please you the 'left-side' and 'right-side' classes. You can see and an example below.
         </p>
 		<!-- Button trigger modal -->
-		<button type="button" class="btn btn-outline-default" data-toggle="modal" data-target="#myModal">
+		<button type="button" class="btn btn-default" data-toggle="modal" data-target="#myModal">
 			Launch demo modal
 		</button>
 		<!-- Modal -->

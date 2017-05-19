@@ -1366,8 +1366,7 @@ textarea.form-control {
   height: 21px;
   top: -3px; }
 
-.checkbox input[type="checkbox"]:checked + label::after,
-.checkbox input[type="checkbox"]:not(:disabled):hover + label::after {
+.checkbox input[type="checkbox"]:checked + label::after {
   font-family: 'FontAwesome';
   content: "\f00c"; }
 
@@ -1531,17 +1530,19 @@ textarea.form-control {
     margin: 5px 0px;
     padding: 20px 15px;
     font-size: 22px; }
-  .navbar .navbar-nav .nav-item .nav-link {
-    line-height: 1.42857;
-    margin: 15px 3px;
-    padding: 10px 15px; }
-  .navbar .navbar-nav .nav-item .nav-link.btn {
-    margin: 15px 3px;
-    padding: 7px 18px; }
-  .navbar .navbar-nav .nav-item .nav-link [class^="fa"] {
-    font-size: 21px;
-    position: relative;
-    top: 1px; }
+  .navbar .navbar-nav {
+    padding-left: 40px; }
+    .navbar .navbar-nav .nav-item .nav-link {
+      line-height: 1.42857;
+      margin: 15px 3px;
+      padding: 10px 15px; }
+    .navbar .navbar-nav .nav-item .nav-link.btn {
+      margin: 15px 3px;
+      padding: 7px 18px; }
+    .navbar .navbar-nav .nav-item .nav-link [class^="fa"] {
+      font-size: 21px;
+      position: relative;
+      top: 1px; }
   .navbar .btn {
     margin: 15px 3px;
     font-size: 16px; }
@@ -1763,6 +1764,13 @@ textarea.form-control {
   margin: 0 auto;
   background: gray; }
 
+.no-transition {
+  -webkit-transition: none;
+  -moz-transition: none;
+  -o-transition: none;
+  -ms-transition: none;
+  transition: none; }
+
 .img-rounded {
   border-radius: 8px;
   box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
@@ -1962,7 +1970,8 @@ textarea.form-control {
     opacity: 1;
     filter: alpha(opacity=100); }
 
-  .navbar-nav li .dropdown-menu:before {
+  .navbar-nav li .dropdown-menu:before,
+  #dropdown-row .dropdown .dropdown-menu:before {
     border-bottom: 11px solid #F1EAE0;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
@@ -1972,7 +1981,12 @@ textarea.form-control {
     right: 12px;
     top: -11px; }
 
-  .navbar-nav li .dropdown-menu:after {
+  #dropdown-row .dropdown .dropdown-menu:before {
+    left: 12px !important;
+    right: auto; }
+
+  .navbar-nav li .dropdown-menu:after,
+  #dropdown-row .dropdown .dropdown-menu:after {
     border-bottom: 11px solid #FFFCF5;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
@@ -1981,6 +1995,13 @@ textarea.form-control {
     position: absolute;
     right: 12px;
     top: -10px; }
+
+  #dropdown-row .dropdown .dropdown-menu:after {
+    left: 12px !important;
+    right: auto; }
+
+  #dropdown-row .dropdown .dropdown-menu {
+    left: 15px; }
 
   .navbar-nav.navbar-right li .dropdown-menu:before,
   .navbar-nav.navbar-right li .dropdown-menu:after {
@@ -2508,7 +2529,6 @@ textarea.form-control {
 /*          Changes for small display      */
 @media (max-width: 767px) {
   .navbar-transparent {
-    padding-top: 15px;
     background-color: rgba(0, 0, 0, 0.45); }
 
   body {
@@ -2542,10 +2562,8 @@ textarea.form-control {
     transition: all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1);
     position: relative; }
 
-  .navbar .navbar-collapse.collapse,
-  .navbar .navbar-collapse.collapse.in,
-  .navbar .navbar-collapse.collapsing {
-    display: none !important; }
+  .demo-header .motto {
+    padding-top: 30% !important; }
 
   body > .navbar-collapse {
     position: fixed;
@@ -2922,8 +2940,8 @@ textarea.form-control {
     width: 100%; }
 
   .modal-footer .btn-simple {
-    padding: 15px; } }
-@media (max-width: 768px) {
+    padding: 15px; }
+
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
