@@ -225,6 +225,12 @@
     margin-top: -100px;
     min-height: 600px;
 }
+.demo-height{
+    min-height: 102vh;
+}
+.demo-height .motto{
+    padding-top: 20% !important;
+}
 .demo-header-image{
     background-image: url('../img/city.jpg');
 }
