@@ -225,6 +225,12 @@
     margin-top: -100px;
     min-height: 600px;
 }
+.demo-height{
+    min-height: 102vh;
+}
+.demo-height .motto{
+    padding-top: 20% !important;
+}
 .demo-header-image{
     background-image: url('../img/city.jpg');
 }
@@ -281,7 +287,8 @@
 }
 
 @media screen{
-    .btn, .btn-morphing{
+    .section-buttons .btn,
+    .section-buttons .btn-morphing{
         margin-bottom: 10px;
     }
     .parallax .motto{
@@ -584,7 +591,7 @@
         -ms-backface-visibility: visible;
         backface-visibility: visible;
     }
-    .rotating-car .back {
+    .rotating-card .back {
         visibility: hidden;
         -ms-transition: all 0.2s cubic-bezier(.92,.01,.83,.67);
     }
@@ -598,7 +605,11 @@
 }
 
 .fixed-section{
-    margin-top: 90px;
+    max-height: 71vh;
+    /*overflow: scroll;*/
+}
+.fixed-section ul{
+    margin-left: -40px !important;
 }
 .fixed-section ul li{
     list-style: none;
@@ -618,15 +629,27 @@
     width: 200px;
     margin-top: 0;
 }
+.affix {
+  position: fixed;
+  top: 100px;
+}
+
+.affix-top {
+  position: absolute;
+}
+
 
 
 /* prettyprint */
-.presentation pre.prettyprint{
-    background-color: transparent;
-    border: 0px !important;
-    margin-bottom: 0;
+ pre.prettyprint{
+    background-color: #eee !important;
+    margin-bottom: 30px;
     margin-top: 30px;
+    padding: 20px !important;
+    font-size: 13px;
     text-align: left;
+    border-radius: 4px !important;
+    border: 1px transparent !important;
 }
 .presentation .atv,
 .presentation .str{
@@ -947,14 +970,14 @@
 }
 
 /* for components and tutorial page */
-pre.prettyprint{
-    background-color: #FFFCF5;
-    border: 0px;
-    margin-bottom: 0;
-    margin-top: 20px;
-    padding: 20px;
-    text-align: left;
-}
+    /*pre.prettyprint{
+        background-color: #FFFCF5;
+        border: 0px;
+        margin-bottom: 0;
+        margin-top: 20px;
+        padding: 20px;
+        text-align: left;
+    }*/
 .atv, .str{
     color: #75c3b6;
 }
@@ -971,10 +994,10 @@ pre.prettyprint{
     color: #999;
 }
 .space-top{
-    margin-top: 50px;
+    margin-top: 30px;
 }
 .area-line{
-    border: 1px solid #999;
+    /*border: 1px solid #999;*/
     border-left: 0;
     border-right: 0;
     color: #666;

@@ -15,13 +15,15 @@
     height: 30px;
     top: 50%;
     width: 30px;
-    left: -30%;
+    left: 5px;
+    opacity: 0;
 }
 .carousel-control.right{
     height: 30px;
-    right: -30%;
+    right: 5px;
     top: 50%;
     width: 30px;
+    opacity: 0;
 }
 .carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .fa, .carousel-control .fa {
     display: inline-block;
@@ -58,4 +60,10 @@
 }
 .carousel-indicators .active{
     background-color: $danger-color;
+}
+.card-carousel:hover{
+    .carousel-control.right,
+    .carousel-control.left{
+        opacity: 1;
+    }
 }

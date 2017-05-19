@@ -4,8 +4,8 @@
 .page-header {
   background-size: cover;
   min-height: 570px;
-  margin-top: -83px;
-  padding-top: 83px; }
+  padding-top: 83px;
+  background-image: url(../img/wall-dark.jpg); }
 
 .page-header .motto {
   padding-top: 8%;
@@ -52,8 +52,7 @@
   min-height: 101vh;
   overflow: hidden;
   position: absolute;
-  width: 100%;
-  margin-top: -100px; }
+  width: 100%; }
 
 .register-background .filter-black::after {
   background-color: rgba(0, 0, 0, 0.5);
@@ -107,7 +106,7 @@
   background-image: url("../img/lamp.jpg");
   background-position: center center;
   background-size: cover;
-  height: 300px;
+  height: 350px;
   position: relative;
   margin-top: -110px; }
 
@@ -115,7 +114,7 @@
   background-color: rgba(0, 0, 0, 0.5);
   content: "";
   display: block;
-  height: 300px;
+  height: 350px;
   left: 0;
   position: absolute;
   top: 0;
@@ -141,10 +140,17 @@
 #following h3 {
   margin: 40px 0; }
 
+.profile-content .tab-content .tab-pane.active {
+  height: 200px; }
+
 .follows .unfollow {
   width: 15px; }
 
+#follows .follows .unfollow .checkbox {
+  margin-top: -15px; }
+
+#follows .follows h6 {
+  margin-top: 15px; }
+
 .follows hr {
   margin-top: 10px; }
-
-/*# sourceMappingURL=examples.css.map */

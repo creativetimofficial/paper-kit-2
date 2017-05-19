@@ -8,6 +8,7 @@
   vertical-align: middle;
   position: relative;
   padding-left: 10px;
+  width: 67%;
 }
 
 .checkbox label::before,
@@ -53,8 +54,7 @@
 //   outline-offset: -2px;
 // }
 
-.checkbox input[type="checkbox"]:checked + label::after,
-.checkbox input[type="checkbox"]:not(:disabled):hover + label::after{
+.checkbox input[type="checkbox"]:checked + label::after{
   font-family: 'FontAwesome';
   content: "\f00c";
 }
@@ -131,6 +131,7 @@
   vertical-align: middle;
   position: relative;
   padding-left: 10px;
+  width: 64%;
 }
 
 .radio label::before,
@@ -157,7 +158,6 @@
   background-color: transparent;
   transition: opacity 0.2s linear;
 }
-
 
 .radio input[type="radio"]:not(:disabled):hover + label::before{
     font-family: 'FontAwesome';
