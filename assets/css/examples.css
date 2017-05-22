@@ -4,6 +4,8 @@
 .page-header {
   background-size: cover;
   min-height: 570px;
+  margin-top: -83px;
+  padding-top: 83px;
   padding-top: 83px;
   background-image: url(../img/wall-dark.jpg); }
 
@@ -138,7 +140,7 @@
   min-height: 300px; }
 
 #following h3 {
-  margin: 40px 0; }
+  margin: 20px 0 40px 0; }
 
 .profile-content .tab-content .tab-pane.active {
   height: 200px; }
@@ -154,3 +156,9 @@
 
 .follows hr {
   margin-top: 10px; }
+
+@media (max-width: 979px) {
+  .fixed-top .navbar-collapse {
+    background-color: #FF8F5E;
+    width: 100%;
+    float: left; } }

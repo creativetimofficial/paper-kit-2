@@ -339,7 +339,7 @@ input.ct-red + span + label + span.switch-right {
     padding: 7px; }
   .btn i,
   .navbar .navbar-nav > li > a.btn i {
-    margin-right: 5px; }
+    margin: 0 5px; }
   .btn[class*="btn-outline-"],
   .navbar .navbar-nav > li > a.btn[class*="btn-outline-"] {
     background-image: none;
