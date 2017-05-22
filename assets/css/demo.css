@@ -16,7 +16,7 @@
 .tim-typo{
     padding-left: 25%;
     margin-bottom: 40px;
-    position: relative;   
+    position: relative;
 }
 .tim-typo .tim-note{
     bottom: 10px;
@@ -61,7 +61,7 @@
     display: block;
 }
 .navigation-example .img-src{
-    background-attachment: scroll; 
+    background-attachment: scroll;
 }
 
 .main{
@@ -89,7 +89,7 @@
     padding-top: 20px;
 }
 .subscribe-form .form-control{
-    
+
 }
 
 .space-100{
@@ -181,20 +181,20 @@
 .parallax{
   width:100%;
   height:570px;
- 
+
   display: block;
   background-attachment: fixed;
     background-repeat:no-repeat;
     background-size:cover;
     background-position: center center;
-  
+
 }
 
 .logo-container .logo{
     overflow: hidden;
     border-radius: 50%;
     border: 1px solid #333333;
-    width: 50px; 
+    width: 50px;
     float: left;
 }
 
@@ -328,7 +328,7 @@
     transition: all .2s;
 }
 .presentation{
-    
+
 }
 .presentation .section{
     padding: 100px 0;
@@ -391,7 +391,7 @@
 	position: absolute;
 	top: 0;
 	left: 0;
-	background-color: #FFF; 
+	background-color: #FFF;
     width: 100%;
     cursor: pointer;
     box-shadow: 10px 4px 14px rgba(0, 0, 0, 0.12);
@@ -406,7 +406,7 @@
 }
 
 .presentation .card-container:hover .front{
-    top: -10px; 
+    top: -10px;
 }
 
 .presentation .card-component img{
@@ -439,7 +439,7 @@
 }
 .presentation h4{
     font-size: 18px;
-    line-height: 24px;  
+    line-height: 24px;
 }
 .presentation .info h4{
     font-size: 24px;
@@ -512,13 +512,13 @@
      -o-transform-style: preserve-3d;
         transform-style: preserve-3d;
 
-    margin-top: 20px;    
+    margin-top: 20px;
   position: relative;
    background: none repeat scroll 0 0 #FFFFFF;
     border-radius: 20px;
-    color: #444444;    
+    color: #444444;
 }
-.rotating-card-container .rotate, 
+.rotating-card-container .rotate,
 .rotating-card .back{
     -webkit-transform: rotateY( 180deg );
     -moz-transform: rotateY( 180deg );
@@ -539,7 +539,7 @@
     -moz-backface-visibility: hidden;
     -o-backface-visibility: hidden;
     backface-visibility: hidden;
-    
+
     position: absolute;
     top: 0;
     left: 0;
@@ -569,8 +569,8 @@
 .rotating-card .image{
     border-radius: 20px 20px 0 0;
 }
-.rotating-card-container, 
-.rotating-card .front, 
+.rotating-card-container,
+.rotating-card .front,
 .rotating-card .back {
   width: 100%;
   min-height: 500px;
@@ -580,7 +580,7 @@
 
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
     .rotating-card .front, .rotating-card .back{
-        -ms-backface-visibility: visible;    
+        -ms-backface-visibility: visible;
         backface-visibility: visible;
     }
     .rotating-car .back {
@@ -595,9 +595,11 @@
         visibility: visible;
     }
 }
-
+.affix-top{
+    margin-top: 100px;
+}
 .fixed-section{
-    margin-top: 90px;
+    top: 200px;
 }
 .fixed-section ul li{
     list-style: none;
@@ -622,7 +624,7 @@
 /* prettyprint */
 .presentation pre.prettyprint{
     background-color: transparent;
-    border: 0px !important; 
+    border: 0px !important;
     margin-bottom: 0;
     margin-top: 30px;
     text-align: left;
@@ -662,7 +664,7 @@
     .presentation .section-images .image img{
         width: 100%;
     }
-        
+
 }
 .presentation .card-text-adjust{
     padding-left: 40px;
@@ -693,7 +695,7 @@
 }
 
 /*      layer animation          */
-    
+
 .layers-container{
     display: block;
     margin-top: 50px;
@@ -827,7 +829,7 @@
     transition: all .2s;
     position: relative;
     z-index: 20003;
-    
+
 }
 .container-right-click .card-price#card-price-big{
     margin-top: 40px;
@@ -837,7 +839,7 @@
     transition: all .2s;
       position: relative;
     z-index: 20003;
-    
+
 }
 .animated {
   -webkit-animation-duration: 1s;
@@ -948,7 +950,7 @@
 /* for components and tutorial page */
 pre.prettyprint{
     background-color: #FFFCF5;
-    border: 0px; 
+    border: 0px;
     margin-bottom: 0;
     margin-top: 20px;
     padding: 20px;
