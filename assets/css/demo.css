@@ -605,11 +605,18 @@
 }
 
 .fixed-section{
+    top: 90px;
     max-height: 71vh;
-    /*overflow: scroll;*/
+    overflow: scroll;
+    position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    bottom: auto;
 }
 .fixed-section ul{
-    margin-left: -40px !important;
+    padding: 0 !important;
 }
 .fixed-section ul li{
     list-style: none;
@@ -622,20 +629,6 @@
 }
 .fixed-section li a.active{
     color: #00bbff;
-}
-.fixed-section.float{
-    position: fixed;
-    top: 100px;
-    width: 200px;
-    margin-top: 0;
-}
-.affix {
-  position: fixed;
-  top: 100px;
-}
-
-.affix-top {
-  position: absolute;
 }
 
 
