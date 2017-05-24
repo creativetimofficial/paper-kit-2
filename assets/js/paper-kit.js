@@ -82,7 +82,7 @@ $(document).ready(function(){
     }).on('hidden.bs.collapse', function (){
         if($(document).scrollTop() < 50 ){
             $('.navbar').removeClass('no-transition');
-            $('nav').addClass('navbar-transparent');
+            $('nav:first-of-type').addClass('navbar-transparent');
     }
     });
 
