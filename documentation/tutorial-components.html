@@ -70,7 +70,7 @@
 					<!--what is row -->
 			            <div class="row tim-row">
 							<div class="col-lg-3 col-md-6">
-				                <div class="fixed-section">
+				                <div class="fixed-section affix">
 				                    <ul>
 				                        <li><a href="#buttons-row">Buttons</a></li>
 				                        <li><a href="#checkbox-row">Checkbox</a></li>
@@ -100,13 +100,10 @@
 			                    <p>
 			                    Using it is very simple and it will enable you to refresh you classic looking application. To get the desired effect you will also need to integrate JS plugins that take a little bit more effort. It the end the result will be worth it.
 			                    </p>
-			                </div>
-			            </div>
+
 			<!--         end row -->
 
 			<!--         usage row -->
-			            <div class="row tim-row">
-			                <div class="col-md-8 offset-md-2">
 								<h2 class="text-center">Getting Started</h2>
 								<legend></legend>
 				                <p class="space-top">
@@ -118,13 +115,9 @@
 				                <p>
 				                    The easiest way to start is to use our start-up template where all the files are already included and ready to use.
 				                </p>
-			                </div>
-			            </div>
 			<!--         end row -->
 
 			<!--         file structure row -->
-			            <div class="row tim-row">
-			                <div class="col-md-8 offset-md-2">
 								<h2 class="text-center">File Structure</h2>
 								<legend></legend>
 			                    <p class="space-top">
@@ -135,48 +128,44 @@
 			                        Let's take it one by one:
 			                    </p>
 								<pre class="prettyprint">
-	PAPER-KIT
-	├── CHANGELOG.md
-	├── LICENSE.md
-	├── README.md
-	├── assets
-	│   ├── css
-	│   │   ├── bootstrap-switch.css
-	│   │   ├── bootstrap.min.css
-	│   │   ├── demo.css
-	│   │   ├── examples.css
-	│   │   ├── paper-kit.css
-	│   │   └── paper-kit.css.map
-	│   ├── img
-	│   ├── js
-	│   │   ├── bootstrap-datetimepicker.min.js
-	│   │   ├── bootstrap-select.js
-	│   │   ├── bootstrap-switch.min.js
-	│   │   ├── bootstrap.min.js
-	│   │   ├── jquery-3.2.1.js
-	│   │   ├── jquery-ui-1.12.1.custom.min.js
-	│   │   ├── moment.min.js
-	│   │   ├── nouislider.js
-	│   │   ├── paper-kit.js
-	│   │   └── tether.min.js
-	│   └── sass
-	├── documentation
-	│   ├── style.css
-	│   ├── tutorial-components.html
-	│   └── tutorial.html
-	├── examples
-	│   ├── landing.html
-	│   ├── profile.html
-	│   └── register.html
-	├── index.html
-	└── template.html</pre>
-			                </div>
-			            </div>
+PAPER-KIT
+├── CHANGELOG.md
+├── LICENSE.md
+├── README.md
+├── assets
+│   ├── css
+│   │   ├── bootstrap-switch.css
+│   │   ├── bootstrap.min.css
+│   │   ├── demo.css
+│   │   ├── examples.css
+│   │   ├── paper-kit.css
+│   │   └── paper-kit.css.map
+│   ├── img
+│   ├── js
+│   │   ├── bootstrap-datetimepicker.min.js
+│   │   ├── bootstrap-select.js
+│   │   ├── bootstrap-switch.min.js
+│   │   ├── bootstrap.min.js
+│   │   ├── jquery-3.2.1.js
+│   │   ├── jquery-ui-1.12.1.custom.min.js
+│   │   ├── moment.min.js
+│   │   ├── nouislider.js
+│   │   ├── paper-kit.js
+│   │   └── tether.min.js
+│   └── sass
+├── documentation
+│   ├── style.css
+│   ├── tutorial-components.html
+│   └── tutorial.html
+├── examples
+│   ├── landing.html
+│   ├── profile.html
+│   └── register.html
+├── index.html
+└── template.html</pre>
 			<!--         end row -->
 
 			<!--         restyled components row -->
-			            <div class="row tim-row">
-			                <div class="col-md-8 offset-md-2">
 								<h2 class="text-center">Restyled Components</h2>
 								<legend></legend>
 			                    <p class="space-top">
@@ -200,12 +189,8 @@
 			                            <li> Carousel</li>
 			                        </ul>
 			                    </p>
-			                </div>
-			            </div>
 			<!--         end row -->
 
-			            <div class="row tim-row">
-			                <div class="col-md-8 offset-md-2">
 								<h2 class="text-center">New Components</h2>
 								<legend></legend>
 			                    <p class="space-top">
@@ -223,14 +208,10 @@
 			                    <p>
 			                        For more details regarding the components, go to our <a href="../index.html">components page</a>.
 			                    </p>
-			                </div>
-			            </div>
 			        <!-- end row -->
 
 
-	    <div class="row">
-	        <div class="col-md-8 offset-md-2">
-	            <div class="tim-container" style="min-height: 2000px;">
+	            <!-- <div class="tim-container" style="min-height: 2000px;"> -->
 
 	    	<!-- buttons row -->
 	        	<div class="tim-row" id="buttons-row">
@@ -250,13 +231,13 @@
 	                    <div class="area-line">
 						    <div id="buttonColor" class="">
 							    <pre class="prettyprint">
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-neutral&quot;&gt;Neutral&lt;/button&gt;</pre>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-primary&quot;&gt;Primary&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Info&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-success&quot;&gt;Success&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-warning&quot;&gt;Warning&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Danger&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-neutral&quot;&gt;Neutral&lt;/button&gt;</pre>
 						    </div>
 	                    </div>
 	                	<h4>Sizes</h4>
@@ -270,9 +251,9 @@
 	                    </a> -->
 	    <div id="buttonSize" >
 	    <pre class="prettyprint">
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-sm&quot;&gt;Small&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-round&quot;&gt;Regular&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;Large&lt;/button&gt;</pre>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-sm&quot;&gt;Small&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-round&quot;&gt;Regular&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;Large&lt;/button&gt;</pre>
 	    </div>
 	                    </div>
 	                <h4>Styles</h4>
@@ -290,11 +271,11 @@
 	                    </a> -->
 		    				<div id="buttonStyle" >
 		    					<pre class="prettyprint">
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Default&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-round&quot;&gt;Round&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-round&quot;&gt;&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt; With Icon&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-just-icon&quot;&gt;&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-link&quot;&gt;Simple&lt;/button&gt;</pre>
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info&quot;&gt;Default&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-round&quot;&gt;Round&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-round&quot;&gt;&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt; With Icon&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-just-icon&quot;&gt;&lt;i class=&quot;fa fa-heart&quot;&gt;&lt;/i&gt;&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-link&quot;&gt;Simple&lt;/button&gt;</pre>
 	    					</div>
 	                    </div>
 	                    <p class="space-top">
@@ -342,37 +323,37 @@
 	                </p>
 	    			<div id="checkboxDataAttribute">
 	    				<pre class="prettyprint">
-	&lt;div class=&quot;checkbox&quot;&gt;
-	    &lt;input id=&quot;checkbox1&quot; type=&quot;checkbox&quot;&gt;
-	    &lt;label for=&quot;checkbox1&quot;&gt;
-	        Unchecked
-	    &lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;checkbox&quot;&gt;
-	   &lt;input id=&quot;checkbox2&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
-	   &lt;label for=&quot;checkbox2&quot;&gt;
-	        Checked
-	    &lt;/label&gt;
-	 &lt;/div&gt;
-	&lt;div class=&quot;checkbox&quot;&gt;
-	    &lt;input id=&quot;checkbox3&quot; type=&quot;checkbox&quot; disabled=&quot;&quot;&gt;
-	    &lt;label for=&quot;checkbox3&quot;&gt;
-	        Disabled unchecked
-	    &lt;/label&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;checkbox&quot;&gt;
-	   &lt;input id=&quot;checkbox4&quot; type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
-	   &lt;label for=&quot;checkbox4&quot;&gt;
-	       Disabled checked
-	   &lt;/label&gt;
-	&lt;/div&gt;</pre>
+&lt;div class=&quot;checkbox&quot;&gt;
+    &lt;input id=&quot;checkbox1&quot; type=&quot;checkbox&quot;&gt;
+    &lt;label for=&quot;checkbox1&quot;&gt;
+        Unchecked
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+   &lt;input id=&quot;checkbox2&quot; type=&quot;checkbox&quot; checked=&quot;&quot;&gt;
+   &lt;label for=&quot;checkbox2&quot;&gt;
+        Checked
+    &lt;/label&gt;
+ &lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+    &lt;input id=&quot;checkbox3&quot; type=&quot;checkbox&quot; disabled=&quot;&quot;&gt;
+    &lt;label for=&quot;checkbox3&quot;&gt;
+        Disabled unchecked
+    &lt;/label&gt;
+&lt;/div&gt;
+&lt;div class=&quot;checkbox&quot;&gt;
+   &lt;input id=&quot;checkbox4&quot; type=&quot;checkbox&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+   &lt;label for=&quot;checkbox4&quot;&gt;
+       Disabled checked
+   &lt;/label&gt;
+&lt;/div&gt;</pre>
 	    		</div>
 	                <p>Or can be called via Javascript:
 
 	                </p>
 	    			<div id="checkboxJavascript" >
 	    				<pre class="prettyprint">
-	$('.checkbox').checkbox();</pre>
+$('.checkbox').checkbox();</pre>
 	    			</div>
 	        </div>
 	    <!-- end row -->
@@ -416,41 +397,41 @@
 	                <!-- <p>Usage can be done via Data Attributes: <a data-target="#radioDataAttribute" href="javascript: void(0);" data-toggle="collapse">See example.</a></p> -->
 	    			<div id="radioDataAttribute">
 	    				<pre class="prettyprint">
-	&lt;div class=&quot;radio&quot;&gt;
-	   &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; id=&quot;radio1&quot; value=&quot;option1&quot;&gt;
-	   &lt;label for=&quot;radio1&quot;&gt;
-		Radio is off
-	   &lt;/label&gt;
-	&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+   &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; id=&quot;radio1&quot; value=&quot;option1&quot;&gt;
+   &lt;label for=&quot;radio1&quot;&gt;
+	Radio is off
+   &lt;/label&gt;
+&lt;/div&gt;
 
-	&lt;div class=&quot;radio&quot;&gt;
-	   &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; id=&quot;radio2&quot; value=&quot;option2&quot; checked=&quot;&quot;&gt;
-	   &lt;label for=&quot;radio2&quot;&gt;
-		Radio is on
-	   &lt;/label&gt;
-	&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+   &lt;input type=&quot;radio&quot; name=&quot;radio1&quot; id=&quot;radio2&quot; value=&quot;option2&quot; checked=&quot;&quot;&gt;
+   &lt;label for=&quot;radio2&quot;&gt;
+	Radio is on
+   &lt;/label&gt;
+&lt;/div&gt;
 
-	&lt;div class=&quot;radio&quot;&gt;
-	   &lt;input type=&quot;radio&quot; name=&quot;radio3&quot; id=&quot;radio3&quot; value=&quot;option3&quot; disabled=&quot;&quot;&gt;
-	   &lt;label for=&quot;radio3&quot;&gt;
-		Disabled radio is off
-	   &lt;/label&gt;
-	&lt;/div&gt;
+&lt;div class=&quot;radio&quot;&gt;
+   &lt;input type=&quot;radio&quot; name=&quot;radio3&quot; id=&quot;radio3&quot; value=&quot;option3&quot; disabled=&quot;&quot;&gt;
+   &lt;label for=&quot;radio3&quot;&gt;
+	Disabled radio is off
+   &lt;/label&gt;
+&lt;/div&gt;
 
-	&lt;div class=&quot;radio&quot;&gt;
-	   &lt;input type=&quot;radio&quot; name=&quot;radio4&quot; id=&quot;radio4&quot; value=&quot;option4&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
-	   &lt;label for=&quot;radio4&quot;&gt;
-		Disabled radio is on
-	   &lt;/label&gt;
-	&lt;/div&gt;</pre>
+&lt;div class=&quot;radio&quot;&gt;
+   &lt;input type=&quot;radio&quot; name=&quot;radio4&quot; id=&quot;radio4&quot; value=&quot;option4&quot; checked=&quot;&quot; disabled=&quot;&quot;&gt;
+   &lt;label for=&quot;radio4&quot;&gt;
+	Disabled radio is on
+   &lt;/label&gt;
+&lt;/div&gt;</pre>
 	    </div>
 	                <p>Or can be called via Javascript:  </p>
 	    			<div id="radioJavascript">
 	    				<pre class="prettyprint">
-	$('.radio').radio();</pre>
+$('.radio').radio();</pre>
 	    			</div>
 	        </div>
-	    </div>
+	    <!-- </div> -->
 	    <!-- end row -->
 
 	    <!-- dropdown row -->
@@ -484,22 +465,22 @@
 	            <div class="area-line">
 	    			<div id="dropdown">
 	    				<pre class="prettyprint">
-	&lt;div class=&quot;dropdown&quot;&gt;
-	    &lt;a href=&quot;#&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
-	        Dropdown
-	        &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;
-	    &lt;/a&gt;
-	    &lt;ul class=&quot;dropdown-menu &quot;&gt;
-	        &lt;li class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
-	        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
-	        &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
-	        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
-	        &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
-	        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Another separated link&lt;/a&gt;&lt;/li&gt;
-	    &lt;/ul&gt;
-	&lt;/div&gt;</pre>
+&lt;div class=&quot;dropdown&quot;&gt;
+    &lt;a href=&quot;#&quot; class=&quot;btn btn-default dropdown-toggle&quot; data-toggle=&quot;dropdown&quot;&gt;
+        Dropdown
+        &lt;b class=&quot;caret&quot;&gt;&lt;/b&gt;
+    &lt;/a&gt;
+    &lt;ul class=&quot;dropdown-menu &quot;&gt;
+        &lt;li class=&quot;dropdown-header&quot;&gt;Dropdown header&lt;/li&gt;
+        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Something else here&lt;/a&gt;&lt;/li&gt;
+        &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Separated link&lt;/a&gt;&lt;/li&gt;
+        &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+        &lt;li class=&quot;dropdown-item&quot;&gt;&lt;a href=&quot;#&quot;&gt;Another separated link&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;</pre>
 	    </div>
 	            </div>
 
@@ -543,32 +524,32 @@
 	                <div class="area-line">
 	        <div id="inputs">
 	    <pre class="prettyprint">
-	&lt;div class=&quot;row&quot;&gt;
-	    &lt;div class=&quot;col-md-6&quot;&gt;
-	        &lt;div class=&quot;form-group&quot;&gt;
-	            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Default&quot;&gt;
-	        &lt;/div&gt;
-	    &lt;/div&gt;
-	    &lt;div class=&quot;col-md-6&quot;&gt;
-	        &lt;div class=&quot;form-group has-success&quot;&gt;
-	            &lt;input type=&quot;text&quot; class=&quot;form-control form-control-success&quot; id=&quot;inputSuccess1&quot; placeholder=&quot;Success&quot;&gt;
-	        &lt;/div&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;
-	&lt;div class=&quot;row&quot;&gt;
-	    &lt;div class=&quot;col-md-6&quot;&gt;
-	        &lt;div class=&quot;form-group has-danger&quot;&gt;
-	            &lt;input type=&quot;text&quot; class=&quot;form-control form-control-danger&quot; id=&quot;inputDanger1&quot; placeholder=&quot;Error&quot;&gt;
-	            &lt;div class=&quot;form-control-feedback&quot;&gt;Sorry, that username's taken. Try another?&lt;/div&gt;
-	        &lt;/div&gt;
-	    &lt;/div&gt;
-	    &lt;div class=&quot;col-md-6&quot;&gt;
-	        &lt;div class=&quot;input-group&quot;&gt;
-	            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot;&gt;
-	            &lt;span class=&quot;input-group-addon&quot; id=&quot;basic-addon1&quot;&gt;&lt;i class=&quot;fa fa-group&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-	        &lt;/div&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;</pre>
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;form-group&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Default&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;form-group has-success&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control form-control-success&quot; id=&quot;inputSuccess1&quot; placeholder=&quot;Success&quot;&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;form-group has-danger&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control form-control-danger&quot; id=&quot;inputDanger1&quot; placeholder=&quot;Error&quot;&gt;
+            &lt;div class=&quot;form-control-feedback&quot;&gt;Sorry, that username's taken. Try another?&lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;col-md-6&quot;&gt;
+        &lt;div class=&quot;input-group&quot;&gt;
+            &lt;input type=&quot;text&quot; class=&quot;form-control&quot; placeholder=&quot;Username&quot; aria-describedby=&quot;basic-addon1&quot;&gt;
+            &lt;span class=&quot;input-group-addon&quot; id=&quot;basic-addon1&quot;&gt;&lt;i class=&quot;fa fa-group&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
 	    </div>
 	    	</div>
 	    </div>
@@ -585,7 +566,7 @@
 	        <div class="area-line">
 	    <div id="textarea">
 	    <pre class="prettyprint">
-	&lt;textarea class=&quot;form-control&quot; rows=&quot;4&quot; placeholder=&quot;Tell us your thoughts&quot;&gt;&lt;/textarea&gt;</pre>
+&lt;textarea class=&quot;form-control&quot; rows=&quot;4&quot; placeholder=&quot;Tell us your thoughts&quot;&gt;&lt;/textarea&gt;</pre>
 	    </div>
 	        </div>
 	    </div>
@@ -637,35 +618,35 @@
 
 	    <div id="navbarCode">
 	    <pre class="prettyprint">
-	&lt;nav class=&quot;navbar navbar-toggleable-md navbar-default&quot;&gt;
-	    &lt;button class=&quot;navbar-toggler navbar-toggler-right&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarNavDropdown&quot; aria-controls=&quot;navbarNavDropdown&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
-	        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
-	    &lt;/button&gt;
-	    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
-	    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNavDropdown&quot;&gt;
-	        &lt;ul class=&quot;navbar-nav&quot;&gt;
-	            &lt;li class=&quot;nav-item active&quot;&gt;
-	                &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Work in progress... &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
-	            &lt;/li&gt;
-	            &lt;li class=&quot;nav-item&quot;&gt;
-	                &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
-	            &lt;/li&gt;
-	            &lt;li class=&quot;nav-item&quot;&gt;
-	                &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
-	            &lt;/li&gt;
-	            &lt;li class=&quot;nav-item dropdown&quot;&gt;
-	                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;http://example.com&quot; id=&quot;navbarDropdownMenuLink&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
-	                    Dropdown link
-	                &lt;/a&gt;
-	                &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdownMenuLink&quot;&gt;
-	                    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
-	                    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
-	                    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
-	                &lt;/div&gt;
-	            &lt;/li&gt;
-	        &lt;/ul&gt;
-	    &lt;/div&gt;
-	&lt;/nav&gt;</pre>
+&lt;nav class=&quot;navbar navbar-toggleable-md navbar-default&quot;&gt;
+    &lt;button class=&quot;navbar-toggler navbar-toggler-right&quot; type=&quot;button&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#navbarNavDropdown&quot; aria-controls=&quot;navbarNavDropdown&quot; aria-expanded=&quot;false&quot; aria-label=&quot;Toggle navigation&quot;&gt;
+        &lt;span class=&quot;navbar-toggler-icon&quot;&gt;&lt;/span&gt;
+    &lt;/button&gt;
+    &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Navbar&lt;/a&gt;
+    &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;navbarNavDropdown&quot;&gt;
+        &lt;ul class=&quot;navbar-nav&quot;&gt;
+            &lt;li class=&quot;nav-item active&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Work in progress... &lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; href=&quot;#&quot;&gt;Link&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;http://example.com&quot; id=&quot;navbarDropdownMenuLink&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
+                    Dropdown link
+                &lt;/a&gt;
+                &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdownMenuLink&quot;&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+                    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
+                &lt;/div&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/nav&gt;</pre>
 	    </div>
 	            </div>
 
@@ -888,42 +869,42 @@
 	        <div class="area-line">
 	    		<div id="navTabs">
 	    			<pre class="prettyprint">
-	&lt;!-- Nav tabs --&gt;
-	&lt;div class=&quot;nav-tabs-navigation&quot;&gt;
-	    &lt;div class=&quot;nav-tabs-wrapper&quot;&gt;
-	        &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
-	            &lt;li class=&quot;nav-item&quot;&gt;
-	                &lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot; role=&quot;tab&quot;&gt;Home&lt;/a&gt;
-	            &lt;/li&gt;
-	            &lt;li class=&quot;nav-item&quot;&gt;
-	                &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#profile&quot; role=&quot;tab&quot;&gt;Profile&lt;/a&gt;
-	            &lt;/li&gt;
-	            &lt;li class=&quot;nav-item&quot;&gt;
-	                &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#messages&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
-	            &lt;/li&gt;
-	            &lt;li class=&quot;nav-item dropdown&quot;&gt;
-	                &lt;a class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Settings&lt;/a&gt;
-	                &lt;ul class=&quot;dropdown-menu dropdown-menu-right dropdown-info&quot;&gt;
-	                    &lt;li class=&quot;dropdown-header&quot; data-toggle=&quot;tab&quot; href=&quot;#action&quot;&gt;Header&lt;/li&gt;
-	                    &lt;li class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; href=&quot;#action&quot;&gt;
-	                        &lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;
-	                    &lt;/li&gt;
-	                    &lt;li class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; href=&quot;#another-action&quot;&gt;
-	                        &lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;
-	                    &lt;/li&gt;
-	                &lt;/ul&gt;
-	            &lt;/li&gt;
-	        &lt;/ul&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;
-	&lt;!-- Tab panes --&gt;
-	&lt;div class=&quot;tab-content text-center&quot;&gt;
-	    &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;Here is information about home.&lt;/div&gt;
-	    &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;Here is your profile.&lt;/div&gt;
-	    &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;Here are your messages.&lt;/div&gt;
-	    &lt;div class=&quot;tab-pane&quot; id=&quot;action&quot; role=&quot;tabpanel&quot;&gt;Vestibulum ex velit, cursus in mauris in, egestas tempor orci.&lt;/div&gt;
-	    &lt;div class=&quot;tab-pane&quot; id=&quot;another-action&quot; role=&quot;tabpanel&quot;&gt;Ut sem metus, lacinia id lobortis vel, mollis ut quam.&lt;/div&gt;
-	&lt;/div&gt;</pre>
+&lt;!-- Nav tabs --&gt;
+&lt;div class=&quot;nav-tabs-navigation&quot;&gt;
+    &lt;div class=&quot;nav-tabs-wrapper&quot;&gt;
+        &lt;ul class=&quot;nav nav-tabs&quot; role=&quot;tablist&quot;&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#home&quot; role=&quot;tab&quot;&gt;Home&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#profile&quot; role=&quot;tab&quot;&gt;Profile&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;nav-item&quot;&gt;
+                &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#messages&quot; role=&quot;tab&quot;&gt;Messages&lt;/a&gt;
+            &lt;/li&gt;
+            &lt;li class=&quot;nav-item dropdown&quot;&gt;
+                &lt;a class=&quot;nav-link dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot; role=&quot;button&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;Settings&lt;/a&gt;
+                &lt;ul class=&quot;dropdown-menu dropdown-menu-right dropdown-info&quot;&gt;
+                    &lt;li class=&quot;dropdown-header&quot; data-toggle=&quot;tab&quot; href=&quot;#action&quot;&gt;Header&lt;/li&gt;
+                    &lt;li class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; href=&quot;#action&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;Action&lt;/a&gt;
+                    &lt;/li&gt;
+                    &lt;li class=&quot;dropdown-item&quot; data-toggle=&quot;tab&quot; href=&quot;#another-action&quot;&gt;
+                        &lt;a href=&quot;#&quot;&gt;Another action&lt;/a&gt;
+                    &lt;/li&gt;
+                &lt;/ul&gt;
+            &lt;/li&gt;
+        &lt;/ul&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;!-- Tab panes --&gt;
+&lt;div class=&quot;tab-content text-center&quot;&gt;
+    &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;Here is information about home.&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;Here is your profile.&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;Here are your messages.&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;action&quot; role=&quot;tabpanel&quot;&gt;Vestibulum ex velit, cursus in mauris in, egestas tempor orci.&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;another-action&quot; role=&quot;tabpanel&quot;&gt;Ut sem metus, lacinia id lobortis vel, mollis ut quam.&lt;/div&gt;
+&lt;/div&gt;</pre>
 	    	</div>
 	    </div>
 	</div>
@@ -958,25 +939,25 @@
 	            <div class="area-line">
 	    			<div id="navPills" >
 	    				<pre class="prettyprint">
-	&lt;!-- Nav pills --&gt;
-	&lt;ul class=&quot;nav nav-pills nav-pills-danger&quot;&gt;
-	    &lt;li class=&quot;nav-item&quot;&gt;
-	        &lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#0&quot;&gt;Info&lt;/a&gt;
-	    &lt;/li&gt;
-	    &lt;li class=&quot;nav-item&quot;&gt;
-	        &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#0&quot;&gt;Menu&lt;/a&gt;
-	    &lt;/li&gt;
-	    &lt;li class=&quot;nav-item&quot;&gt;
-	        &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#0&quot;&gt;Concept&lt;/a&gt;
-	    &lt;/li&gt;
-	&lt;/ul&gt;
-	&lt;!-- Pill panes --&gt;
-	&lt;div class=&quot;tab-content&quot;&gt;
-	    &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
-	    &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
-	    &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
-	    &lt;div class=&quot;tab-pane&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;</pre>
+&lt;!-- Nav pills --&gt;
+&lt;ul class=&quot;nav nav-pills nav-pills-danger&quot;&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link active&quot; data-toggle=&quot;tab&quot; href=&quot;#0&quot;&gt;Info&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#0&quot;&gt;Menu&lt;/a&gt;
+    &lt;/li&gt;
+    &lt;li class=&quot;nav-item&quot;&gt;
+        &lt;a class=&quot;nav-link&quot; data-toggle=&quot;tab&quot; href=&quot;#0&quot;&gt;Concept&lt;/a&gt;
+    &lt;/li&gt;
+&lt;/ul&gt;
+&lt;!-- Pill panes --&gt;
+&lt;div class=&quot;tab-content&quot;&gt;
+    &lt;div class=&quot;tab-pane active&quot; id=&quot;home&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;profile&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;messages&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;tab-pane&quot; id=&quot;settings&quot; role=&quot;tabpanel&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
 		    </div>
 		</div>
 	</div>
@@ -1031,45 +1012,45 @@
 	            <div class="area-line">
 	    			<div id="pagination">
 	    				<pre class="prettyprint">
-	&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
-	    &lt;ul class=&quot;pagination&quot;&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;
-	            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
-	                &lt;i class=&quot;fa fa-angle-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-	                &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
-	            &lt;/a&gt;
-	        &lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;
-	            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
-	                &lt;i class=&quot;fa fa-angle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
-	                &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
-	            &lt;/a&gt;
-	        &lt;/li&gt;
-	    &lt;/ul&gt;
-	&lt;/nav&gt;
-	&lt;br/&gt;
-	&lt;nav aria-label=&quot;...&quot;&gt;
-	    &lt;ul class=&quot;pagination&quot;&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;
-	            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
-	        &lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;page-item active&quot;&gt;
-	            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
-	        &lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
-	        &lt;li class=&quot;page-item&quot;&gt;
-	            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
-	        &lt;/li&gt;
-	    &lt;/ul&gt;
-	&lt;/nav&gt;</pre>
+&lt;nav aria-label=&quot;Page navigation example&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Previous&quot;&gt;
+                &lt;i class=&quot;fa fa-angle-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; aria-label=&quot;Next&quot;&gt;
+                &lt;i class=&quot;fa fa-angle-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;
+                &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;
+            &lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;
+&lt;br/&gt;
+&lt;nav aria-label=&quot;...&quot;&gt;
+    &lt;ul class=&quot;pagination&quot;&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot; tabindex=&quot;-1&quot;&gt;Previous&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item active&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;3&lt;span class=&quot;sr-only&quot;&gt;(current)&lt;/span&gt;&lt;/a&gt;
+        &lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;&lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;
+        &lt;li class=&quot;page-item&quot;&gt;
+            &lt;a class=&quot;page-link&quot; href=&quot;#&quot;&gt;Next&lt;/a&gt;
+        &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/nav&gt;</pre>
 	    </div>
 	            </div>
 	    </div>
@@ -1099,20 +1080,20 @@
 
 	    <div id="progressBars">
 	    <pre class="prettyprint">
-	&lt;div class=&quot;progress&quot;&gt;
-	    &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; style=&quot;width: 25%&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;&lt;br/&gt;
-	&lt;div class=&quot;progress&quot;&gt;
-	    &lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; style=&quot;width: 50%&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;&lt;br/&gt;
-	&lt;div class=&quot;progress&quot;&gt;
-	    &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; style=&quot;width: 80%&quot; aria-valuenow=&quot;80&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;&lt;br/&gt;
-	&lt;div class=&quot;progress&quot;&gt;
-	    &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 15%&quot; aria-valuenow=&quot;15&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
-	    &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; style=&quot;width: 30%&quot; aria-valuenow=&quot;30&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
-	    &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; style=&quot;width: 20%&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
-	&lt;/div&gt;</pre>
+&lt;div class=&quot;progress&quot;&gt;
+    &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; style=&quot;width: 25%&quot; aria-valuenow=&quot;25&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;br/&gt;
+&lt;div class=&quot;progress&quot;&gt;
+    &lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; style=&quot;width: 50%&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;br/&gt;
+&lt;div class=&quot;progress&quot;&gt;
+    &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; style=&quot;width: 80%&quot; aria-valuenow=&quot;80&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;&lt;br/&gt;
+&lt;div class=&quot;progress&quot;&gt;
+    &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; style=&quot;width: 15%&quot; aria-valuenow=&quot;15&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; style=&quot;width: 30%&quot; aria-valuenow=&quot;30&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; style=&quot;width: 20%&quot; aria-valuenow=&quot;20&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;</pre>
 	    </div>
 	             </div>
 	    </div>
@@ -1131,10 +1112,10 @@
 
 	    <div id="sliderMarkup">
 	    <pre class="prettyprint">
-	    &lt;!-- Markup --&gt;
-	&lt;div id=&quot;sliderRegular&quot; class=&quot;slider noUi-target noUi-ltr noUi-horizontal noUi-connect&quot;&gt;&lt;/div&gt;
+    &lt;!-- Markup --&gt;
+&lt;div id=&quot;sliderRegular&quot; class=&quot;slider noUi-target noUi-ltr noUi-horizontal noUi-connect&quot;&gt;&lt;/div&gt;
 
-	&lt;div id=&quot;sliderDouble&quot; class=&quot;slider slider-info noUi-target noUi-ltr noUi-horizontal noUi-background&quot;&gt;&lt;/div&gt;</pre>
+&lt;div id=&quot;sliderDouble&quot; class=&quot;slider slider-info noUi-target noUi-ltr noUi-horizontal noUi-background&quot;&gt;&lt;/div&gt;</pre>
 	    </div>
 	            </div>
 	    </div>
@@ -1155,12 +1136,12 @@
 
 	    		<div id="labels">
 	    			<pre class="prettyprint">
-	&lt;span class=&quot;label label-default&quot;&gt;Default&lt;/span&gt;
-	&lt;span class=&quot;label label-primary&quot;&gt;Primary&lt;/span&gt;
-	&lt;span class=&quot;label label-info&quot;&gt;Info&lt;/span&gt;
-	&lt;span class=&quot;label label-success&quot;&gt;Success&lt;/span&gt;
-	&lt;span class=&quot;label label-warning&quot;&gt;Warning&lt;/span&gt;
-	&lt;span class=&quot;label label-danger&quot;&gt;Danger&lt;/span&gt;</pre>
+&lt;span class=&quot;label label-default&quot;&gt;Default&lt;/span&gt;
+&lt;span class=&quot;label label-primary&quot;&gt;Primary&lt;/span&gt;
+&lt;span class=&quot;label label-info&quot;&gt;Info&lt;/span&gt;
+&lt;span class=&quot;label label-success&quot;&gt;Success&lt;/span&gt;
+&lt;span class=&quot;label label-warning&quot;&gt;Warning&lt;/span&gt;
+&lt;span class=&quot;label label-danger&quot;&gt;Danger&lt;/span&gt;</pre>
 	    		</div>
 	        </div>
 	    </div>
@@ -1186,31 +1167,31 @@
 	        <div class="area-line">
 	    		<div id="datepicker">
 	    			<pre class="prettyprint">
-	    &lt;!-- markup --&gt;
-	&lt;div class=&quot;form-group&quot;&gt;
-	    &lt;div class='input-group date' id='datetimepicker'&gt;
-	        &lt;input type='text' class=&quot;form-control datetimepicker&quot; placeholder=&quot;05/08/2017&quot; /&gt;
-	        &lt;span class=&quot;input-group-addon&quot;&gt;
-	            &lt;span class=&quot;glyphicon glyphicon-calendar&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
-	        &lt;/span&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;
-	    &lt;!-- javascript --&gt;
-	$('#datetimepicker').datetimepicker({
-		icons: {
-			time: "fa fa-clock-o",
-			date: "fa fa-calendar",
-			up: "fa fa-chevron-up",
-			down: "fa fa-chevron-down",
-			previous: 'fa fa-chevron-left',
-			next: 'fa fa-chevron-right',
-			today: 'fa fa-screenshot',
-			clear: 'fa fa-trash',
-			close: 'fa fa-remove'
-		},
-		debug: true
+    &lt;!-- markup --&gt;
+&lt;div class=&quot;form-group&quot;&gt;
+    &lt;div class='input-group date' id='datetimepicker'&gt;
+        &lt;input type='text' class=&quot;form-control datetimepicker&quot; placeholder=&quot;05/08/2017&quot; /&gt;
+        &lt;span class=&quot;input-group-addon&quot;&gt;
+            &lt;span class=&quot;glyphicon glyphicon-calendar&quot;&gt;&lt;i class=&quot;fa fa-calendar&quot; aria-hidden=&quot;true&quot;&gt;&lt;/i&gt;&lt;/span&gt;
+        &lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+    &lt;!-- javascript --&gt;
+$('#datetimepicker').datetimepicker({
+	icons: {
+		time: "fa fa-clock-o",
+		date: "fa fa-calendar",
+		up: "fa fa-chevron-up",
+		down: "fa fa-chevron-down",
+		previous: 'fa fa-chevron-left',
+		next: 'fa fa-chevron-right',
+		today: 'fa fa-screenshot',
+		clear: 'fa fa-trash',
+		close: 'fa fa-remove'
+	},
+	debug: true
 
-	});
+});
 
 	</pre>
 	    </div>
@@ -1255,34 +1236,34 @@
 	        <div class="area-line">
 	    		<div id="modals">
 	    			<pre class="prettyprint">
-	&lt;!-- Button trigger modal --&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-default btn-round&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;
-	    Launch demo modal
-	&lt;/button&gt;
-	&lt;!-- Modal --&gt;
-	&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
-	    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
-	        &lt;div class=&quot;modal-content&quot;&gt;
-	            &lt;div class=&quot;modal-header&quot;&gt;
-	                &lt;h5 class=&quot;modal-title text-center&quot; id=&quot;exampleModalLabel&quot;&gt;Modal title&lt;/h5&gt;
-	                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
-	                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
-	                &lt;/button&gt;
-	            &lt;/div&gt;
-	            &lt;div class=&quot;modal-body&quot;&gt; Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
-	            &lt;/div&gt;
-	            &lt;div class=&quot;modal-footer&quot;&gt;
-	                &lt;div class=&quot;left-side&quot;&gt;
-	                    &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Never mind&lt;/button&gt;
-	                &lt;/div&gt;
-	                &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
-	                &lt;div class=&quot;right-side&quot;&gt;
-	                    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-link&quot;&gt;Delete&lt;/button&gt;
-	                &lt;/div&gt;
-	            &lt;/div&gt;
-	        &lt;/div&gt;
-	    &lt;/div&gt;
-	&lt;/div&gt;</pre>
+&lt;!-- Button trigger modal --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-outline-default btn-round&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;
+    Launch demo modal
+&lt;/button&gt;
+&lt;!-- Modal --&gt;
+&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; tabindex=&quot;-1&quot; role=&quot;dialog&quot; aria-labelledby=&quot;exampleModalLabel&quot; aria-hidden=&quot;true&quot;&gt;
+    &lt;div class=&quot;modal-dialog&quot; role=&quot;document&quot;&gt;
+        &lt;div class=&quot;modal-content&quot;&gt;
+            &lt;div class=&quot;modal-header&quot;&gt;
+                &lt;h5 class=&quot;modal-title text-center&quot; id=&quot;exampleModalLabel&quot;&gt;Modal title&lt;/h5&gt;
+                &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot; aria-label=&quot;Close&quot;&gt;
+                    &lt;span aria-hidden=&quot;true&quot;&gt;&amp;times;&lt;/span&gt;
+                &lt;/button&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-body&quot;&gt; Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean. A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth. Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.
+            &lt;/div&gt;
+            &lt;div class=&quot;modal-footer&quot;&gt;
+                &lt;div class=&quot;left-side&quot;&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-link&quot; data-dismiss=&quot;modal&quot;&gt;Never mind&lt;/button&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;divider&quot;&gt;&lt;/div&gt;
+                &lt;div class=&quot;right-side&quot;&gt;
+                    &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-link&quot;&gt;Delete&lt;/button&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</pre>
 	    </div>
 	        </div>
 	    </div>
@@ -1299,11 +1280,11 @@
 	        <div class="area-line">
 				<div id="tooltipMarkup">
 					<pre class="prettyprint">
-	    &lt;!-- Markup --&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-round&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;On bottom&lt;/button&gt;
+    &lt;!-- Markup --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-round&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Tooltip on bottom&quot;&gt;On bottom&lt;/button&gt;
 
-	    &lt;!-- Javascript --&gt;
-	$('[data-toggle=&quot;tooltip&quot;]').tooltip();</pre>
+    &lt;!-- Javascript --&gt;
+$('[data-toggle=&quot;tooltip&quot;]').tooltip();</pre>
 	    		</div>
 	        </div>
 	    </div>
@@ -1321,12 +1302,12 @@
 	        <div class="area-line">
 	    		<div id="popover">
 	    			<pre class="prettyprint">
-		&lt;!-- markup --&gt;
-	&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-title=&quot;Popover on bottom&quot; data-content=&quot;Here will be some very useful information about his popover.&quot;&gt;on bottom&lt;/button&gt;
+	&lt;!-- markup --&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-container=&quot;body&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-title=&quot;Popover on bottom&quot; data-content=&quot;Here will be some very useful information about his popover.&quot;&gt;on bottom&lt;/button&gt;
 
-		&lt;!-- javascript --&gt;
+	&lt;!-- javascript --&gt;
 
-	pk.initPopovers();</pre>
+pk.initPopovers();</pre>
 	    		</div>
 	        </div>
 	    </div>
@@ -1341,9 +1322,9 @@
 	    </div>
 	    <!-- end row -->
 
-	    </div>
 	                <!-- end container -->
-	            </div>
+				</div>
+		   </div>
 	        </div>
 	        </div>
 	    </div>

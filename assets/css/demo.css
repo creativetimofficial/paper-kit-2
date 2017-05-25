@@ -605,9 +605,8 @@
 }
 
 .fixed-section{
-    top: 90px;
-    max-height: 71vh;
-    overflow: scroll;
+    top: 100px;
+    max-height: 77vh;
     position: -webkit-sticky;
     position: -moz-sticky;
     position: -ms-sticky;
