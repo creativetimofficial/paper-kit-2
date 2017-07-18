@@ -106,7 +106,6 @@
             }
         }
 }
-
 /*             Navigation Pills               */
 .nav-pills {
     > li + li {
@@ -118,7 +117,7 @@
         color: $default-color;
         font-weight: $font-weight-bold;
         margin-left: -1px;
-        padding: 5px 20px;
+        padding: 10px 25px;
 
     }
     > li.active > a,
@@ -285,7 +284,7 @@
 .pagination-danger > li:first-child > span,
 .pagination-danger > li:last-child > a,
 .pagination-danger > li:last-child > span{
-    border: 2px solid $danger-color;
+    border: 1px solid $danger-color;
     color: $danger-color;
 }
 

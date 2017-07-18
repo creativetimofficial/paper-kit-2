@@ -79,9 +79,8 @@
     }
 }
 
-@mixin btn-size($padding-vertical, $padding-horizontal, $font-size, $border, $line-height){
+@mixin btn-size($padding-vertical, $padding-horizontal, $font-size, $line-height){
    font-size: $font-size;
-   border-radius: $border;
    padding: $padding-vertical $padding-horizontal;
 
    &.btn-simple{

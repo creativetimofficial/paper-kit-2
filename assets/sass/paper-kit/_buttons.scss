@@ -2,9 +2,13 @@
 .navbar .navbar-nav > li > a.btn{
     box-sizing: border-box;
     border-width: $border-thick;
-    font-size: $font-size-base;
-    font-weight: $font-weight-semi;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
     padding: .5rem $padding-base-horizontal;
+    line-height: 1.5;
+    cursor: pointer;
+    text-transform: uppercase;
+
 
     &.btn-border,
     &.btn-link{
@@ -123,11 +127,10 @@
 }
 
 .btn-lg{
-   @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $border-radius-btn-large, $line-height-small);
-   font-weight: $font-weight-normal;
+   @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-medium, $line-height-small);
 }
 .btn-sm{
-    @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-btn-small, $line-height-small);
+    @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small);
 }
 .btn-wd {
     min-width: 140px;

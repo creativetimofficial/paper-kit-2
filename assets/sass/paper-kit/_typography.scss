@@ -56,7 +56,12 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     text-transform: uppercase;
 }
 blockquote{
-    font-style: italic;
+    border-bottom: 1px solid #CCC5B9;
+    border-top: 1px solid #CCC5B9;
+    font-weight: 300;
+    margin: 15px 0 10px;
+    text-align: center;
+    border-left: 0 none !important;
 }
 blockquote small{
     font-style: normal;

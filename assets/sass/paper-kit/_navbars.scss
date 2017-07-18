@@ -48,7 +48,9 @@
     .caret{
        @include center-item();
     }
-
+    &.navbar-transparent{
+        padding-top: 25px;
+    }
 
 }
 

@@ -2,6 +2,7 @@
 body{
     color: $font-color;
     font-size: $font-size-base;
+    font-weight: $font-weight-light;
     font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
 }
 a{
@@ -12,7 +13,7 @@ a{
      text-decoration: none;
   }
 
-  @include transition($fast-transition-time, linear);
+  // @include transition($fast-transition-time, linear);
 }
 hr{
     border-color: $medium-pale-bg;
