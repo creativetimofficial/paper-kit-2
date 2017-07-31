@@ -70,7 +70,7 @@
 					<!--what is row -->
 			            <div class="row tim-row">
 							<div class="col-lg-3 col-md-6">
-				                <div class="fixed-section affix">
+				                <div class="fixed-section">
 				                    <ul>
 				                        <li><a href="#buttons-row">Buttons</a></li>
 				                        <li><a href="#checkbox-row">Checkbox</a></li>
@@ -110,7 +110,7 @@
 				                The Paper Kit is built on top of Bootstrap 4, so you can safely use it on your existing or new Bootstrap project. No line of code from Bootstrap 4 was changed, so you don't have to worry about undesired effects in your work.
 				                </p>
 				                <p>
-				                    We provide all the necessary CSS resources. To get going, just include 'css/ct-paper.css' in your HTML template. Your project will get the new look.
+				                    We provide all the necessary CSS resources. To get going, just include 'css/paper-kit.css' in your HTML template. Your project will get the new look.
 				                </p>
 				                <p>
 				                    The easiest way to start is to use our start-up template where all the files are already included and ready to use.
@@ -163,7 +163,7 @@ PAPER-KIT
 │   └── register.html
 ├── index.html
 └── template.html</pre>
-			<!--         end row -->
+		<!--         end row -->
 
 			<!--         restyled components row -->
 								<h2 class="text-center">Restyled Components</h2>
@@ -214,7 +214,6 @@ PAPER-KIT
 	            <!-- <div class="tim-container" style="min-height: 2000px;"> -->
 
 	    	<!-- buttons row -->
-	        	<div class="tim-row" id="buttons-row">
 	                <h2>Buttons </h2>
 	                <legend></legend>
 	                <h4>Colors</h4>
@@ -242,9 +241,9 @@ PAPER-KIT
 	                    </div>
 	                	<h4>Sizes</h4>
 	                    <p class="space-top">Buttons come in all needed sizes:</p>
-						<button type="button" class="btn btn-danger btn-sm">Small</button>
-						<button type="button" class="btn btn-danger btn-round">Regular</button>
-						<button type="button" class="btn btn-danger btn-lg">Large</button>
+						<button type="button" class="btn btn-outline-danger btn-sm">Small</button>
+						<button type="button" class="btn btn-outline-danger">Regular</button>
+						<button type="button" class="btn btn-outline-danger btn-lg">Large</button>
 	                    <div class="area-line">
 	                    <!-- <a data-target="#buttonSize" href="javascript: void(0);" data-toggle="collapse">
 	                          See Full Implementation
@@ -252,7 +251,7 @@ PAPER-KIT
 	    <div id="buttonSize" >
 	    <pre class="prettyprint">
 &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-sm&quot;&gt;Small&lt;/button&gt;
-&lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-round&quot;&gt;Regular&lt;/button&gt;
+&lt;button type=&quot;button&quot; class=&quot;btn btn-danger&quot;&gt;Regular&lt;/button&gt;
 &lt;button type=&quot;button&quot; class=&quot;btn btn-danger btn-lg&quot;&gt;Large&lt;/button&gt;</pre>
 	    </div>
 	                    </div>
@@ -282,7 +281,6 @@ PAPER-KIT
 	                        Button groups, toolbars, and disabled state all work like they are supposed to.
 	                    </p>
 
-	        	</div>
 	    <!--     end row -->
 
 	    <!-- checkbox row -->
@@ -431,7 +429,6 @@ $('.checkbox').checkbox();</pre>
 $('.radio').radio();</pre>
 	    			</div>
 	        </div>
-	    <!-- </div> -->
 	    <!-- end row -->
 
 	    <!-- dropdown row -->
@@ -503,14 +500,14 @@ $('.radio').radio();</pre>
 		            	</div>
 		            	<div class="col-md-6">
 							<div class="form-group has-success">
-								<input type="text" class="form-control form-control-success" id="inputSuccess1" placeholder="Success">
+								<input type="text" class="form-control form-control-success" id="inputSuccess1" value="Success">
 							</div>
 		            	</div>
 	        		</div>
 	                <div class="row">
 		                <div class="col-md-6">
 							<div class="form-group has-danger">
-								<input type="text" class="form-control form-control-danger" id="inputDanger1" placeholder="Error">
+								<input type="text" class="form-control form-control-danger" id="inputDanger1" value="Error">
 								<div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
 							</div>
 		            	</div>
@@ -603,11 +600,16 @@ $('.radio').radio();</pre>
 							    	<a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							      		Dropdown link
 							    	</a>
-							    	<div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownMenuLink">
-							    		<a class="dropdown-item" href="#">Action</a>
-							    		<a class="dropdown-item" href="#">Another action</a>
-							    		<a class="dropdown-item" href="#">Something else here</a>
-							    	</div>
+									<ul class="dropdown-menu dropdown-menu-right">
+                                        <li class="dropdown-header">Dropdown header</li>
+                                        <li class="dropdown-item"><a href="#paper-kit">Action</a></li>
+                                        <li class="dropdown-item"><a href="#paper-kit">Another action</a></li>
+                                        <li class="dropdown-item"><a href="#paper-kit">Something else here</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li class="dropdown-item"><a href="#paper-kit">Separated link</a></li>
+                                        <div class="dropdown-divider"></div>
+                                        <li class="dropdown-item"><a href="#paper-kit">Another separated link</a></li>
+                                    </ul>
 								</li>
 							</ul>
 						</div>
@@ -638,11 +640,15 @@ $('.radio').radio();</pre>
                 &lt;a class=&quot;nav-link dropdown-toggle&quot; href=&quot;http://example.com&quot; id=&quot;navbarDropdownMenuLink&quot; data-toggle=&quot;dropdown&quot; aria-haspopup=&quot;true&quot; aria-expanded=&quot;false&quot;&gt;
                     Dropdown link
                 &lt;/a&gt;
-                &lt;div class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdownMenuLink&quot;&gt;
+                &lt;ul class=&quot;dropdown-menu&quot; aria-labelledby=&quot;navbarDropdownMenuLink&quot;&gt;
                     &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Action&lt;/a&gt;
                     &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another action&lt;/a&gt;
                     &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Something else here&lt;/a&gt;
-                &lt;/div&gt;
+	    	    &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+    		    &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Separated Link&lt;/a&gt;
+	    	    &lt;div class=&quot;dropdown-divider&quot;&gt;&lt;/div&gt;
+	            &lt;a class=&quot;dropdown-item&quot; href=&quot;#&quot;&gt;Another separated link&lt;/a&gt;
+                &lt;/ul&gt;
             &lt;/li&gt;
         &lt;/ul&gt;
     &lt;/div&gt;
@@ -1192,7 +1198,6 @@ $('#datetimepicker').datetimepicker({
 	debug: true
 
 });
-
 	</pre>
 	    </div>
 	        </div>
@@ -1319,16 +1324,17 @@ pk.initPopovers();</pre>
 	            <legend></legend>
 	            <p>
 	            The new Paper Kit notifications are looking fresh and clean. They go great with the navbar. If you want to see how we recommend using them, see on of the example pages <a href="../examples/landing.html">here.</a> </p>
-	    </div>
-	    <!-- end row -->
+			    </div>
+			    <!-- end row -->
 
+			    </div>
 	                <!-- end container -->
-				</div>
-		   </div>
-	        </div>
-	        </div>
+	        <!-- </div> -->
 	    </div>
 	</div>
+
+</div>
+</div>
 	<footer class="footer section-dark">
 		<div class="container">
 			<div class="row">
