@@ -54,6 +54,13 @@ $(document).ready(function(){
     if($(".tagsinput").length != 0){
         $(".tagsinput").tagsInput();
     }
+    if (window_width >= 768) {
+        big_image = $('.page-header[data-parallax="true"]');
+
+        if(big_image.length != 0){
+           $(window).on('scroll', pk.checkScrollForPresentationPage);
+        }
+    }
 
     if($("#datetimepicker").length != 0){
         $('#datetimepicker').datetimepicker({
@@ -68,7 +75,6 @@ $(document).ready(function(){
                 clear: 'fa fa-trash',
                 close: 'fa fa-remove'
             },
-            debug: true
 
         });
     };
@@ -82,7 +88,7 @@ $(document).ready(function(){
     }).on('hidden.bs.collapse', function (){
         if($(document).scrollTop() < 50 ){
             $('.navbar').removeClass('no-transition');
-            $('nav').addClass('navbar-transparent');
+            $('nav:first-of-type').addClass('navbar-transparent');
     }
     });
 
@@ -121,7 +127,7 @@ $(document).ready(function(){
             api.openPopup('twitter');
           },
           template: '<i class="fa fa-twitter"></i>',
-          url: 'http://demos.creative-tim.com/paper-kit-bs4/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit/index.html'
         });
     }
 
@@ -139,7 +145,7 @@ $(document).ready(function(){
             api.openPopup('twitter');
           },
           template: '<i class="fa fa-twitter"></i><p class="hidden-lg-up">Twitter</p>',
-          url: 'http://demos.creative-tim.com/paper-kit-bs4/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit/index.html'
         });
     }
 
@@ -156,7 +162,7 @@ $(document).ready(function(){
             api.openPopup('facebook');
           },
           template: '<i class="fa fa-facebook-square"></i>',
-          url: 'http://demos.creative-tim.com/paper-kit-bs4/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit/index.html'
         });
     }
 
@@ -173,7 +179,7 @@ $(document).ready(function(){
             api.openPopup('facebook');
           },
           template: '<i class="fa fa-facebook-square"></i><p class="hidden-lg-up">Facebook</p>',
-          url: 'http://demos.creative-tim.com/paper-kit-bs4/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit/index.html'
         });
     }
 
@@ -190,7 +196,7 @@ $(document).ready(function(){
             api.openPopup('linkedin');
           },
           template: '<i class="fa fa-linkedin"></i>',
-          url: 'http://demos.creative-tim.com/paper-kit-bs4/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit/index.html'
         });
     }
 
@@ -207,7 +213,7 @@ $(document).ready(function(){
             api.openPopup('linkedin');
           },
           template: '<i class="fa fa-linkedin"></i><p class="hidden-lg-up">LinkedIn</p>',
-          url: 'http://demos.creative-tim.com/paper-kit-bs4/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit/index.html'
         });
     }
 
@@ -304,6 +310,16 @@ pk = {
         }
 
     },
+
+    checkScrollForPresentationPage: debounce(function(){
+        oVal = ($(window).scrollTop() / 3);
+        big_image.css({
+            'transform':'translate3d(0,' + oVal +'px,0)',
+            '-webkit-transform':'translate3d(0,' + oVal +'px,0)',
+            '-ms-transform':'translate3d(0,' + oVal +'px,0)',
+            '-o-transform':'translate3d(0,' + oVal +'px,0)'
+        });
+    }, 4),
 
     checkScrollForTransparentNavbar: debounce(function() {
         	if($(document).scrollTop() > $(".navbar").attr("color-on-scroll") ) {
@@ -478,14 +494,3 @@ function debounce(func, wait, immediate) {
 		if (immediate && !timeout) func.apply(context, args);
 	};
 };
-
-    // Google analytics
-var _gaq = _gaq || [];
-_gaq.push(['_setAccount', 'UA-46172202-1']);
-_gaq.push(['_trackPageview']);
-
-(function() {
-var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-})();
