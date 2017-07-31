@@ -2,11 +2,11 @@
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea{
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    font-family: 'Montserrat', "Helvetica", Arial, sans-serif;
+    font-family: $font-family-sans-serif;
+    font-weight: $font-weight-light;
 }
 
 h1, .h1, h2, .h2, h3, .h3, h4, .h4{
-    font-weight: $font-weight-normal;
     margin: $margin-large-vertical 0 0;
 }
 h1, .h1 {
@@ -26,25 +26,22 @@ h4, .h4{
 }
 h5, .h5 {
     font-size: $font-size-h5;
-    font-weight: $font-weight-normal;
     line-height: 1.4em;
-    // margin-bottom: 15px;
 }
 h6, .h6{
     font-size: $font-size-h6;
     font-weight: $font-weight-bold;
     text-transform: uppercase;
+    line-height: 1.5em;
 }
 p{
     font-size: $font-paragraph;
     line-height: $line-height-general;
     margin-bottom: 5px;
-
 }
 
 h1 small, h2 small, h3 small, h4 small, h5 small, h6 small, .h1 small, .h2 small, .h3 small, .h4 small, .h5 small, .h6 small, h1 .small, h2 .small, h3 .small, h4 .small, h5 .small, h6 .small, .h1 .small, .h2 .small, .h3 .small, .h4 .small, .h5 .small, .h6 .small {
     color: $dark-gray;
-    font-weight: $font-weight-light;
     line-height: $line-height-general;
 }
 
@@ -67,21 +64,16 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         text-decoration: none;
     }
 }
-
-.info-title{
-    margin-bottom: 10px;
+.title{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
 }
-
 .title-uppercase{
     text-transform: uppercase;
 }
-blockquote{
-    border-bottom: 1px solid #CCC5B9;
-    border-top: 1px solid #CCC5B9;
-    font-weight: 300;
-    margin: 15px 0 10px;
-    text-align: center;
-    border-left: 0 none !important;
+.description{
+    color: $dark-gray;
 }
 blockquote small{
     font-style: normal;
@@ -90,19 +82,19 @@ blockquote small{
     color: $medium-gray;
 }
 .text-primary, .text-primary:hover{
-    color: $primary-states-color !important;
+    color: $primary-color !important;
 }
 .text-info, .text-info:hover{
-    color: $info-states-color !important;
+    color: $info-color !important;
 }
 .text-success, .text-success:hover{
-    color: $success-states-color !important;
+    color: $success-color !important;
 }
 .text-warning, .text-warning:hover{
-    color: $warning-states-color !important;
+    color: $warning-color !important;
 }
 .text-danger, .text-danger:hover{
-    color: $danger-states-color !important;
+    color: $danger-color !important;
 }
 .glyphicon{
     line-height: 1;

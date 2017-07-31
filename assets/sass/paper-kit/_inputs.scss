@@ -1,14 +1,14 @@
 .form-control::-moz-placeholder{
-   @include placeholder($medium-gray,1);
+   @include placeholder($placeholder-gray,1);
 }
 .form-control:-moz-placeholder{
-   @include placeholder($medium-gray,1);
+   @include placeholder($placeholder-gray,1);
 }
 .form-control::-webkit-input-placeholder{
-   @include placeholder(#ddd,1);
+   @include placeholder($placeholder-gray,1);
 }
 .form-control:-ms-input-placeholder{
-   @include placeholder($medium-gray,1);
+   @include placeholder($placeholder-gray,1);
 }
 
 .form-control {
@@ -40,8 +40,8 @@
     }
 
     .has-success &{
-        border: 1px solid $success-color;
-        color: $success-color;
+        border: 1px solid $table-line-color;
+        color: $font-color;
     }
     .has-success &:focus{
         border: 1px solid $success-color;

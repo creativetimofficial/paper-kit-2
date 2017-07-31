@@ -330,3 +330,56 @@
   z-index: 1;
   cursor: pointer;
 }
+.bootstrap-datetimepicker-widget{
+    opacity: 0;
+    -webkit-transform: translate3d(0px, -10px, 0px);
+    -moz-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0px, -10px, 0px);
+
+    &.top{
+        -webkit-transform: translate3d(0px, 0px, 0px);
+        -moz-transform: translate3d(0, 0px, 0);
+        -o-transform: translate3d(0, 0px, 0);
+        -ms-transform: translate3d(0, 0px, 0);
+        transform: translate3d(0px, 0px, 0px);
+    }
+    &.open{
+        opacity: 1;
+        -webkit-transform: translate3d(0, 10px, 0);
+        -moz-transform: translate3d(0, 10px, 0);
+        -o-transform: translate3d(0, 10px, 0);
+        -ms-transform: translate3d(0, 10px, 0);
+        transform: translate3d(0, 10px, 0);
+        transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
+    }
+}
+.bootstrap-datetimepicker-widget.open.top{
+    -webkit-transform: translate3d(0, -10px, 0);
+    -moz-transform: translate3d(0, -10px, 0);
+    -o-transform: translate3d(0, -10px, 0);
+    -ms-transform: translate3d(0, -10px, 0);
+    transform: translate3d(0, -10px, 0);
+
+    &:before{
+        border-top: 11px solid #DCD9D1;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 12px;
+        bottom: -12px;
+    }
+    &:after{
+        border-top: 11px solid #FFFCF5;
+        border-left: 11px solid transparent;
+        border-right: 11px solid transparent;
+        content: "";
+        display: inline-block;
+        position: absolute;
+        right: 12px;
+        bottom: -11px;
+    }
+}

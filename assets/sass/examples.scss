@@ -35,9 +35,15 @@
     text-align: left;
     z-index: 3;
     color: #fff;
+    position: relative;
+
 }
 .landing-section{
     padding: 100px 0;
+    z-index: 1;
+}
+.section-buttons{
+    z-index: 1;
 }
 .landing-section .btn-simple{
     padding: 0;
