@@ -1,10 +1,13 @@
-.btn,
-.navbar .navbar-nav > li > a.btn{
+.btn{
     box-sizing: border-box;
     border-width: $border-thick;
-    font-size: $font-size-base;
-    font-weight: $font-weight-semi;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
     padding: .5rem $padding-base-horizontal;
+    line-height: 1.75;
+    cursor: pointer;
+    text-transform: uppercase;
+
 
     &.btn-border,
     &.btn-link{
@@ -17,6 +20,7 @@
     &:hover,
     &:focus{
         outline: 0 !important;
+        @include box-shadow(none);
     }
     &:active,
     &.active,
@@ -25,17 +29,24 @@
          outline: 0 !important;
     }
 
-    &.btn-icon{
-        padding: $padding-base-vertical;
-    }
-
-    i{
-        margin-right: 5px;
-    }
-
     &[class*="btn-outline-"]{
         background-image: none;
         background-color: transparent;
+    }
+}
+.btn-just-icon{
+    border-radius: $border-radius-btn-large;
+    height: 40px;
+    width: 40px;
+    min-width: 40px;
+    padding: 8px;
+
+    &.btn-sm{
+        padding: 4px !important;
+    }
+    i{
+        font-size: $font-size-medium;
+        padding: 2px 0px;
     }
 }
 
@@ -49,12 +60,12 @@
 
 // Apply the mixin to the buttons
 //.btn-default { @include btn-styles($default-color, $default-states-color); }
-.navbar .navbar-nav > li > a.btn-primary, .btn-primary { @include btn-styles($primary-color, $primary-states-color); }
-.navbar .navbar-nav > li > a.btn-success, .btn-success { @include btn-styles($success-color, $success-states-color); }
-.navbar .navbar-nav > li > a.btn-info, .btn-info    { @include btn-styles($info-color, $info-states-color); }
-.navbar .navbar-nav > li > a.btn-warning, .btn-warning { @include btn-styles($warning-color, $warning-states-color); }
-.navbar .navbar-nav > li > a.btn-danger, .btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
-.navbar .navbar-nav > li > a.btn-neutral, .btn-neutral  { @include btn-styles($white-color, $default-states-color); }
+.btn-primary { @include btn-styles($primary-color, $primary-states-color); }
+.btn-success { @include btn-styles($success-color, $success-states-color); }
+.btn-info    { @include btn-styles($info-color, $info-states-color); }
+.btn-warning { @include btn-styles($warning-color, $warning-states-color); }
+.btn-danger  { @include btn-styles($danger-color, $danger-states-color); }
+.btn-neutral  { @include btn-styles($white-color, $default-states-color); }
 
 .btn-outline-default { @include btn-outline-styles($default-color, $default-states-color); }
 .btn-outline-primary { @include btn-outline-styles($primary-color, $primary-states-color); }
@@ -90,15 +101,6 @@
              color: $default-color;
         }
     }
-/*
-    &.btn-fill{
-        color: $default-color;
-    }
-    &.btn-fill:hover,
-    &.btn-fill:focus{
-        color: $default-states-color;
-    }
-*/
 
     &.btn-link:active,
     &.btn-link.active{
@@ -128,11 +130,10 @@
 }
 
 .btn-lg{
-   @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $border-radius-btn-large, $line-height-small);
-   font-weight: $font-weight-normal;
+   @include btn-size($padding-large-vertical, $padding-large-horizontal, $font-size-base, $line-height-small);
 }
 .btn-sm{
-    @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $border-radius-btn-small, $line-height-small);
+    @include btn-size($padding-small-vertical, $padding-small-horizontal, $font-size-small, $line-height-small);
 }
 .btn-wd {
     min-width: 140px;

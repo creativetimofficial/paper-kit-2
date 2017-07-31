@@ -2,21 +2,48 @@
     margin-bottom: 0;
 }
 .page-header{
+    background-color: #B2AFAB;
+    background-position: center center;
     background-size: cover;
-    min-height: 570px;
-    margin-top: -83px;
-    padding-top: 83px;
-    padding-top: 83px;
-    background-image: url(../img/wall-dark.jpg);
+    min-height: 100vh;
+    max-height: 999px;
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .filter::after{
+        background-color: rgba(0, 0, 0, 0.5);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    &.page-header-small{
+        min-height: 65vh !important;
+        max-height: 700px;
+    }
 }
 .page-header .motto{
-    padding-top: 8%;
     text-align: left;
     z-index: 3;
     color: #fff;
+    position: relative;
+
 }
 .landing-section{
     padding: 100px 0;
+    z-index: 1;
+}
+.section-buttons{
+    z-index: 1;
 }
 .landing-section .btn-simple{
     padding: 0;
@@ -48,26 +75,6 @@
 #register-navbar a{
     color: #FFF;
 }
-.register-background{
-    background-image: url('../img/landscape.jpg');
-    background-position: center center;
-    background-size: cover;
-    min-height: 101vh;
-    overflow: hidden;
-    position: absolute;
-    width: 100%;
-}
-.register-background .filter-black::after{
-    background-color: rgba(0, 0, 0, 0.5);
-    content: "";
-    display: block;
-    height: 100%;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
 .register-background .container{
     margin-top: 11%;
     position: relative;
@@ -83,15 +90,7 @@
 .register-footer .fa-heart{
     color: #EB5E28;
 }
-.register-card{
-    background-color: #FF8F5E;
-    border-radius: 8px;
-    color: #fff;
-    max-width: 350px;
-    margin: 20px 0 70px;
-    min-height: 400px;
-    padding: 30px;
-}
+
 .register-card label{
     margin-top: 15px;
 }
@@ -106,25 +105,6 @@
     text-align: center;
 }
 
-.profile-background{
-    background-image: url('../img/lamp.jpg');
-    background-position: center center;
-    background-size: cover;
-    height: 350px;
-    position: relative;
-    margin-top: -110px;
-}
-.profile-background .filter-black::after{
-    background-color: rgba(0, 0, 0, 0.5);
-    content: "";
-    display: block;
-    height: 350px;
-    left: 0;
-    position: absolute;
-    top: 0;
-    width: 100%;
-    z-index: 1;
-}
 .profile-content{
     position: relative;
 }

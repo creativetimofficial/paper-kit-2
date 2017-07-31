@@ -52,6 +52,8 @@
 .carousel-inner > .carousel-item > a > img{
     border-radius: $border-radius-extreme;
     box-shadow: 0 2px 2px rgba(204, 197, 185, 0.5);
+    height: 400px;
+    width: 100%;
 }
 .carousel-indicators{
     bottom: 0px;

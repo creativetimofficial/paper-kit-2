@@ -18,7 +18,7 @@
 }
 .section-light-brown{
     background-color: #D8C1AB;
-    color: $white-color;    
+    color: $white-color;
 }
 .section-brown{
     background-color: #A59E94;
@@ -35,4 +35,9 @@
 .section-dark{
     background-color: #1a1817;
     color: $white-color;
+
+    .title{
+        color: $white-color;
+        margin-bottom: 100px;
+    }
 }

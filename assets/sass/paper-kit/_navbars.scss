@@ -13,19 +13,26 @@
     transition: all 0.4s;
     -webkit-transition: all 0.4s;
     padding: 0;
+    box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 
     .navbar-brand{
         font-weight: $font-weight-bold;
         margin: $navbar-margin-brand;
-        padding: $navbar-padding-brand;
-        font-size: $font-size-large-navbar;
+        font-size: $font-size-base;
+        text-transform: uppercase;
+        padding: 20px 15px;
     }
     .navbar-nav{
         padding-left: 40px;
         .nav-item .nav-link {
-             line-height: 1.42857;
-             margin: $navbar-margin-a;
-             padding: $navbar-padding-a;
+            margin: $navbar-margin-a;
+            padding: $navbar-padding-a;
+            line-height: 1.6;
+            opacity: .8;
+            font-size: $font-size-small;
+            text-transform: uppercase;
+            font-weight: $font-weight-bold;
+            color: $default-color;
          }
         .nav-item .nav-link.btn{
              margin: $navbar-margin-a-btn;
@@ -48,7 +55,10 @@
     .caret{
        @include center-item();
     }
-
+    &.navbar-transparent{
+        padding-top: 25px;
+        box-shadow: none; 
+    }
 
 }
 
@@ -308,6 +318,7 @@
 }
 .navbar .navbar-burger{
     margin-top: 20px;
+    outline: none;
 }
 .navbar-toggler-icon{
     display: block;
