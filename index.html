@@ -68,33 +68,40 @@
                 <span class="navbar-toggler-bar"></span>
                 <span class="navbar-toggler-bar"></span>
             </button>
-            <div class="navbar-header">
-                <div class="logo-container">
-                    <div class="logo">
-                        <img src="assets/img/new_logo.png" alt="Creative Tim Logo" href="http://www.creative-tim.com" class="d-inline-block align-top">
-                    </div>
-                    <div class="brand">
-                        Creative Tim
-                  </div>
-                </div>
-            </div>
+            <a class="navbar-brand" href="www.creative-tim.com">Paper Kit 2 Free</a>
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
-                        <a href="paper-kit/examples/components.html" target="_blank" class="nav-link">Components</a>
+                        <a href="http://www.creative-tim.com/product/paper-kit" target="_blank" class="nav-link">Download</a>
                     </li>
                     <li class="nav-item">
-                        <a href="paper-kit/examples/tutorial.html" target="_blank" class="nav-link">Tutorial</a>
+                        <a href="documentation/tutorial-components.html" target="_blank" class="nav-link">Tutorial</a>
                     </li>
                     <li class="nav-item">
-                        <a href="http://www.creative-tim.com/product/paper-kit" target="_blank" class="btn btn-danger btn-round">Download</a>
+                        <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
+                            <i class="fa fa-twitter"></i>
+                            <p class="hidden-lg-up">Twitter</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Like us on Facebook" data-placement="bottom" href="https://www.facebook.com/CreativeTim" target="_blank">
+                            <i class="fa fa-facebook-square"></i>
+                            <p class="hidden-lg-up">Facebook</p>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" rel="tooltip" title="Follow us on Instagram" data-placement="bottom" href="https://www.instagram.com/CreativeTimOfficial" target="_blank">
+                            <i class="fa fa-instagram"></i>
+                            <p class="hidden-lg-up">Instagram</p>
+                        </a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
     <div class="wrapper">
-        <div class="demo-header demo-header-image">
+        <div class="page-header page-header-small" style="background-image: url('../assets/img/daniel-olahs.jpg');">
+            <div class="filter"></div>
             <div class="motto">
                 <h1 class="title-uppercase text-center">Paper Kit</h1>
                 <h3 class="text-center">Make your mark with a new design.</h3>
@@ -103,18 +110,18 @@
         <div class="main">
             <div class="section section-buttons">
                 <div class="container">
-                    <div class="title">
+                    <div class="tim-title">
                         <h2>Basic Elements</h2>
                     </div>
                     <div id="buttons">
-                        <div class="title">
+                        <div class="tim-title">
                             <h3>Buttons
                                 <br/>
                                 <small>Pick your style</small>
                             </h3>
                         </div>
                         <div class="row">
-                            <div class="col-md-8 offset-md-2">
+                            <div class="col-md-8">
                                 <button type="button" class="btn btn-info">Default</button>
                                 <button type="button" class="btn btn-info btn-round">Round</button>
                                 <button type="button" class="btn btn-info btn-round"><i class="fa fa-heart"></i> With Icon</button>
@@ -122,21 +129,21 @@
                                 <button type="button" class="btn btn-info btn-link">Simple</button>
                             </div>
                         </div>
-                        <div class="title">
+                        <div class="tim-title">
                             <h3><small>Pick your size</small></h3>
                         </div>
                         <div class="row">
-                            <div class="col-md-8 offset-md-2">
+                            <div class="col-md-8">
                                 <button type="button" class="btn btn-outline-danger btn-sm">Small</button>
-                                <button type="button" class="btn btn-outline-danger btn-round">Regular</button>
+                                <button type="button" class="btn btn-outline-danger">Regular</button>
                                 <button type="button" class="btn btn-outline-danger btn-lg">Large</button>
                             </div>
                         </div>
-                        <div class="title">
+                        <div class="tim-title">
                             <h3><small>Pick your color</small></h3>
                         </div>
                         <div class="row">
-							<div class="col-md-8 offset-md-2">
+							<div class="col-md-8">
 								<button type="button" class="btn btn-outline-default btn-round">Default</button>
 								<button type="button" class="btn btn-outline-primary btn-round">Primary</button>
                                 <button type="button" class="btn btn-outline-info btn-round">Info</button>
@@ -148,7 +155,7 @@
                         </div>
                         <br/>
                         <div class="row">
-                            <div class="col-md-8 offset-md-2">
+                            <div class="col-md-8">
 								<button type="button" class="btn btn-default btn-round">Default</button>
                                 <button type="button" class="btn btn-primary btn-round">Primary</button>
                                 <button type="button" class="btn btn-info btn-round">Info</button>
@@ -160,11 +167,11 @@
 		                </div>
                     </div>
                         <br/>
-                    <div class="title">
+                    <div class="tim-title">
                         <h3>Links</h3>
                     </div>
                     <div class="row">
-                        <div class="col-md-8 offset-md-2">
+                        <div class="col-md-8">
                             <a href="#0" class="btn btn-link btn-default">Default</a>
                             <a href="#0" class="btn btn-link btn-primary">Primary</a>
                             <a href="#0" class="btn btn-link btn-success">Success</a>
@@ -175,7 +182,7 @@
                         </div>
                     </div>
                     <br/>
-                    <div class="title">
+                    <div class="tim-title">
                         <h3>Inputs</h3>
                     </div>
                     <div class="row">
@@ -186,12 +193,12 @@
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group has-success">
-                                <input type="text" class="form-control form-control-success" id="inputSuccess1" placeholder="Success">
+                                <input type="text" class="form-control form-control-success" id="inputSuccess1" value="Success">
                             </div>
                         </div>
                         <div class="col-sm-3">
                             <div class="form-group has-danger">
-                                <input type="text" class="form-control form-control-danger" id="inputDanger1" placeholder="Error">
+                                <input type="text" class="form-control form-control-danger" id="inputDanger1" value="Error">
                                 <div class="form-control-feedback">Sorry, that username's taken. Try another?</div>
                             </div>
                         </div>
@@ -205,7 +212,7 @@
                     <br/>
                     <div class="row">
                         <div class="col-sm-6 col-lg-3">
-                            <div class="title">
+                            <div class="tim-title">
                                 <h3>Checkboxes</h3>
                             </div>
                             <div class="checkbox">
@@ -234,7 +241,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <div class="title">
+                            <div class="tim-title">
                                 <h3>Radio Buttons</h3>
                             </div>
                             <div class="radio">
@@ -266,7 +273,7 @@
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <div class="title">
+                            <div class="tim-title">
                                 <h3>Toggle Buttons</h3>
                             </div>
 							<div class="togglebutton">
@@ -281,7 +288,7 @@
 				            </div>
                         </div>
                         <div class="col-sm-6 col-lg-3">
-                            <div class="title">
+                            <div class="tim-title">
                                 <h3>Sliders</h3>
                             </div>
 							<div id="sliderRegular" class="slider noUi-target noUi-ltr noUi-horizontal noUi-connect"></div>
@@ -294,7 +301,7 @@
         </div>
             <div class="section section-navbars">
                 <div class="container" id="menu-dropdown">
-                    <div class="title">
+                    <div class="tim-title">
                         <h3>Menu</h3>
                     </div>
                     <div class="row">
@@ -366,7 +373,7 @@
                 <br/>
                 <div id="navbar">
                     <div class="container">
-                        <div class="title">
+                        <div class="tim-title">
                             <h3>Navigation</h3>
                             <br/>
                         </div>
@@ -520,7 +527,7 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="title">
+                            <div class="tim-title">
                                 <h3>Progress Bar</h3>
                                 <br/>
                             </div>
@@ -540,7 +547,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="title">
+                            <div class="tim-title">
                                 <h3>Pagination</h3>
                                 <br/>
                             </div>
@@ -588,7 +595,7 @@
                     <br/>
                     <div class="row">
                         <div class="col-md-6">
-                            <div class="title">
+                            <div class="tim-title">
                                 <h3>Navigation Tabs</h3>
                             </div>
                             <!-- Nav tabs -->
@@ -598,9 +605,6 @@
                                         <li class="nav-item">
                                             <a class="nav-link active" data-toggle="tab" href="#home" role="tab">Home</a>
                                         </li>
-                                        <!-- <li class="nav-item">
-                                            <a class="nav-link" data-toggle="tab" href="#profile" role="tab">Profile</a>
-                                        </li> -->
                                         <li class="nav-item">
                                             <a class="nav-link" data-toggle="tab" href="#messages" role="tab">Messages</a>
                                         </li>
@@ -622,13 +626,12 @@
                             <!-- Tab panes -->
                             <div class="tab-content text-center">
                                 <div class="tab-pane active" id="home" role="tabpanel">Here is information about home.</div>
-                                <!-- <div class="tab-pane" id="profile" role="tabpanel">Here is your profile.</div> -->
                                 <div class="tab-pane" id="messages" role="tabpanel">Here are your messages.</div>
                                 <div class="tab-pane" id="action" role="tabpanel">Vestibulum ex velit, cursus in mauris in, egestas tempor orci.</div>
                                 <div class="tab-pane" id="another-action" role="tabpanel">Ut sem metus, lacinia id lobortis vel, mollis ut quam.</div>
                             </div>
                             <br/>
-                            <div class="title">
+                            <div class="tim-title">
                                 <h3>Navigation Pills</h3>
                             </div>
                             <ul class="nav nav-pills nav-pills-danger">
@@ -651,7 +654,7 @@
                             </div>
                         </div>
                         <div class="col-md-6">
-                            <div class="title">
+                            <div class="tim-title">
                                 <h3>Labels</h3>
                             </div>
                             <span class="label label-default">Default</span>
@@ -666,7 +669,7 @@
             </div>
             <div class="section section-notifications" id="notifications">
                 <div class="container">
-                    <div class="title">
+                    <div class="tim-title">
                         <h3>Notification</div>
                     </div>
                 </div>
@@ -697,7 +700,7 @@
             <br/>
             <div class="section section-nude">
                 <div class="container tim-container">
-                    <div class="title">
+                    <div class="tim-title">
                         <h3>Typography</h3>
                         <br/>
                     </div>
@@ -780,43 +783,43 @@
                     <br/>
                     <div id="images">
                     	<div class="container">
-                            <div class="title">
+                            <div class="tim-title">
                                 <h3>Images</h3>
                             </div>
                             <div class="row">
                                 <div class="col-xs-8 col-sm-6 col-md-3">
                                     <h4 class="images-title">Rounded Image</h4>
-                                    <img src="assets/img/thinking_in_textures.png" class="img-rounded img-responsive" alt="Rounded Image">
+                                    <img src="assets/img/faces/ayo-ogunseinde-1.jpg" class="img-rounded img-responsive" alt="Rounded Image">
                                     <div class="img-details">
                                         <div class="author">
-                                            <img src="assets/img/chet_faker_1.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
+                                            <img src="assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
                                         </div>
                                         <p>Chet Faker</p>
                                     </div>
                                 </div>
                                 <div class="col-xs-6  col-sm-3 col-md-2 offset-md-1">
                                     <h4 class="images-title">Circle Image</h4>
-                                    <img src="assets/img/placeholder.jpg" class="img-circle img-no-padding img-responsive" alt="Rounded Image">
+                                    <img src="assets/img/faces/joe-gardner-2.jpg" class="img-circle img-no-padding img-responsive" alt="Rounded Image">
                                     <p class="text-center">Placeholder</p>
                                 </div>
                                 <div class="col-xs-6  col-sm-3 col-md-2 offset-md-1">
                                     <h4 class="images-title">Thumbnail</h4>
-                                    <img src="assets/img/chet_faker_2.jpg" class="img-thumbnail img-responsive" alt="Rounded Image">
-                                    <p class="text-center">Chet Faker</p>
+                                    <img src="assets/img/faces/clem-onojeghuo-3.jpg" class="img-thumbnail img-responsive" alt="Rounded Image">
+                                    <p class="text-center">Erik Faker</p>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="section section-dark-blue" class="javascript-components">
+            <div class="section section-dark-blue javascript-components">
 				<div class="container">
-					<div class="title">
+					<div class="tim-title">
 						<h2>Javascript Components</h2>
 					</div>
 					<div class="row" id="modals">
 						<div class="col-md-6">
-							<div class="title">
+							<div class="tim-title">
 								<h3>Modal</h3>
 							</div>
 							<!-- Button trigger modal -->
@@ -849,7 +852,7 @@
 							</div>
 						</div>
 						<div class="col-md-6">
-							<div class="title">
+							<div class="tim-title">
 								<h3>Popovers</h3>
 							</div>
 							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="left" data-title="Lorem ipsum dolor" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on left</button>
@@ -859,7 +862,7 @@
 						</div>
 						<br/>
 						<div class="col-md-6">
-							<div class="title">
+							<div class="tim-title">
 								<h3>Datepicker</h3>
 							</div>
 						    <div class="row">
@@ -876,7 +879,7 @@
 						    </div>
 						</div>
 						<div class="col-md-6">
-							<div class="title">
+							<div class="tim-title">
 								<h3>Tooltips</h3>
 							</div>
 							<button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="left" title="Tooltip on left">On left</button>
@@ -885,7 +888,7 @@
 							<button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">On bottom</button>
 						</div>
 					</div>
-					<div class="title">
+					<div class="tim-title">
 						<h3>Carousel</h3>
 					</div>
 				</div>
@@ -903,19 +906,19 @@
 								    </ol>
                                     <div class="carousel-inner" role="listbox">
                                     <div class="carousel-item active">
-                                        <img class="d-block img-fluid" src="http://www.hudsonmgmt.com/hms/images/slider-img-1.jpg" alt="First slide">
+                                        <img class="d-block img-fluid" src="assets\img\soroush-karimi.jpg" alt="First slide">
                                     	<div class="carousel-caption d-none d-md-block">
                                             <p>Somewhere</p>
                                         </div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block img-fluid" src="http://96bda424cfcc34d9dd1a-0a7f10f87519dba22d2dbc6233a731e5.r41.cf2.rackcdn.com/ermu/sliders-1/fall-residential-faders/Fall_Fader2.jpg" alt="Second slide">
+                                        <img class="d-block img-fluid" src="assets\img\federico-beccari.jpg" alt="Second slide">
                                     	<div class="carousel-caption d-none d-md-block">
                                     	    <p>Somewhere else</p>
                                     	</div>
                                     </div>
                                     <div class="carousel-item">
-                                        <img class="d-block img-fluid" src="http://www.jveroassociates.com/images/slider/slider-02.jpg" alt="Third slide">
+                                        <img class="d-block img-fluid" src="assets\img\joshua-stannard.jpg" alt="Third slide">
                                     	<div class="carousel-caption d-none d-md-block">
                                     	    <p>Here it is</p>
                                     	</div>
@@ -938,6 +941,40 @@
 					</div>
 				</div>
 			</div>
+            <div class="section section-white section-nucleo-icons">
+                <div class="container">
+    				<div class="row">
+    					<div class="col-lg-6 col-md-12">
+    						<h2 class="title">Nucleo Icons</h2><br/>
+    						<h5 class="description">
+    							Now UI Kit comes with 100 custom icons made by our friends from NucleoApp. The official package contains over 2.100 thin icons which are looking great in combination with Now UI Kit Make sure you check all of them and use those that you like the most.
+    						</h5>
+                            <a href="nucleo-icons-demo.html" class="btn btn-primary btn-round" target="_blank">View Demo Icons</a>
+                            <a href="https://nucleoapp.com/?ref=creativetim" class="btn btn-outline-primary btn-round" target="_blank">View All Icons</a>
+    					</div>
+
+    					<div class="col-lg-6 col-md-12">
+    						<div class="icons-container">
+    							<i class="nc-icon nc-time-alarm"></i>
+    							<i class="nc-icon nc-atom"></i>
+    							<i class="nc-icon nc-camera-compact"></i>
+    							<i class="nc-icon nc-watch-time"></i>
+    							<i class="nc-icon nc-key-25"></i>
+    							<i class="nc-icon nc-diamond"></i>
+    							<i class="nc-icon nc-user-run"></i>
+    							<i class="nc-icon nc-layout-11"></i>
+    							<i class="nc-icon nc-badge"></i>
+    							<i class="nc-icon nc-bulb-63"></i>
+    							<i class="nc-icon nc-favourite-28"></i>
+    							<i class="nc-icon nc-planet"></i>
+    							<i class="nc-icon nc-tie-bow"></i>
+    							<i class="nc-icon nc-zoom-split"></i>
+    							<i class="nc-icon nc-cloud-download-93"></i>
+    						</div>
+    					</div>
+    				</div>
+    			</div>
+            </div>
 			<div class="section section-white">
 				<div class="container tim-container">
 					<div class="row">
@@ -948,19 +985,19 @@
 					</div>
 					<div class="row example-page">
 						<div class="col-md-4">
-							<a href="http://demos.creative-tim.com/paper-kit/landing-page" target="_blank">
+							<a href="http://demos.creative-tim.com/paper-kit-bs4/landing" target="_blank">
 								<img src="assets\img\examples\landing.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
 								<h5 class="text-center">Landing Page</h5>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="http://demos.creative-tim.com/paper-kit/register" target="_blank">
+							<a href="http://demos.creative-tim.com/paper-kit-bs4/register" target="_blank">
 								<img src="assets\img\examples\profile.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
 								<h5 class="text-center">Register</h5>
 							</a>
 						</div>
 						<div class="col-md-4">
-							<a href="http://demos.creative-tim.com/paper-kit/profile" target="_blank">
+							<a href="http://demos.creative-tim.com/paper-kit-bs4/profile" target="_blank">
 								<img src="assets\img\examples\register.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
 								<h5 class="text-center">Profile</h5>
 							</a>
@@ -984,16 +1021,16 @@
                             <h3>Thank you for supporting us!</h3>
                         </div>
                         <div class="text-center col-md-12 col-lg-8">
-                            <a href="#pablo" class="btn btn-neutral btn-icon btn-twitter twitter-sharrre" rel="tooltip" title="Tweet!">
+                            <a href="#pablo" class="btn btn-neutral btn-round btn-icon btn-twitter twitter-sharrre" rel="tooltip" title="Tweet!">
                                 <i class="fa fa-twitter"></i>
                             </a>
-                            <a href="#pablo" class="btn btn-neutral btn-icon btn-facebook facebook-sharrre" rel="tooltip" title="Share!">
+                            <a href="#pablo" class="btn btn-neutral btn-round btn-icon btn-facebook facebook-sharrre" rel="tooltip" title="Share!">
                                 <i class="fa fa-facebook-square"></i>
                             </a>
-                            <a href="#pablo" class="btn btn-neutral btn-icon btn-linkedin linkedin-sharrre" rel="tooltip" title="Share!">
+                            <a href="#pablo" class="btn btn-neutral btn-round btn-icon btn-linkedin linkedin-sharrre" rel="tooltip" title="Share!">
                                 <i class="fa fa-linkedin"></i>
                             </a>
-                            <a href="https://github.com/creativetimofficial/now-ui-kit" class="btn btn-neutral btn-icon btn-github" rel="tooltip" title="Star on Github">
+                            <a href="https://github.com/creativetimofficial/now-ui-kit" class="btn btn-neutral btn-round btn-icon btn-github sharrre" rel="tooltip" title="Star on Github">
                                 <i class="fa fa-github"></i>
                             </a>
                         </div>
