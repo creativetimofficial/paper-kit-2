@@ -79,19 +79,6 @@ $(document).ready(function(){
         });
     };
 
-    // Change the collor of navbar collapse
-    $('#navbarToggler').on('show.bs.collapse', function () {
-        if( $('nav').hasClass('navbar-transparent') && $(document).scrollTop() < 50 ){
-            $('.navbar').addClass('no-transition');
-            $('nav').removeClass('navbar-transparent');
-        }
-    }).on('hidden.bs.collapse', function (){
-        if($(document).scrollTop() < 50 ){
-            $('.navbar').removeClass('no-transition');
-            $('nav:first-of-type').addClass('navbar-transparent');
-    }
-    });
-
     // Navbar color change on scroll
     if($('.navbar[color-on-scroll]').length != 0){
         $(window).on('scroll', pk.checkScrollForTransparentNavbar)
@@ -241,74 +228,40 @@ $(window).resize(function(){
     }
 });
 
+$(document).on('click', '.navbar-toggler', function(){
+    $toggle = $(this);
+    if(pk.misc.navbar_menu_visible == 1) {
+        $('html').removeClass('nav-open');
+        pk.misc.navbar_menu_visible = 0;
+        setTimeout(function(){
+            $toggle.removeClass('toggled');
+            $('#bodyClick').remove();
+        }, 550);
+    } else {
+        setTimeout(function(){
+            $toggle.addClass('toggled');
+        }, 580);
+
+        div = '<div id="bodyClick"></div>';
+        $(div).appendTo("body").click(function() {
+            $('html').removeClass('nav-open');
+            pk.misc.navbar_menu_visible = 0;
+            $('#bodyClick').remove();
+            setTimeout(function(){
+                $toggle.removeClass('toggled');
+            }, 550);
+        });
+
+
+
+        $('html').addClass('nav-open');
+        pk.misc.navbar_menu_visible = 1;
+    }
+});
+
 pk = {
     misc:{
         navbar_menu_visible: 0
-    },
-    initRightMenu: function(){
-         if(!navbar_initialized){
-             $navbar = $('nav').find('.navbar-collapse').first().clone(true);
-             $navbar.css('min-height', window.screen.height);
-
-             ul_content = '';
-
-             $navbar.children('ul').each(function(){
-                content_buff = $(this).html();
-                ul_content = ul_content + content_buff;
-             });
-
-             ul_content = '<ul class="nav navbar-nav">' + ul_content + '</ul>';
-             $navbar.html(ul_content);
-
-             $('body').append($navbar);
-
-             background_image = $navbar.data('nav-image');
-             if(background_image != undefined){
-                $navbar.css('background',"url('" + background_image + "')")
-                       .removeAttr('data-nav-image')
-                       .css('background-size',"cover")
-                       .addClass('has-image');
-             }
-
-
-             $toggle = $('.navbar-toggle');
-
-             $navbar.find('a').removeClass('btn btn-round btn-default');
-             $navbar.find('button').removeClass('btn-round btn-fill btn-info btn-primary btn-success btn-danger btn-warning btn-neutral');
-             $navbar.find('button').addClass('btn-simple btn-block');
-
-             $toggle.click(function (){
-                if(pk.misc.navbar_menu_visible == 1) {
-                    $('html').removeClass('nav-open');
-                    pk.misc.navbar_menu_visible = 0;
-                    $('#bodyClick').remove();
-                     setTimeout(function(){
-                        $toggle.removeClass('toggled');
-                     }, 400);
-
-                } else {
-                    setTimeout(function(){
-                        $toggle.addClass('toggled');
-                    }, 430);
-
-                    div = '<div id="bodyClick"></div>';
-                    $(div).appendTo("body").click(function() {
-                        $('html').removeClass('nav-open');
-                        pk.misc.navbar_menu_visible = 0;
-                        $('#bodyClick').remove();
-                         setTimeout(function(){
-                            $toggle.removeClass('toggled');
-                         }, 400);
-                    });
-
-                    $('html').addClass('nav-open');
-                    pk.misc.navbar_menu_visible = 1;
-
-                }
-            });
-            navbar_initialized = true;
-        }
-
     },
 
     checkScrollForPresentationPage: debounce(function(){

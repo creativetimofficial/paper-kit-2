@@ -131,9 +131,3 @@
 
 .follows hr {
   margin-top: 10px; }
-
-@media (max-width: 979px) {
-  .fixed-top .navbar-collapse {
-    background-color: #FF8F5E;
-    width: 100%;
-    float: left; } }

@@ -114,22 +114,22 @@
 .popover{
     border: 0;
     border-radius: $border-radius-base;
-    background-color: $bg-danger;
-    color: $white-color;
+    background-color: $pale-bg;
+    color: $default-color;
     font-weight: $font-weight-normal;
     padding: 0;
     z-index: 1031;
     @include box-shadow(none);
 }
 .popover-title{
-    background-color: $bg-danger;
+    background-color: $pale-bg;
     border-bottom: 0 none;
     font-size: $font-paragraph;
     font-weight: normal;
     line-height: 22px;
     padding: 15px 15px 0px 15px;
     margin: 0;
-    color: $danger-states-color;
+    color: $default-color;
     text-align: center;
     border-radius: $border-radius-base $border-radius-base 0 0;
     margin-bottom: -10px;
@@ -183,12 +183,6 @@
 
 // changing color&style of the tooltip and popover arrows
 
-//onLeft
-.popover.bs-tether-element-attached-right::after, .popover.popover-left::after,
-.popover.bs-tether-element-attached-right::before, .popover.popover-left::before{
-    border-left-color: #FF8F5E !important;
-    right: -9px;
-}
 .tooltip.bs-tether-element-attached-right .tooltip-inner::before,
 .tooltip.tooltip-left .tooltip-inner::before{
     border-left: 11px solid rgba(0, 0, 0, 0.2);
@@ -209,12 +203,6 @@
     margin-left: 0;
 }
 
-//onTop
-.popover.bs-tether-element-attached-bottom::after,.popover.popover-top::after,
-.popover.bs-tether-element-attached-bottom::before, .popover.popover-top::before{
-    border-top-color: #FF8F5E !important;
-    bottom: -9px;
-}
 .tooltip.bs-tether-element-attached-bottom .tooltip-inner::before,
 .tooltip.tooltip-top .tooltip-inner::before{
     border-top: 11px solid rgba(0, 0, 0, 0.2);
@@ -236,12 +224,6 @@
     position: absolute;
 }
 
-//onRight
-.popover.bs-tether-element-attached-left::after, .popover.popover-right::after,
-.popover.bs-tether-element-attached-left::before, .popover.popover-right::before{
-    border-right-color: #FF8F5E !important;
-    left: -9px;
-}
 .tooltip.bs-tether-element-attached-left .tooltip-inner::before,
 .tooltip.tooltip-right .tooltip-inner::before{
     border-right: 11px solid rgba(0, 0, 0, 0.2);
@@ -269,12 +251,6 @@
     position: absolute;
 }
 
-//onBottom
-.popover.bs-tether-element-attached-top::after, .popover.popover-bottom::after,
-.popover.bs-tether-element-attached-top::before, .popover.popover-bottom::before{
-    border-bottom-color: #FF8F5E !important;
-    top: -9px;
-}
 .tooltip.bs-tether-element-attached-top .tooltip-inner::before,
 .tooltip.tooltip-bottom .tooltip-inner::before{
     border-bottom: 11px solid rgba(0, 0, 0, 0.2);

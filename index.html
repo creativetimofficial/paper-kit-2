@@ -16,24 +16,25 @@
     <link href="assets/css/paper-kit.css" rel="stylesheet"/>
     <link href="assets/css/demo.css" rel="stylesheet" />
     <link href="assets/css/examples.css" rel="stylesheet" />
-    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
     <link href="http://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
-    <link href="../assets/css/nucleo-icons.css" rel="stylesheet">
+    <link href="assets/css/nucleo-icons.css" rel="stylesheet" />
 
 </head>
 
 <body>
     <nav class="navbar navbar-toggleable-md fixed-top bg-danger navbar-transparent" color-on-scroll="500">
         <div class="container">
-            <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-bar"></span>
-                <span class="navbar-toggler-bar"></span>
-                <span class="navbar-toggler-bar"></span>
-            </button>
-            <a class="navbar-brand" href="www.creative-tim.com">Paper Kit 2 Free</a>
+            <div class="navbar-translate">
+                <button class="navbar-toggler navbar-toggler-right navbar-burger" type="button" data-toggle="collapse" data-target="#navbarToggler" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                    <span class="navbar-toggler-bar"></span>
+                </button>
+                <a class="navbar-brand" href="www.creative-tim.com">Paper Kit 2 Free</a>
+            </div>
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -820,10 +821,10 @@
 							<div class="tim-title">
 								<h3>Popovers</h3>
 							</div>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="left" data-title="Lorem ipsum dolor" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on left</button>
-                            <button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="right" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on right</button>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="top" data-title="Lorem ipsum dolor" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on top</button>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="bottom" data-content="Vivamus sagittis lacus vel augue laoreet rutrum faucibus.">on bottom</button>
+							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="left" data-title="Popover on left" data-content="Here will be some very useful information about this popover.">on left</button>
+                            <button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="right" data-title="Popover on right" data-content="Here will be some very useful information about this popover.">on right</button>
+							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="top" data-title="Popover on top" data-content="Here will be some very useful information about this popover.">on top</button>
+							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="bottom" data-title="Popover on bottom" data-content="Here will be some very useful information about this popover.">on bottom</button>
 						</div>
 						<br/>
 						<div class="col-md-6">
@@ -862,7 +863,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 offset-md-2">
-							<div class="card card-raised card-carousel">
+							<div class="card page-carousel">
 								<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
 								    <ol class="carousel-indicators">
     								    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -898,9 +899,7 @@
                                         <span class="fa fa-angle-right"></span>
                                         <span class="sr-only">Next</span>
                                     </a>
-
 								</div>
-
 							</div>
 						</div>
 					</div>

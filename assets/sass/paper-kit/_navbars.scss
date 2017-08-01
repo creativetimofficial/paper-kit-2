@@ -40,9 +40,7 @@
 //              line-height: $line-height;
          }
         .nav-item .nav-link [class^="fa"]{
-             font-size: $font-size-large + 1;
-             position: relative;
-             top: 1px;
+            font-size: $font-size-large + 1;
         }
     }
     .btn{
@@ -57,9 +55,17 @@
     }
     &.navbar-transparent{
         padding-top: 25px;
-        box-shadow: none; 
+        box-shadow: none;
     }
 
+    &:not(.fixed-top){
+        .nav-item .nav-link [class^="fa"]{
+            font-size: $font-size-large + 1;
+            position: relative;
+            top: 3.5px;
+            margin-right: 5px;
+        }
+    }
 }
 
 .navbar-transparent, [class*="bg"]{

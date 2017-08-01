@@ -43,7 +43,7 @@
     background-image: none;
 }
 
- .card-carousel{
+ .page-carousel{
     border-radius: $border-radius-extreme !important;
     border: none !important;
 }
@@ -65,7 +65,7 @@
 .carousel-indicators .active{
     background-color: $danger-color;
 }
-.card-carousel:hover{
+.page-carousel:hover{
     .carousel-control.right,
     .carousel-control.left{
         opacity: 1;
