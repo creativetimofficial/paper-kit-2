@@ -38,12 +38,16 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     outline : 0 !important;
 }
 
+
 /*           Animations              */
 .form-control,
 .input-group-addon,
 .tagsinput,
 .navbar,
-.navbar .alert{
+.navbar .alert,
+.carousel-control.right,
+.carousel-control.left
+{
     @include transition($general-transition-time, linear);
 }
 .tagsinput .tag,
@@ -51,7 +55,8 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .filter,
 .btn-hover,
 [data-toggle="collapse"] i,
-.animation-transition-fast{
+.animation-transition-fast,
+.dropdown-menu .dropdown-item{
     @include transition($fast-transition-time, linear);
 }
 
@@ -69,68 +74,32 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
     margin-top: 50px;
 }
 
+.iframe-container iframe{
+    box-shadow: 0 16px 38px -12px rgba(0,0,0,.56), 0 4px 25px 0 rgba(0,0,0,.12), 0 8px 10px -5px rgba(0,0,0,.2);
+}
 
 /*       CT colors          */
-.ct-blue,
-.checkbox-blue.checkbox.checked .second-icon,
-.checkbox-blue.checkbox.checked,
-.radio-blue.radio.checked .second-icon,
-.radio-blue.radio.checked{
+.ct-blue{
     color: $primary-color;
 }
-.ct-azure,
-.checkbox-azure.checkbox.checked .second-icon,
-.radio-azure.radio.checked .second-icon,
-.checkbox-azure.checkbox.checked,
-.radio-azure.radio.checked{
+.ct-azure{
     color: $info-color;
 }
-.ct-green,
-.checkbox-green.checkbox.checked .second-icon,
-.radio-green.radio.checked .second-icon,
-.checkbox-green.checkbox.checked,
-.radio-green.radio.checked{
+.ct-green{
     color: $success-color;
 }
-.ct-orange,
-.checkbox-orange.checkbox.checked .second-icon,
-.radio-orange.radio.checked .second-icon,
-.checkbox-orange.checkbox.checked,
-.radio-orange.radio.checked{
+.ct-orange{
     color: $warning-color;
 }
-.ct-red,
-.checkbox-red.checkbox.checked .second-icon,
-.radio-red.radio.checked .second-icon,
-.checkbox-red.checkbox.checked,
-.radio-red.radio.checked{
+.ct-red{
     color: $danger-color;
 }
-input.ct-blue + span.switch-left,
-input.ct-blue + span + label + span.switch-right{
-    background-color:  $primary-color;
-}
-input.ct-azure + span.switch-left,
-input.ct-azure + span + label + span.switch-right{
-    background-color:  $info-color;
-}
-input.ct-green + span.switch-left,
-input.ct-green + span + label + span.switch-right{
-    background-color:  $success-color;
-}
-input.ct-orange + span.switch-left,
-input.ct-orange + span + label + span.switch-right{
-    background-color:  $warning-color;
-}
-input.ct-red + span.switch-left,
-input.ct-red + span + label + span.switch-right{
-    background-color:  $danger-color;
-}
 
-//stefan changes
+// small changes
 
 .pagination .page-item .page-link .fa{
     width: auto;
+    font-weight: $font-weight-bold;
 }
 
 .bg-primary{
@@ -148,6 +117,7 @@ input.ct-red + span + label + span.switch-right{
 .bg-danger{
     @include navbar-color($bg-danger !important);
 }
+
 .navbar-transparent{
     background-color: transparent !important;
     border-bottom: 1px solid transparent;

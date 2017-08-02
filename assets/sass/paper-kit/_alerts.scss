@@ -5,6 +5,11 @@
     padding: 10px 15px;
     font-size: 14px;
 
+    & .close{
+        font-size: $font-size-large;
+        color: $white-color;
+    }
+
     .container &{
         border-radius: 4px;
 
@@ -21,20 +26,36 @@
     .navbar:not(.navbar-transparent) &{
         top: 70px;
     }
+    .alert-icon{
+        display: block;
+        font-size: 30px;
+        left: 15px;
+        position: absolute;
+        top: 50%;
+        margin-top: -22px;
+    }
+    .alert-wrapper {
+        &.message{
+            padding-right: 60px;
+        }
+        i{
+            position: relative;
+            font-size: 20px;
+            top: 5px;
+            margin-top: -5px;
+            font-weight: $font-weight-bold;
+        }
+    }
 }
 .alert-info{
     background-color: $bg-info;
-    color: $info-states-color;
 }
 .alert-success {
     background-color: $bg-success;
-    color: $success-states-color;
 }
 .alert-warning {
     background-color: $bg-warning;
-    color: $warning-states-color;
 }
 .alert-danger {
     background-color: $bg-danger;
-    color: $danger-states-color;
 }

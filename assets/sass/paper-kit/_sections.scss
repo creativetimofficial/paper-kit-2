@@ -1,8 +1,7 @@
 .section{
-    padding: 30px 0;
+    padding: 70px 0;
     position: relative;
-    background-color: #f4f3ef;
-    // background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0%, rgba(112, 112, 112, 0) 60%, rgba(186, 186, 186, 0.15) 100%);
+    background-color: #FFFFFF;
 }
 .section-with-space{
     padding: 60px 0;
@@ -10,14 +9,11 @@
 .section-gray{
     background-color: #EEEEEE;
 }
-.section-white{
-    background-color: #FFFFFF;
-}
 .section-nude{
     background-color: $bg-nude;
 }
-.section-light-brown{
-    background-color: #D8C1AB;
+.section-gold{
+    background-color: #caac90;
     color: $white-color;
 }
 .section-brown{
@@ -33,11 +29,60 @@
     color: $white-color;
 }
 .section-dark{
-    background-color: #1a1817;
-    color: $white-color;
+    background-color: #151f20;
+}
+.section-image,
+.section-gold,
+.section-dark{
+    position: relative;
 
-    .title{
+    .title,
+    .info-title,
+    .card-plain .card-title{
+        color: $white-color !important;
+    }
+    .category,
+    .description,
+    .card-plain .card-description,
+    .card-plain .card-category{
+        color: rgba($white-color, .7);
+    }
+    hr{
+        border-color: rgba(255, 255, 255, 0.19);
+    }
+}
+.page-header,
+.carousel-caption{
+    .title,
+    .info-title{
         color: $white-color;
-        margin-bottom: 100px;
+    }
+}
+[class*="features-"],
+[class*="team-"],
+[class*="projects-"],
+[class*="pricing-"],
+[class*="testimonials-"],
+[class*="contactus-"]{
+    padding: 80px 0;
+}
+.section-image{
+    background-position: center center;
+    background-size: cover;
+
+    &:before{
+        background-color: rgba(0, 0, 0, 0.5);
+        content: "";
+        display: block;
+        height: 100%;
+        left: 0;
+        top: 0;
+        position: absolute;
+        width: 100%;
+        z-index: 1;
+    }
+    & .container{
+        position: relative;
+        z-index: 2;
     }
 }

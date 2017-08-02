@@ -89,7 +89,9 @@
 .subscribe-form{
     padding-top: 20px;
 }
-
+.page-header .card-register .title{
+    margin-bottom: 0;
+}
 .space-100{
     height: 100px;
     display: block;
