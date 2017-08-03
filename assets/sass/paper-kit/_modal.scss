@@ -2,11 +2,31 @@
     border-bottom: 1px solid $medium-gray;
     padding: 20px;
     text-align: center;
+    display: block !important;
+
+    &.no-border-header{
+        border-bottom: 0 none !important;
+        & .modal-title{
+            margin-top: 20px;
+
+        }
+    }
+    .modal-title{
+        color: $black-color;
+    }
+    button.close{
+        margin-top: -25px;
+    }
 }
 .modal-content {
     border: 0 none;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.15), 0 0 1px 1px rgba(0, 0, 0, 0.1);
+    .modal-header{
+        h6{
+            margin-top: 10px;
+        }
+    }
 }
 .modal-dialog {
     padding-top: 60px;
@@ -18,6 +38,10 @@
 .modal-footer {
     border-top: 1px solid $medium-gray;
     padding: 0px;
+
+    &.no-border-footer{
+        border-top: 0 none;
+    }
 }
 .modal-footer .left-side, .modal-footer .right-side{
     display: inline-block;
@@ -50,6 +74,19 @@
 .modal-backdrop.in {
     opacity: 0.25;
 }
-.modal-title{
-    color: #000;
+.modal-register .modal-footer{
+    text-align: center;
+    margin-bottom: 25px;
+    padding: 20px 0 15px;
+    span{
+        width: 100%;
+    }
+}
+.modal-header:after {
+     display: table;
+     content: " ";
+}
+.modal-header:before{
+    display: table;
+    content: " ";
 }

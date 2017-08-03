@@ -51,6 +51,19 @@
             padding-top: 10px;
         }
     }
+<<<<<<< HEAD
+=======
+
+    &.no-transition:hover,
+    &.card-register:hover,
+    &.page-carousel:hover{
+        box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none;
+        -moz-transform: none;
+    }
+>>>>>>> bootstrap4-development
 }
 .section-dark{
     .card-profile.card-plain{

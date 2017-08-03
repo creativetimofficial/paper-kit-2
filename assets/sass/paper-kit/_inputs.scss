@@ -12,13 +12,13 @@
 }
 
 .form-control {
-    background-color: $gray-input-bg;
-    border: 1px solid $table-line-color;
+    background-color: $white-bg;
+    border: 1px solid $medium-gray;
     border-radius: $border-radius-base;
     color: $font-color;
     font-size: $font-size-base;
     transition: background-color 0.3s ease 0s;
-    @include input-size($padding-base-vertical, $padding-base-horizontal, $height-base);
+    @include input-size($padding-base-vertical, $padding-label-horizontal, $height-base);
     @include box-shadow(none);
 
     &:focus{
@@ -29,7 +29,7 @@
     }
 
     &.no-border{
-        border: medium none;
+        border: medium none !important;
     }
 
     .has-success &,
@@ -64,6 +64,7 @@
         font-size: .8rem;
         position: absolute;
         top: 100%;
+        padding-left: $padding-label-horizontal;
         vertical-align: middle;
         padding-left: 12px;
     }
@@ -92,10 +93,13 @@
 
 
 .input-group-addon {
-    background-color: $gray-input-bg;
-    border: solid 1px $table-line-color;
+    background-color: $white-bg;
+    // border: solid 1px $table-line-color;
     border-radius: $border-radius-base;
 
+    &.no-border{
+        border: medium none !important;
+    }
 
     .has-success &,
     .has-error &{
@@ -130,6 +134,13 @@
     color: $default-color;
     cursor: not-allowed;
 }
+.input-group[disabled]{
+    & .input-group-addon{
+        background-color: $light-gray;
+        cursor: not-allowed;
+        border-color: $medium-gray;
+    }
+}
 
 .input-group-btn .btn{
     border-width: $border-thin;
@@ -152,5 +163,19 @@ textarea.form-control{
 }
 
 .register-form .form-control{
-        border: 1px solid transparent !important;
+    border: 1px solid transparent !important;
+}
+#inputs {
+
+    .input-group{
+        margin-bottom: 1rem;
+    }
+}
+
+.card-form-horizontal{
+    .card-block{
+        .form-group{
+            margin-bottom: 0;
+        }
+    }
 }

@@ -64,11 +64,14 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
         text-decoration: none;
     }
 }
+<<<<<<< HEAD
 .title{
     margin-top: 30px;
     margin-bottom: 25px;
     min-height: 32px;
 }
+=======
+>>>>>>> bootstrap4-development
 .title-uppercase{
     text-transform: uppercase;
 }
@@ -103,10 +106,10 @@ blockquote small{
 // Pulsing Heart (footer)
 .heart {
   color: #EB5E28;
-  animation: pulse 1s ease infinite,;
+  animation: heathing 1s ease infinite,;
 }
 
-@keyframes pulse {
+@keyframes heathing {
   0% { transform: scale( .75 ); }
   20% { transform: scale( 1 ); }
   40% { transform: scale( .75 ); }
@@ -120,4 +123,20 @@ blockquote small{
 }
 .footer .btn{
     margin-bottom: 0;
+}
+.blockquote{
+    border-left: 0 none;
+    border-bottom: 1px solid #CCC5B9;
+    border-top: 1px solid #CCC5B9;
+    font-weight: 300;
+    margin: 15px 0 10px;
+    text-align: center;
+}
+.title{
+    margin-top: 30px;
+    margin-bottom: 25px;
+    min-height: 32px;
+}
+.title.text-center{
+    margin-bottom: 50px;
 }

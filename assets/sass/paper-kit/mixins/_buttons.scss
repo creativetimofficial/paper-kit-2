@@ -9,7 +9,7 @@
     &:focus,
     &:active,
     &.active,
-    .open > &.dropdown-toggle{
+    .show > &.dropdown-toggle{
         background-color: $btn-states-color;
         color: $white-color;
         border-color: $btn-states-color;
