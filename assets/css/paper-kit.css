@@ -2024,11 +2024,14 @@ textarea.form-control {
   color: #66615B;
   text-transform: uppercase;
 }
-.navbar.fixed-top .nav-link i {
+.navbar .nav-link i {
   font-size: 16px;
   position: relative;
   top: 4px;
   right: 3px;
+}
+.navbar .nav-link [class^="fa"] {
+  top: 2px;
 }
 .navbar .navbar-nav .nav-item .nav-link {
   line-height: 1.6;
@@ -2043,12 +2046,6 @@ textarea.form-control {
 .navbar .navbar-nav .nav-item .nav-link.btn {
   margin: 15px 3px;
   padding: 9px;
-}
-.navbar .navbar-nav .nav-item .nav-link [class^="fa"] {
-  font-size: 17px;
-  position: relative;
-  margin: 0px -5px;
-  right: 5px;
 }
 .navbar .navbar-nav .dropdown-menu {
   border-radius: 12px;
@@ -3285,9 +3282,6 @@ textarea.form-control {
 
 .section-nucleo-icons {
   padding: 100px 0;
-}
-.section-nucleo-icons [class*='col-']:nth-child(2) {
-  padding-left: 100px;
 }
 .section-nucleo-icons .icons-container {
   position: relative;
@@ -4787,7 +4781,6 @@ textarea.form-control {
 
   .fixed-top .navbar-collapse {
     background-color: #FF8F5E;
-    width: 100%;
     float: left;
   }
 

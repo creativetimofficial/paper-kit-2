@@ -35,7 +35,8 @@
     }
 
     &.section-dark{
-        .content-center{
+        .content-center,
+        .category-absolute{
             z-index: 1;
         }
     }
@@ -211,17 +212,37 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    margin-left: -13%;
-    margin-bottom: -61px;
-    width: 125%;
+    margin-left: -35%;
+    margin-bottom: -50px;
+    width: 110%;
     opacity: .85;
 
     img{
         width: 100%;
     }
 
-    // &.right{
-    //     margin-left: 30%;
-    //     opacity: 1;
-    // }
+    &.right{
+        margin-left: 30%;
+        opacity: 1;
+    }
 }
+.page-header{
+    .content-center{
+        margin-top: 85px;
+    }
+}
+.moving-clouds{
+    position: absolute;
+    z-index: 30;
+    top: 25%;
+    left: 0;
+    width: 250.625em;
+    height: 43.75em;
+    -webkit-animation: cloudLoop 80s linear infinite;
+    animation: cloudLoop 80s linear infinite;
+}
+
+@keyframes cloudLoop{   0%{-webkit-transform:translate3d(0,0,0);transform:translate3d(0,0,0)}
+                        100%{-webkit-transform:translate3d(-50%,0,0);
+                        transform:translate3d(-50%,0,0)}
+                    }

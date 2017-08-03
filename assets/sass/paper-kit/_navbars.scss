@@ -23,14 +23,15 @@
         color: $default-color;
         text-transform: uppercase;
     }
-    &.fixed-top{
-        .nav-link{
-            i{
-                font-size: 16px;
-                position: relative;
-                top: 4px;
-                right: 3px;
-            }
+    .nav-link{
+        i{
+            font-size: 16px;
+            position: relative;
+            top: 4px;
+            right: 3px;
+        }
+        [class^="fa"]{
+            top: 2px;
         }
     }
     .navbar-nav{
@@ -49,12 +50,7 @@
             padding: 9px;
 
          }
-        .nav-item .nav-link [class^="fa"]{
-            font-size: 17px;
-            position: relative;
-            margin: 0px -5px;
-            right: 5px;
-        }
+         
         .dropdown-menu{
             border-radius: $border-radius-extreme;
             margin-top: 1px;
