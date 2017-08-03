@@ -106,8 +106,6 @@
             }
         }
 }
-<<<<<<< HEAD
-=======
 .profile-content{
     & .tab-content{
         & .tab-pane{
@@ -118,7 +116,6 @@
         }
     }
 }
->>>>>>> bootstrap4-development
 /*             Navigation Pills               */
 
 .nav-pills {
@@ -364,7 +361,7 @@
 .pagination-danger > li:first-child > span,
 .pagination-danger > li:last-child > a,
 .pagination-danger > li:last-child > span{
-    border: 1px solid $danger-color;
+    border: 2px solid $danger-color;
     color: $danger-color;
 }
 

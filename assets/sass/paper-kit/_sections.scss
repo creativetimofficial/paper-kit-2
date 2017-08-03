@@ -12,13 +12,8 @@
 .section-nude{
     background-color: $bg-nude;
 }
-<<<<<<< HEAD
-.section-light-brown{
-    background-color: #D8C1AB;
-=======
 .section-gold{
     background-color: #caac90;
->>>>>>> bootstrap4-development
     color: $white-color;
 }
 .section-brown{
@@ -34,14 +29,6 @@
     color: $white-color;
 }
 .section-dark{
-<<<<<<< HEAD
-    background-color: #1a1817;
-    color: $white-color;
-
-    .title{
-        color: $white-color;
-        margin-bottom: 100px;
-=======
     background-color: #151f20;
 }
 .section-image,
@@ -97,6 +84,5 @@
     & .container{
         position: relative;
         z-index: 2;
->>>>>>> bootstrap4-development
     }
 }
