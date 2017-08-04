@@ -24,16 +24,6 @@ var navbar_initialized = false;
 $(document).ready(function(){
     window_width = $(window).width();
 
-    // Init navigation toggle for small screens
-    if(window_width < 768){
-        pk.initRightMenu();
-    }
-
-    // Activate Morpghing Buttons
-    $('[data-toggle="morphing"]').each(function () {
-          $(this).morphingButton();
-    });
-
     //  Activate the tooltips
     $('[data-toggle="tooltip"]').tooltip();
 
@@ -44,11 +34,6 @@ $(document).ready(function(){
     //      Activate regular switches
     if($("[data-toggle='switch']").length != 0){
          $("[data-toggle='switch']").bootstrapSwitch();
-    }
-
-    //    Activate bootstrap-select
-    if($(".selectpicker").length != 0){
-        $(".selectpicker").selectpicker();
     }
 
     if($(".tagsinput").length != 0){
@@ -114,7 +99,7 @@ $(document).ready(function(){
             api.openPopup('twitter');
           },
           template: '<i class="fa fa-twitter"></i>',
-          url: 'http://demos.creative-tim.com/paper-kit/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit-2/index.html'
         });
     }
 
@@ -132,7 +117,7 @@ $(document).ready(function(){
             api.openPopup('twitter');
           },
           template: '<i class="fa fa-twitter"></i><p class="hidden-lg-up">Twitter</p>',
-          url: 'http://demos.creative-tim.com/paper-kit/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit-2/index.html'
         });
     }
 
@@ -149,7 +134,7 @@ $(document).ready(function(){
             api.openPopup('facebook');
           },
           template: '<i class="fa fa-facebook-square"></i>',
-          url: 'http://demos.creative-tim.com/paper-kit/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit-2/index.html'
         });
     }
 
@@ -166,7 +151,7 @@ $(document).ready(function(){
             api.openPopup('facebook');
           },
           template: '<i class="fa fa-facebook-square"></i><p class="hidden-lg-up">Facebook</p>',
-          url: 'http://demos.creative-tim.com/paper-kit/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit-2/index.html'
         });
     }
 
@@ -183,7 +168,7 @@ $(document).ready(function(){
             api.openPopup('linkedin');
           },
           template: '<i class="fa fa-linkedin"></i>',
-          url: 'http://demos.creative-tim.com/paper-kit/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit-2/index.html'
         });
     }
 
@@ -200,14 +185,9 @@ $(document).ready(function(){
             api.openPopup('linkedin');
           },
           template: '<i class="fa fa-linkedin"></i><p class="hidden-lg-up">LinkedIn</p>',
-          url: 'http://demos.creative-tim.com/paper-kit/index.html'
+          url: 'http://demos.creative-tim.com/paper-kit-2/index.html'
         });
     }
-
-    demo.initPickColor();
-
-     // Make the images from the card fill the hole space
-    pk.fitBackgroundForCards();
 
     // Init popovers
     pk.initPopovers();
@@ -218,15 +198,8 @@ $(document).ready(function(){
     // Init Sliders
     pk.initSliders();
 
-
 });
 
-// activate collapse right menu when the windows is resized
-$(window).resize(function(){
-    if($(window).width() < 768){
-        pk.initRightMenu();
-    }
-});
 
 $(document).on('click', '.navbar-toggler', function(){
     $toggle = $(this);
@@ -251,8 +224,6 @@ $(document).on('click', '.navbar-toggler', function(){
                 $toggle.removeClass('toggled');
             }, 550);
         });
-
-
 
         $('html').addClass('nav-open');
         pk.misc.navbar_menu_visible = 1;
@@ -288,22 +259,6 @@ pk = {
             }
     }, 17),
 
-    fitBackgroundForCards: function(){
-         $('.card').each(function(){
-            if(!$(this).hasClass('card-product') && !$(this).hasClass('card-user')){
-                image = $(this).find('.image img');
-
-                image.hide();
-                image_src = image.attr('src');
-
-                $(this).find('.image').css({
-                    "background-image": "url('" + image_src + "')",
-                    "background-position": "center center",
-                    "background-size": "cover"
-                });
-            }
-        });
-    },
     initPopovers: function(){
         if($('[data-toggle="popover"]').length != 0){
             $('body').append('<div class="popover-filter"></div>');
@@ -392,22 +347,6 @@ pk = {
     },
 
 
-}
-
-demo = {
-    initPickColor: function(){
-        $('.pick-class-label').click(function(){
-            var new_class = $(this).attr('new-class');
-            var old_class = $('#display-buttons').attr('data-class');
-            var display_div = $('#display-buttons');
-            if(display_div.length) {
-            var display_buttons = display_div.find('.btn');
-            display_buttons.removeClass(old_class);
-            display_buttons.addClass(new_class);
-            display_div.attr('data-class', new_class);
-            }
-        });
-    }
 }
 
 examples = {
