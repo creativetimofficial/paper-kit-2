@@ -155,36 +155,36 @@ $(document).ready(function(){
         });
     }
 
-    if($('.linkedin-sharrre').length != 0){
-        $('.linkedin-sharrre').sharrre({
+    if($('.google-sharrre').length != 0){
+        $('.google-sharrre').sharrre({
           share: {
-            linkedin: true
+            googlePlus: true
           },
           enableCounter: false,
           enableHover: false,
           enableTracking: true,
           click: function(api, options){
             api.simulateClick();
-            api.openPopup('linkedin');
+            api.openPopup('googlePlus');
           },
-          template: '<i class="fa fa-linkedin"></i>',
+          template: '<i class="fa fa-google"></i>',
           url: 'http://demos.creative-tim.com/paper-kit-2/index.html'
         });
     }
 
-    if($('.linkedin-sharrre-nav').length != 0){
-        $('.linkedin-sharrre-nav').sharrre({
+    if($('.google-sharrre-nav').length != 0){
+        $('.google-sharrre-nav').sharrre({
           share: {
-            linkedin: true
+            googlePlus: true
           },
           enableCounter: false,
           enableHover: false,
           enableTracking: true,
           click: function(api, options){
             api.simulateClick();
-            api.openPopup('linkedin');
+            api.openPopup('googlePlus');
           },
-          template: '<i class="fa fa-linkedin"></i><p class="hidden-lg-up">LinkedIn</p>',
+          template: '<i class="fa fa-google"></i><p class="hidden-lg-up">Google</p>',
           url: 'http://demos.creative-tim.com/paper-kit-2/index.html'
         });
     }
