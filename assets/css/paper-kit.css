@@ -936,7 +936,6 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
   border-radius: 4px;
   color: #66615b;
   font-size: 14px;
-  transition: background-color 0.3s ease 0s;
   padding: 7px 12px;
   height: 40px;
   -webkit-box-shadow: none;
@@ -944,7 +943,7 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 }
 .form-control:focus {
   background-color: #FFFFFF;
-  border: 1px solid #ccc;
+  border: 1px solid #9A9A9A;
   -webkit-box-shadow: none;
   box-shadow: none;
   outline: 0 !important;
@@ -986,6 +985,10 @@ input[type="file"] > input[type="button"]::-moz-focus-inner {
 .open .form-control {
   border-radius: 4px 4px 0 0;
   border-bottom-color: transparent;
+}
+
+.input-group.input-group-focus .input-group-addon {
+  border-color: #9A9A9A;
 }
 
 .input-lg {
