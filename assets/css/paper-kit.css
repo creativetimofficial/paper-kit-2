@@ -1803,7 +1803,7 @@ textarea.form-control {
 }
 
 .section-dark {
-  background-color: #151f20;
+  background-color: #0b1011;
 }
 
 .section-image,
@@ -1876,6 +1876,10 @@ textarea.form-control {
 .section-image .container {
   position: relative;
   z-index: 2;
+}
+
+.section-login {
+  min-height: 700px;
 }
 
 .checkbox,
