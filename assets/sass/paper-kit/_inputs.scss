@@ -179,3 +179,9 @@ textarea.form-control{
         }
     }
 }
+.form-group-no-border{
+    .form-control,
+    .input-group-addon{
+        border: 0 !important;
+    }
+}

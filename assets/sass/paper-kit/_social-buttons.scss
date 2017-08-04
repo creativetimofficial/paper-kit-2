@@ -53,12 +53,12 @@
         border-color: darken($social-facebook, 5%) !important;
     }
 }
-.btn-linkedin-bg{
-    background-color: $social-linkedin !important;
-    border-color: $social-linkedin !important;
+.btn-google-bg{
+    background-color: $social-google !important;
+    border-color: $social-google !important;
     &:hover{
-        background-color: darken($social-linkedin, 5%) !important;
-        border-color: darken($social-linkedin, 5%) !important;
+        background-color: darken($social-google, 5%) !important;
+        border-color: darken($social-google, 5%) !important;
     }
 }
 .btn-github-bg{
