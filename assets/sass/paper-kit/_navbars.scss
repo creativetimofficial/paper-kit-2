@@ -143,7 +143,13 @@
             }
     }
 }
-
+.navbar.fixed-top{
+    .nav-link{
+        i{
+            top: 4px;
+        }
+    }
+}
 .navbar-absolute{
     position: absolute;
     width: 100%;
