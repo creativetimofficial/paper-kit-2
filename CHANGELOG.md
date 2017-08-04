@@ -1,7 +1,17 @@
 # Change Log
 
+## [2.0.0] 2017-08-04 [current version]
+### Major update to Bootstrap 4
+ - Bootstrap 4 framework
+ - changed colors
+ - changed example pages
+ - new typography
+ - new design changes
+ - better code structure
+ - better SCSS and CSS properties
+
 ## [1.2.2] 2017-01-18
-### MIT License [current version]
+### MIT License
  - changed licensing agreement to MIT
 
 ## [1.2.1] 2016-02-25

@@ -1,42 +1,44 @@
-# [Paper Kit - Free Bootstrap UI Kit](http://demos.creative-tim.com/paper-kit)
+# [Paper Kit 2 - Free Bootstrap 4 UI Kit](http://demos.creative-tim.com/paper-kit-2) [![version][version-badge]][CHANGELOG] [![license][license-badge]][LICENSE]
 
-![Paper Kit](http://s3.amazonaws.com/creativetim_bucket/products/33/original/opt_pk_thumbnail.jpg "Paper Kit Free")
+![Paper Kit 2](http://s3.amazonaws.com/creativetim_bucket/products/61/original/opt_pk2_thumbnail.jpg "Paper Kit 2 Free")
 
-Paper Kit is a free Bootstrap UI kit that can get you going in a new creative direction! To say the least, it's different since it's not material, flat or iOS inspired. We hope the kit will help you make your mark and create something new. Using it is extremely convenient, since it offers fully responsive design and elements that are easy to use.
+Paper Kit 2 is a free Bootstrap 4 UI Kit with pale colors, beautiful typography and thoughtful drawings. We created it having paper and drawings in mind.
 
-We created this kit having paper and drawings in mind. We tried to focus on pale colours, beautiful typography and thoughtful drawings. If you like the result, you can use it in your projects for free. You can import it in an old project and make it look fresh, or you can start a new one. It's very easy to use and to integrate.
+Any elements that is vital to code a web project is already here, fully coded. All components are fully responsive and look great on every screen size. Transitions, shadows, colors, they all resemble the flow you would have using pieces of paper.
 
-Every element in the kit comes in fresh colour scheme, that goes from light blue to orange. Check out the [live preview](http://demos.creative-tim.com/paper-kit) to see how they fit!
+We have created the UI Kit kit having pastel colors and paper in mind. It feels light, fresh and easy to go through. It features beautiful typography, font icons and thoughtful layouts.
 
-**Bootstrap 3 support**
-Paper Kit fully support Bootstrap3, since it is built on top of it. No worries there! We have redesigned most of its components, giving it a new look. If you are using a component we have not touched, it will gracefully fall back to the Bootstrap default.
+Paper Kit 2 has a PRO version with a huge number of components, sections and examples: Paper Kit 2 PRO (https://www.creative-tim.com/product/paper-kit-2-pro). Based on feedback from people that downloaded and used it, we have added needed components and we have created multiple examples pages. We are curious to see how you want to use it and also improve it, so let us know any feedback you have.
 
-We will support very soon Bootstrap 4.0.
+**Bootstrap 4 support**
+
+Paper Kit 2 is built on top of Bootstrap 4, so it fully supports it. Most of the elements from the framework are re-designed to resemble sheets of paper and color pastels. If the are elements that we have not touched, they will gracefully fall back to the Bootstrap 4 default.
 
 **Examples**
-The kit comes with three pre-built pages to help you get started faster. You can change the text and images and you're good to go. If you want to get a picture of what you can build with this powerful kit, you can see the examples here:
 
-- [Landing Page](http://demos.creative-tim.com/paper-kit/landing-page)
-- [Register Page](http://demos.creative-tim.com/paper-kit/register)
-- [Profile Page](http://demos.creative-tim.com/paper-kit/profile)
+Paper Kit 2 contains some pages already designed and implemented. Here is the list with the pages available. We are also working on more example pages, that you will be able to access no matter the version you download.
 
+
+- [Landing Page](http://demos.creative-tim.com/paper-kit-2/examples/landing.html)
+- [Register Page](http://demos.creative-tim.com/paper-kit-2/examples/register.html)
+- [Profile Page](http://demos.creative-tim.com/paper-kit-2/examples/profile.html)
 
 Tutorial & Components
-To see what you will get in the archive and how you can start using the Paper Kit, you can check out the [tutorial](http://demos.creative-tim.com/paper-kit/tutorial) page. It has all the basics.
 
-If you want to see the documentation for every element, head over to the [components](http://demos.creative-tim.com/paper-kit/components) page.
+Once you download the archive, you will be able find a tutorial page inside it explaining how to start using it. You can also check the [documentation online](http://demos.creative-tim.com/paper-kit-2-pro/documentation/tutorial-components.html).
 
 ## Links:
 
-+ [Live Preview](http://demos.creative-tim.com/paper-kit)
-+ [Paper Kit PRO](http://demos.creative-tim.com/paper-kit-pro/presentation.html) (from $49)
++ [Live Preview](http://demos.creative-tim.com/paper-kit-2)
++ [Paper Kit 2 PRO](http://demos.creative-tim.com/paper-kit-2-pro/presentation.html) (from $69)
++ [Paper Kit Bootstrap 3](http://demos.creative-tim.com/paper-kit)
 
 ## Quick start
 
 Quick start options:
 
 - [Download from Github](https://github.com/creativetimofficial/paper-kit.git).
-- [Download from Creative Tim](http://www.creative-tim.com/product/paper-kit).
+- [Download from Creative Tim](http://www.creative-tim.com/product/paper-kit-2).
 - Clone the repo: `git clone https://github.com/creativetimofficial/paper-kit.git`.
 
 
@@ -45,58 +47,38 @@ Quick start options:
 Within the download you'll find the following directories and files:
 
 ```
-x_paper_kit/
-├── assets/
+paper-kit-2
+├── CHANGELOG.md
+├── LICENSE.md
+├── README.md
+├── assets
 │   ├── css
-│   │   ├── ct-paper.css
+│   │   ├── bootstrap.min.css
 │   │   ├── demo.css
-│   │   └── examples.css
-│   ├── fonts/
-│   ├── img/
-│   ├── js/
-│   │   ├── bootstrap-datepicker.js
-│   │   ├── bootstrap-select.js
-│   │   ├── ct-paper-checkbox.js
-│   │   ├── ct-paper-radio.js
-│   │   ├── ct-paper.js
-│   │   ├── jquery-1.10.2.js
-│   │   ├── jquery-ui-1.10.4.custom.min.js
-│   │   └── presentation-page
-│   ├── paper_img/
-│   ├── sass/
-│   │   ├── ct-paper/
-│   │   ├── ct-paper.scss
-│   │   └── examples.scss
-│   └── video
-├── bootstrap3/
-├── components.html
-├── examples/
+│   │   └── paper-kit.css
+│   ├── img
+│   ├── js
+│   │   ├── bootstrap-datetimepicker.min.js
+│   │   ├── bootstrap-switch.min.js
+│   │   ├── bootstrap.min.js
+│   │   ├── jquery-3.2.1.js
+│   │   ├── jquery-ui-1.12.1.custom.min.js
+│   │   ├── moment.min.js
+│   │   ├── nouislider.js
+│   │   ├── paper-kit.js
+│   │   └── tether.min.js
+│   └── sass
+├── documentation
+│   └── tutorial-components.html
+├── examples
+│   ├── landing.html
+│   ├── profile.html
+│   └── register.html
 ├── index.html
-├── template.html
-└── tutorial.html
+├── nucleo-icons-demo.html
+└── template.html
 
 ```
-
-### Version logs
-
--V1.0 26.08.2015 Original Release
-
--V1.1 05.11.2015 Bugfixing
-- input-group button fix
-- changed checkbox to square and changed hover effect
-- fixed bug on register page cut-off
-
--V1.2 4.12.2015 Changes
-- updated Bootstrap to latest stable version(3.3.6)
-- added SASS and Less files
-- added style for off-canvas navigation
-- fixed small bugs.
-
--V1.2.1 25.02.2016 Bugfixing
-- fix the issue with disappearing navbar on mobile screen
-
--V1.2.2 18.01.2017 MIT License [current version]
-- changed licensing agreement to MIT 
 
 ### License
 
@@ -125,5 +107,8 @@ Dribbble: <https://dribbble.com/creativetim>
 Google+: <https://plus.google.com/+CreativetimPage>
 
 Instagram: <https://instagram.com/creativetimofficial>
-    
-    
+
+[CHANGELOG]: ./CHANGELOG.md
+[LICENSE]: ./LICENSE.md
+[version-badge]: https://img.shields.io/badge/version-2.0.0-blue.svg
+[license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
