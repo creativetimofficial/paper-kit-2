@@ -119,11 +119,14 @@
 .profile-content{
     position: relative;
 }
+.owner{
+    text-align: center;
+}
 .owner .avatar{
-    margin-top: -85px;
     padding: 15px;
-    position:relative;
-    z-index: 3;
+    max-width: 180px;
+    margin: -85px auto 0;
+    display: inline-block;
 }
 .owner .name h4{
     margin-top: 10px;
@@ -247,3 +250,8 @@
                         100%{-webkit-transform:translate3d(-50%,0,0);
                         transform:translate3d(-50%,0,0)}
                     }
+.following{
+    img{
+        max-width: 70px;
+    }
+}
