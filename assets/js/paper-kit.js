@@ -1,11 +1,11 @@
 /*!
 
  =========================================================
- * Paper Kit - v1.2.2
+ * Paper Kit 2 - v2.0.0
  =========================================================
 
- * Product Page: http://www.creative-tim.com/product/paper-kit
- * Copyright 2016 Creative Tim (http://www.creative-tim.com)
+ * Product Page: http://www.creative-tim.com/product/paper-kit-2
+ * Copyright 2017 Creative Tim (http://www.creative-tim.com)
  * Licensed under MIT (https://github.com/timcreative/paper-kit/blob/master/LICENSE.md)
 
  =========================================================
@@ -75,7 +75,7 @@ $(document).ready(function(){
                 clear: 'fa fa-trash',
                 close: 'fa fa-remove'
             },
-
+            debug: true
         });
     };
 

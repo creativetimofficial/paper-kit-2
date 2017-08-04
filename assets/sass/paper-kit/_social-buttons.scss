@@ -37,3 +37,35 @@
         color: $social-linkedin !important;
     }
 }
+.btn-twitter-bg{
+    background-color: $social-twitter !important;
+    border-color: $social-twitter !important;
+    &:hover{
+        background-color: darken($social-twitter, 5%) !important;
+        border-color: darken($social-twitter, 5%) !important;
+    }
+}
+.btn-facebook-bg{
+    background-color: $social-facebook !important;
+    border-color: $social-facebook !important;
+    &:hover{
+        background-color: darken($social-facebook, 5%) !important;
+        border-color: darken($social-facebook, 5%) !important;
+    }
+}
+.btn-linkedin-bg{
+    background-color: $social-linkedin !important;
+    border-color: $social-linkedin !important;
+    &:hover{
+        background-color: darken($social-linkedin, 5%) !important;
+        border-color: darken($social-linkedin, 5%) !important;
+    }
+}
+.btn-github-bg{
+    background-color: #767676 !important;
+    border-color: #767676 !important;
+    &:hover{
+        background-color: darken(#767676, 5%) !important;
+        border-color: darken(#767676, 5%) !important;
+    }
+}

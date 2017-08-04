@@ -33,6 +33,18 @@
         [class^="fa"]{
             top: 2px;
         }
+        p{
+            margin: 0px 0px;
+            color: #9A9A9A !important;
+            text-transform: uppercase;
+            font-weight: 600;
+            font-size: 12px;
+            line-height: 1.5em;
+            padding: 15px 0;
+        }
+        p:hover{
+            color: #403D39 !important;
+        }
     }
     .navbar-nav{
         .nav-item .nav-link {
@@ -50,7 +62,7 @@
             padding: 9px;
 
          }
-         
+
         .dropdown-menu{
             border-radius: $border-radius-extreme;
             margin-top: 1px;

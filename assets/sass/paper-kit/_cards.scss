@@ -115,15 +115,32 @@
 
 }
 
+.section{
+    .card-profile{
+        margin-top: 100px;
+    }
+}
+
 .card-register {
   background-color: #FF8F5E;
   border-radius: 8px;
   color: #fff;
   max-width: 350px;
-  margin: 20px 0 70px;
+  margin: 120px 0 70px;
   min-height: 400px;
   padding: 30px;
   z-index: 1;
+
+  .social-line{
+      .btn{
+          margin-top: 0;
+      }
+  }
+}
+.section-image{
+    .card-register{
+        margin-top: 0;
+    }
 }
 
 .card-register label {

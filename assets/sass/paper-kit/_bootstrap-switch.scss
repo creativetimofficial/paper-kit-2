@@ -62,7 +62,7 @@
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-primary,
 .bootstrap-switch .bootstrap-switch-handle-off.bootstrap-switch-primary {
   color: #fff;
-  background: #7A9E9F;
+  background: $primary-color;
 }
 
 .bootstrap-switch .bootstrap-switch-handle-on.bootstrap-switch-info,
@@ -237,7 +237,7 @@
 }
 
 .bootstrap-switch.bootstrap-switch-on .bootstrap-switch-primary ~ .bootstrap-switch-default {
-  background-color: #7A9E9F;
+  background-color: $primary-color;
 }
 
 .bootstrap-switch.bootstrap-switch-on .bootstrap-switch-info ~ .bootstrap-switch-default {
