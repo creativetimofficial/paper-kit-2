@@ -83,6 +83,9 @@
     width: 100%;
     position: relative;
 }
+#carousel{
+    padding-top: 0;
+}
 .note{
     text-transform: capitalize;
 }
@@ -90,7 +93,7 @@
     padding-top: 20px;
 }
 .page-header .card-register .title{
-    margin-bottom: 0;
+    margin-bottom: 10px;
 }
 .space-100{
     height: 100px;
@@ -938,9 +941,7 @@
 .navbar-header{
     min-width: 135px;
 }
-#notifications{
-    background-color: #F5F2EC;
-}
+
 #demo-navbar{
     border-radius: 0;
     margin-bottom: 0px;
@@ -953,6 +954,127 @@
 }
 .sharing-area .btn{
     margin-top: 14px;
+}
+
+/* nucleo icons  */
+
+.demo-iconshtml {
+    font-size: 62.5%;
+}
+.demo-icons body {
+    font-size: 1.6rem;
+    font-family: sans-serif;
+    color: #333333;
+    background: white;
+}
+.demo-icons a {
+    color: #608CEE;
+    text-decoration: none;
+}
+.demo-icons header {
+    text-align: center;
+    padding: 100px 0 0;
+}
+.demo-icons header h1 {
+    font-size: 2.8rem;
+}
+.demo-icons header p {
+    font-size: 1.4rem;
+    margin-top: 1em;
+}
+.demo-icons header a:hover {
+    text-decoration: underline;
+}
+.demo-icons .nc-icon {
+    font-size: 34px;
+}
+.demo-icons section {
+    width: 90%;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+.demo-icons section h2 {
+    border-bottom: 1px solid #e2e2e2;
+    padding: 0 0 1em .2em;
+    margin-bottom: 1em;
+}
+.demo-icons ul::after {
+    clear: both;
+    content: "";
+    display: table;
+}
+.demo-icons ul li {
+    width: 25%;
+    float: left;
+    padding: 16px 0;
+    text-align: center;
+    border-radius: .25em;
+    -webkit-transition: background 0.2s;
+    -moz-transition: background 0.2s;
+    transition: background 0.2s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    overflow: hidden;
+}
+.demo-icons ul li:hover {
+    background: #f4f4f4;
+}
+.demo-icons ul p, .demo-icons ul em, .demo-icons ul input {
+    display: inline-block;
+    font-size: 1rem;
+    color: #999999;
+    -webkit-user-select: auto;
+    -moz-user-select: auto;
+    -ms-user-select: auto;
+    user-select: auto;
+    white-space: nowrap;
+    width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.demo-icons ul p {
+    padding: 20px 0 0;
+    font-size: 12px;
+    margin: 0;
+}
+.demo-icons ul p::selection, .demo-icons ul em::selection {
+    background: #608CEE;
+    color: #efefef;
+}
+.demo-icons ul em {
+    margin-bottom: 8px;
+    font-size: 12px;
+}
+.demo-icons ul em::before {
+    content: '[';
+}
+.demo-icons ul em::after {
+    content: ']';
+}
+.demo-icons ul input {
+    text-align: center;
+    background: transparent;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    display: none;
+}
+
+@media only screen and (min-width: 768px) {
+    .demo-icons ul li {
+        width: 20%;
+        float: left;
+    }
+}
+@media only screen and (min-width: 1024px) {
+    .demo-icons ul li {
+        width: 12.5%;
+        float: left;
+        padding: 32px 0;
+    }
 }
 
 /* for components and tutorial page */
@@ -1001,4 +1123,13 @@
 }
 .example-pages{
     margin-top: 50px;
+}
+.main .section:first-of-type{
+    position: relative;
+    z-index: 2;
+}
+.profile-content{
+    padding-top: 0;
+    position: relative;
+    z-index: 2;
 }

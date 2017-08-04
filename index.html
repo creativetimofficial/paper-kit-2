@@ -4,6 +4,7 @@
 <head>
     <meta charset="utf-8" />
     <link rel="icon" type="image/png" href="assets/img/favicon.ico">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/img/apple-icon.png">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
 
     <title>Paper Kit by Creative Tim</title>
@@ -14,7 +15,6 @@
     <link href="assets/css/bootstrap.min.css" rel="stylesheet" />
     <link href="assets/css/paper-kit.css" rel="stylesheet"/>
     <link href="assets/css/demo.css" rel="stylesheet" />
-    <link href="assets/css/examples.css" rel="stylesheet" />
 
     <!--     Fonts and icons     -->
     <link href='http://fonts.googleapis.com/css?family=Montserrat:400,300,700' rel='stylesheet' type='text/css'>
@@ -32,16 +32,10 @@
                     <span class="navbar-toggler-bar"></span>
                     <span class="navbar-toggler-bar"></span>
                 </button>
-                <a class="navbar-brand" href="www.creative-tim.com">Paper Kit 2</a>
+                <a class="navbar-brand" href="https://www.creative-tim.com">Paper Kit 2</a>
             </div>
             <div class="collapse navbar-collapse" id="navbarToggler">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a href="http://www.creative-tim.com/product/paper-kit" target="_blank" class="nav-link"><i class="nc-icon nc-cloud-download-93"></i> Download</a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="documentation/tutorial-components.html" target="_blank" class="nav-link"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
-                    </li>
                     <li class="nav-item">
                         <a class="nav-link" rel="tooltip" title="Follow us on Twitter" data-placement="bottom" href="https://twitter.com/CreativeTim" target="_blank">
                             <i class="fa fa-twitter"></i>
@@ -66,6 +60,12 @@
                             <p class="hidden-lg-up">GitHub</p>
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a href="documentation/tutorial-components.html" target="_blank" class="nav-link"><i class="nc-icon nc-book-bookmark"></i> Documentation</a>
+                    </li>
+                    <li class="nav-item">
+						<a href="https://www.creative-tim.com/product/paper-kit-2-pro?ref=pk2-free-local" target="_blank" class="btn btn-danger btn-round">Upgrade to Pro</a>
+					</li>
                 </ul>
             </div>
         </div>
@@ -98,7 +98,7 @@
     		</h6>
     	</div>
         <div class="main">
-            <div class="section section-gray section-buttons">
+            <div class="section section-buttons">
                 <div class="container">
                     <div class="tim-title">
                         <h2>Basic Elements</h2>
@@ -140,7 +140,6 @@
                                 <button type="button" class="btn btn-outline-success btn-round">Success</button>
                                 <button type="button" class="btn btn-outline-warning btn-round">Warning</button>
                                 <button type="button" class="btn btn-outline-danger btn-round">Danger</button>
-                                <button type="button" class="btn btn-outline-neutral btn-round">Neutral</button>
 							</div>
                         </div>
                         <br/>
@@ -152,7 +151,6 @@
                                 <button type="button" class="btn btn-success btn-round">Success</button>
                                 <button type="button" class="btn btn-warning btn-round">Warning</button>
                                 <button type="button" class="btn btn-danger btn-round">Danger</button>
-                                <button type="button" class="btn btn-neutral btn-round">Neutral</button>
                             </div>
 		                </div>
                     </div>
@@ -296,7 +294,7 @@
                     </div>
                     <div class="row">
                         <div class="col-md-6">
-                            <nav class="navbar navbar-toggleable-md navbar-default">
+                            <nav class="navbar navbar-toggleable-md bg-primary">
                                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                     <span class="navbar-toggler-icon"></span>
@@ -306,22 +304,22 @@
                                 <div class="collapse navbar-collapse" id="navbar-menu">
                                     <ul class="navbar-nav mr-auto">
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Link</a>
+                                            <a class="nav-link" href="#pk">Link</a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#">Link</a>
+                                            <a class="nav-link" href="#pk">Link</a>
                                         </li>
                                         <li class="nav-item dropdown">
                                             <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
                                             <ul class="dropdown-menu dropdown-menu-right dropdown-info">
                                                 <li class="dropdown-header">Dropdown header</li>
-                                                <li class="dropdown-item"><a href="#">Action</a></li>
-                                                <li class="dropdown-item"><a href="#">Another action</a></li>
-                                                <li class="dropdown-item"><a href="#">Something else here</a></li>
+                                                <li class="dropdown-item"><a href="#pk">Action</a></li>
+                                                <li class="dropdown-item"><a href="#pk">Another action</a></li>
+                                                <li class="dropdown-item"><a href="#pk">Something else here</a></li>
                                                 <div class="dropdown-divider"></div>
-                                                <li class="dropdown-item"><a href="#">Separated link</a></li>
+                                                <li class="dropdown-item"><a href="#pk">Separated link</a></li>
                                                 <div class="dropdown-divider"></div>
-                                                <li class="dropdown-item"><a href="#">Another separated link</a></li>
+                                                <li class="dropdown-item"><a href="#pk">Another separated link</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -329,7 +327,7 @@
                             </nav>
                         </div>
                         <div class="col-md-6">
-                            <nav class="navbar navbar-toggleable-md navbar-default">
+                            <nav class="navbar navbar-toggleable-md bg-danger">
                                 <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbar-menu-icon" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                                     <span class="navbar-toggler-icon"></span>
                                     <span class="navbar-toggler-icon"></span>
@@ -339,19 +337,19 @@
                                 <div class="collapse navbar-collapse" id="navbar-menu-icon">
                                     <ul class="navbar-nav ml-auto">
                                         <li class="nav-item active">
-                                            <a class="nav-link" href="#"><i class="nc-icon nc-email-85" aria-hidden="true"></i></a>
+                                            <a class="nav-link" href="#pk"><i class="nc-icon nc-email-85" aria-hidden="true"></i></a>
                                         </li>
                                         <li class="nav-item">
-                                            <a class="nav-link" href="#"><i class="nc-icon nc-single-02" aria-hidden="true"></i></a>
+                                            <a class="nav-link" href="#pk"><i class="nc-icon nc-single-02" aria-hidden="true"></i></a>
                                         </li>
                                         <li class="nav-item dropdown">
-                                            <a class="nav-link dropdown-toggle text-danger" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i></a>
+                                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false"><i class="nc-icon nc-settings-gear-65" aria-hidden="true"></i></a>
                                             <ul class="dropdown-menu dropdown-menu-right dropdown-danger">
-                                                <li class="dropdown-header" href="#">Dropdown header</li>
-                                                <li class="dropdown-item" href="#"><a href="#">Another action</a></li>
-                                                <li class="dropdown-item" href="#"><a href="#">Something else here</a></li>
+                                                <li class="dropdown-header" href="#pk">Dropdown header</li>
+                                                <li class="dropdown-item"><a href="#pk">Another action</a></li>
+                                                <li class="dropdown-item"><a href="#pk">Something else here</a></li>
                                                 <div class="dropdown-divider"></div>
-                                                <li class="dropdown-item" href="#"><a href="#">Separated link</a></li>
+                                                <li class="dropdown-item"><a href="#pk">Separated link</a></li>
                                             </ul>
                                         </li>
                                     </ul>
@@ -513,7 +511,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section section-nude">
+            <div class="section">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-6">
@@ -667,7 +665,7 @@
                 </div>
             </div>
             <br/>
-            <div class="section section-nude">
+            <div class="section">
                 <div class="container tim-container">
                     <div class="tim-title">
                         <h3>Typography</h3>
@@ -758,7 +756,7 @@
                             <div class="row">
                                 <div class="col-xs-8 col-sm-6 col-md-3">
                                     <h4 class="images-title">Rounded Image</h4>
-                                    <img src="assets/img/faces/ayo-ogunseinde-1.jpg" class="img-rounded img-responsive" alt="Rounded Image">
+                                    <img src="assets/img/uriel-soberanes.jpg" class="img-rounded img-responsive" alt="Rounded Image">
                                     <div class="img-details">
                                         <div class="author">
                                             <img src="assets/img/faces/clem-onojeghuo-2.jpg" alt="Circle Image" class="img-circle img-no-padding img-responsive">
@@ -781,7 +779,7 @@
                     </div>
                 </div>
             </div>
-            <div class="section section-dark-blue javascript-components">
+            <div class="section javascript-components">
 				<div class="container">
 					<div class="tim-title">
 						<h2>Javascript Components</h2>
@@ -792,7 +790,7 @@
 								<h3>Modal</h3>
 							</div>
 							<!-- Button trigger modal -->
-							<button type="button" class="btn btn-outline-neutral btn-round" data-toggle="modal" data-target="#myModal">
+							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="modal" data-target="#myModal">
 							    Launch demo modal
 							</button>
 							<!-- Modal -->
@@ -824,10 +822,10 @@
 							<div class="tim-title">
 								<h3>Popovers</h3>
 							</div>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="left" data-title="Popover on left" data-content="Here will be some very useful information about this popover.">on left</button>
-                            <button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="right" data-title="Popover on right" data-content="Here will be some very useful information about this popover.">on right</button>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="top" data-title="Popover on top" data-content="Here will be some very useful information about this popover.">on top</button>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-container="body" data-toggle="popover" data-placement="bottom" data-title="Popover on bottom" data-content="Here will be some very useful information about this popover.">on bottom</button>
+							<button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="left" data-title="Popover on left" data-content="Here will be some very useful information about this popover.">on left</button>
+                            <button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="right" data-title="Popover on right" data-content="Here will be some very useful information about this popover.">on right</button>
+							<button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="top" data-title="Popover on top" data-content="Here will be some very useful information about this popover.">on top</button>
+							<button type="button" class="btn btn-outline-danger btn-round" data-container="body" data-toggle="popover" data-placement="bottom" data-title="Popover on bottom" data-content="Here will be some very useful information about this popover.">on bottom</button>
 						</div>
 						<br/>
 						<div class="col-md-6">
@@ -851,10 +849,10 @@
 							<div class="tim-title">
 								<h3>Tooltips</h3>
 							</div>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="left" title="Tooltip on left">On left</button>
-                            <button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="right" title="Tooltip on right">On right</button>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="top" title="Tooltip on top">On top</button>
-							<button type="button" class="btn btn-outline-neutral btn-round" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">On bottom</button>
+							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="left" title="Tooltip on left">On left</button>
+                            <button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="right" title="Tooltip on right">On right</button>
+							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="top" title="Tooltip on top">On top</button>
+							<button type="button" class="btn btn-outline-danger btn-round" data-toggle="tooltip" data-placement="bottom" title="Tooltip on bottom">On bottom</button>
 						</div>
 					</div>
 					<div class="tim-title">
@@ -942,8 +940,8 @@
     				</div>
     			</div>
             </div>
-			<div class="section section-white">
-				<div class="container tim-container">
+			<div class="section section-dark">
+				<div class="container">
 					<div class="row">
 						<div class="col-md-8 offset-md-2 text-center">
 							<h2 class="title">Completed with examples</h2>
@@ -952,7 +950,7 @@
 					</div>
 				</div>
 			</div>
-            <div class="section section-image" style="background-image: url('assets/img/the-how-photographer.jpg');">
+            <div class="section section-image" style="background-image: url('assets/img/.jpg');">
                 <div class="container">
                     <div class="row">
                         <div class="col-md-4 offset-md-4">
@@ -991,22 +989,22 @@
             <div class="section section-dark">
                 <div class="container">
                     <div class="row example-page">
-                        <div class="col-md-6">
+                        <div class="col-md-6 text-center">
                             <a href="examples/landing.html" target="_blank">
                                 <img src="assets\img\examples\landing-page.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                                <h5 class="text-center text-muted">Landing Page</h5>
+                                <a href="examples/landing.html" class="btn btn-outline-neutral btn-round" target="_blank">Landing Page</a>
                             </a>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 text-center">
                             <a href="examples/register.html" target="_blank">
                                 <img src="assets\img\examples\profile-page.jpg" alt="Rounded Image" class="img-rounded img-responsive" style="width: 100%">
-                                <h5 class="text-center text-muted">Profile</h5>
+                                <a href="examples/profile.html" class="btn btn-outline-neutral btn-round" target="_blank">Profile Page</a>
                             </a>
                         </div>
                     </div>
                 </div>
             </div>
-			<div class="section  section-with-space">
+			<div class="section">
 				<div class="container text-center">
 					<div class="row">
 						<div class="col-md-8 offset-md-2 text-center">
@@ -1017,21 +1015,32 @@
 							<a href="http://www.creative-tim.com/product/paper-kit" class="btn btn-danger">download free HTML</a>
 						</div>
 					</div>
+                    <div class="row text-center upgrade-pro">
+    					<div class="col-md-8 offset-md-2">
+    	                    <h2 class="title">Want more?</h2>
+    	                    <p class="description">We've just launched <a href="http://demos.creative-tim.com/paper-kit-2-pro/presentation.html?ref=utp-pk2-demos" target="_blank">Paper Kit 2 PRO</a>. It has a huge number of components, sections and example pages. Start Your Development With A Badass Bootstrap UI Kit inspired by Paper Design.</p>
+    	                </div>
+    					<div class="col-xs-8 offset-xs-2 col-sm-4 offset-sm-4">
+    						<a href="http://demos.creative-tim.com/paper-kit-2-pro/presentation.html?ref=utp-pk-demos" class="btn btn-info" target="_blank">
+    							<i class="fa fa-archive" aria-hidden="true"></i> Upgrade to PRO
+    						</a>
+    					</div>
+    	            </div>
                     <div class="row justify-content-md-center sharing-area text-center">
                         <div class="text-center col-md-12 col-lg-8">
                             <h3>Thank you for supporting us!</h3>
                         </div>
                         <div class="text-center col-md-12 col-lg-8">
-                            <a href="#pablo" class="btn btn-primary twitter-sharrre" rel="tooltip" title="Tweet!">
+                            <a href="#pablo" class="btn btn-twitter-bg twitter-sharrre" rel="tooltip" title="Tweet!">
                                 <i class="fa fa-twitter"></i> Twitter
                             </a>
-                            <a href="#pablo" class="btn btn-info facebook-sharrre" rel="tooltip" title="Share!">
+                            <a href="#pablo" class="btn btn-facebook-bg facebook-sharrre" rel="tooltip" title="Share!">
                                 <i class="fa fa-facebook-square"></i> Facebook
                             </a>
-                            <a href="#pablo" class="btn btn-danger linkedin-sharrre" rel="tooltip" title="Share!">
+                            <a href="#pablo" class="btn btn-linkedin-bg linkedin-sharrre" rel="tooltip" title="Share!">
                                 <i class="fa fa-linkedin"></i> LinkedIn
                             </a>
-                            <a href="https://github.com/creativetimofficial/" class="btn btn-default btn-github sharrre" rel="tooltip" title="Star on Github">
+                            <a href="https://github.com/creativetimofficial/" class="btn btn-github-bg btn-github sharrre" rel="tooltip" title="Star on Github">
                                 <i class="fa fa-github"></i> GitHub
                             </a>
                         </div>
@@ -1065,9 +1074,6 @@
 <script src="assets/js/jquery-ui-1.12.1.custom.min.js" type="text/javascript"></script>
 <script src="assets/js/tether.min.js" type="text/javascript"></script>
 <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-
-<!-- Plugin for Share buttons -->
-<script src="assets/js/jquery.sharrre.js"></script>
 
 <!-- Switches -->
 <script src="assets/js/bootstrap-switch.min.js"></script>

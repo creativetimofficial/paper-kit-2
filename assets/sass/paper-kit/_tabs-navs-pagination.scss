@@ -211,12 +211,12 @@
     }
 }
 
-.pagination > li > a,
-.pagination > li > span,
-.pagination > li:first-child > a,
-.pagination > li:first-child > span,
-.pagination > li:last-child > a,
-.pagination > li:last-child > span{
+.pagination > .page-item > .page-link,
+.pagination > .page-item > span,
+.pagination > .page-item:first-child > .page-link,
+.pagination > .page-item:first-child > span,
+.pagination > .page-item:last-child > .page-link,
+.pagination > .page-item:last-child > span{
     background-color: transparent;
     border: 2px solid $danger-color;
     border-radius: 20px;
@@ -224,159 +224,32 @@
     height: $line-height;
     margin: 0 2px;
     min-width: 36px;
-    padding: 7px 12px;
     font-weight: $font-weight-bold;
 }
-.nav-pills-default > li > a,
-.pagination > li > a:hover,
-.pagination > li > a:focus,
-.pagination > li > a:active,
-.pagination > li.active > a,
-.pagination > li.active > span,
-.pagination > li.active > a:hover,
-.pagination > li.active > span:hover,
-.pagination > li.active > a:focus,
-.pagination > li.active > span:focus {
-    background-color: $default-color;
-    border-color: $default-color;
-    color: $white-color;
-}
 
-.nav-pills-primary > li > a,
-.pagination-primary > li > a,
-.pagination-primary > li > span,
-.pagination-primary > li:first-child > a,
-.pagination-primary > li:first-child > span,
-.pagination-primary > li:last-child > a,
-.pagination-primary > li:last-child > span{
-    border: 2px solid $primary-color;
-    color: $primary-color;
-}
-
-.nav-pills-primary > li.active > a,
-.nav-pills-primary > li.active > a:hover,
-.nav-pills-primary > li.active > a:focus,
-.pagination-primary > li > a:hover,
-.pagination-primary > li > a:focus,
-.pagination-primary > li > a:active,
-.pagination-primary > li.active > a,
-.pagination-primary > li.active > span,
-.pagination-primary > li.active > a:hover,
-.pagination-primary > li.active > span:hover,
-.pagination-primary > li.active > a:focus,
-.pagination-primary > li.active > span:focus{
-   background-color: $primary-color !important;
-   border-color: $primary-color !important;
-   color: $white-color;
-}
-
-.nav-pills-info > li > a,
-.pagination-info > li > a,
-.pagination-info > li > span,
-.pagination-info > li:first-child > a,
-.pagination-info > li:first-child > span,
-.pagination-info > li:last-child > a,
-.pagination-info > li:last-child > span{
-    border: 2px solid $info-color;
-    color: $info-color;
-}
-
-.nav-pills-info > li.active > a,
-.nav-pills-info > li.active > a:hover,
-.nav-pills-info > li.active > a:focus,
-.pagination-info > li > a:hover,
-.pagination-info > li > a:focus,
-.pagination-info > li > a:active,
-.pagination-info > li.active > a,
-.pagination-info > li.active > span,
-.pagination-info > li.active > a:hover,
-.pagination-info > li.active > span:hover,
-.pagination-info > li.active > a:focus,
-.pagination-info > li.active > span:focus{
-   background-color: $info-color !important;
-   border-color: $info-color !important;
-   color: $white-color;
-}
-
-.nav-pills-success > li > a,
-.pagination-success > li > a,
-.pagination-success > li > span,
-.pagination-success > li:first-child > a,
-.pagination-success > li:first-child > span,
-.pagination-success > li:last-child > a,
-.pagination-success > li:last-child > span{
-    border: 2px solid $success-color;
-    color: $success-color;
-}
-
-.nav-pills-success > li.active > a,
-.nav-pills-success > li.active > a:hover,
-.nav-pills-success > li.active > a:focus,
-.pagination-success > li > a:hover,
-.pagination-success > li > a:focus,
-.pagination-success > li > a:active,
-.pagination-success > li.active > a,
-.pagination-success > li.active > span,
-.pagination-success > li.active > a:hover,
-.pagination-success > li.active > span:hover,
-.pagination-success > li.active > a:focus,
-.pagination-success > li.active > span:focus{
-   background-color: $success-color !important;
-   border-color: $success-color !important;
-   color: $white-color;
-}
-
-.nav-pills-warning > li > a,
-.pagination-warning > li > a,
-.pagination-warning > li > span,
-.pagination-warning > li:first-child > a,
-.pagination-warning > li:first-child > span,
-.pagination-warning > li:last-child > a,
-.pagination-warning > li:last-child > span{
-    border: 2px solid $warning-color;
-    color: $warning-color;
-}
-
-.nav-pills-warning > li.active > a,
-.nav-pills-warning > li.active > a:hover,
-.nav-pills-warning > li.active > a:focus,
-.pagination-warning > li > a:hover,
-.pagination-warning > li > a:focus,
-.pagination-warning > li > a:active,
-.pagination-warning > li.active > a,
-.pagination-warning > li.active > span,
-.pagination-warning > li.active > a:hover,
-.pagination-warning > li.active > span:hover,
-.pagination-warning > li.active > a:focus,
-.pagination-warning > li.active > span:focus{
-   background-color: $warning-color !important;
-   border-color: $warning-color !important;
-   color: $white-color;
-}
-
-.nav-pills-danger > li > a,
-.pagination-danger > li > a,
-.pagination-danger > li > span,
-.pagination-danger > li:first-child > a,
-.pagination-danger > li:first-child > span,
-.pagination-danger > li:last-child > a,
-.pagination-danger > li:last-child > span{
+.nav-pills-danger > .page-item > .page-link,
+.pagination-danger > .page-item > .page-link,
+.pagination-danger > .page-item > span,
+.pagination-danger > .page-item:first-child > .page-link,
+.pagination-danger > .page-item:first-child > span,
+.pagination-danger > .page-item:last-child > .page-link,
+.pagination-danger > .page-item:last-child > span{
     border: 2px solid $danger-color;
     color: $danger-color;
 }
 
-.nav-pills-danger > li.active > a,
-.nav-pills-danger > li.active > a:hover,
-.nav-pills-danger > li.active > a:focus,
-.pagination-danger > li > a:hover,
-.pagination-danger > li > a:focus,
-.pagination-danger > li > a:active,
-.pagination-danger > li.active > a,
-.pagination-danger > li.active > span,
-.pagination-danger > li.active > a:hover,
-.pagination-danger > li.active > span:hover,
-.pagination-danger > li.active > a:focus,
-.pagination-danger > li.active > span:focus{
+.nav-pills-danger > .page-item.active > .page-link,
+.nav-pills-danger > .page-item.active > .page-link:hover,
+.nav-pills-danger > .page-item.active > .page-link:focus,
+.pagination-danger > .page-item > .page-link:hover,
+.pagination-danger > .page-item > .page-link:focus,
+.pagination-danger > .page-item > .page-link:active,
+.pagination-danger > .page-item.active > .page-link,
+.pagination-danger > .page-item.active > span,
+.pagination-danger > .page-item.active > .page-link:hover,
+.pagination-danger > .page-item.active > span:hover,
+.pagination-danger > .page-item.active > .page-link:focus,
+.pagination-danger > .page-item.active > span:focus{
    background-color: $danger-color !important;
    border-color: $danger-color !important;
    color: $white-color;

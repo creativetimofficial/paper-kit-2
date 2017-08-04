@@ -132,17 +132,17 @@
   border-color: #7AC29A;
 }
 .slider.slider-info .noUi-origin:first-child{
-  background-color: #68B3C8;
+  background-color: $primary-color;
 }
 .slider.slider-info .noUi-handle {
-  border-color: #68B3C8;
+  border-color: $primary-color;
 }
 .slider.slider-success .noUi-connect,
 .slider.slider-success.noUi-connect {
-  background-color: #68B3C8;
+  background-color: $primary-color;
 }
 .slider.slider-success .noUi-handle {
-  border-color: #68B3C8;
+  border-color: $primary-color;
 }
 .slider.slider-warning .noUi-connect,
 .slider.slider-warning.noUi-connect {
