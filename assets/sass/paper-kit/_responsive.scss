@@ -685,3 +685,13 @@
         }
     }
 }
+
+@media screen and (max-width: 324px){
+    .section{
+        .container{
+            nav{
+                overflow: auto;
+            }
+        }
+    }
+}

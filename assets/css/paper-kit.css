@@ -1090,6 +1090,13 @@ textarea.form-control {
   border: 0 !important;
 }
 
+.register-form .input-group .input-group-addon {
+  padding-right: 2px;
+}
+.register-form .input-group .form-control {
+  margin-left: -1px;
+}
+
 .progress {
   background-color: #DDDDDD;
   border-radius: 3px;
@@ -5221,6 +5228,11 @@ textarea.form-control {
 @media screen and (max-width: 1025px) {
   .input-group .input-group-addon {
     padding-right: 10px;
+  }
+}
+@media screen and (max-width: 324px) {
+  .section .container nav {
+    overflow: auto;
   }
 }
 /*!
