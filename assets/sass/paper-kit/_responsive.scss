@@ -158,6 +158,10 @@
 
     }
 
+    .bootstrap-datetimepicker-widget{
+        visibility: visible;
+    }
+
     .dropdown-menu {
         display: none;
     }
@@ -179,6 +183,22 @@
     }
     .footer:not(.footer-big) nav > ul li{
         float: none;
+    }
+    .footer{
+        .footer-nav,
+        .credits{
+            margin: 0 auto;
+        }
+    }
+    .section-buttons{
+        .input-group{
+            margin-top: 15px;
+        }
+        .form-group.has-danger{
+            .form-control-feedback{
+                margin-top: 5px;
+            }
+        }
     }
     .social-area.pull-right{
         float: none !important;
@@ -320,6 +340,19 @@
                     display: none !important;
                 }
             }
+        }
+    }
+    #typography{
+        .typography-line{
+            .note{
+                margin-left: 7px !important;
+            }
+        }
+    }
+    .section-nucleo-icons{
+        [class*='col-lg']{
+            text-align: center!important;
+            margin-bottom: 2em;
         }
     }
 }
@@ -642,6 +675,13 @@
            &.show .dropdown-menu{
                display: block;
            }
+        }
+    }
+}
+@media screen and (max-width: 1025px){
+    .input-group{
+        .input-group-addon{
+            padding-right: 10px;
         }
     }
 }

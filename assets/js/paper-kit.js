@@ -27,15 +27,6 @@ $(document).ready(function(){
     //  Activate the tooltips
     $('[data-toggle="tooltip"]').tooltip();
 
-    //      Activate the switches with icons
-    if($('.switch').length != 0){
-        $('.switch')['bootstrapSwitch']();
-    }
-    //      Activate regular switches
-    if($("[data-toggle='switch']").length != 0){
-         $("[data-toggle='switch']").bootstrapSwitch();
-    }
-
     if($(".tagsinput").length != 0){
         $(".tagsinput").tagsInput();
     }
@@ -59,8 +50,7 @@ $(document).ready(function(){
                 today: 'fa fa-screenshot',
                 clear: 'fa fa-trash',
                 close: 'fa fa-remove'
-            },
-            debug: true
+            }
         });
     };
 

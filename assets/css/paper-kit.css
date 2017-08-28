@@ -2468,6 +2468,10 @@ textarea.form-control {
   background-color: rgba(255, 255, 255, 0.2);
 }
 
+.section-navbars #menu-dropdown .navbar .navbar-toggler .navbar-toggler-icon {
+  background: #FFFFFF;
+}
+
 .img-rounded {
   border-radius: 12px;
   transition: opacity 0.5s ease 0s;
@@ -4669,6 +4673,10 @@ textarea.form-control {
     border-top-color: white;
   }
 
+  .bootstrap-datetimepicker-widget {
+    visibility: visible;
+  }
+
   .dropdown-menu {
     display: none;
   }
@@ -4695,6 +4703,18 @@ textarea.form-control {
 
   .footer:not(.footer-big) nav > ul li {
     float: none;
+  }
+
+  .footer .footer-nav,
+  .footer .credits {
+    margin: 0 auto;
+  }
+
+  .section-buttons .input-group {
+    margin-top: 15px;
+  }
+  .section-buttons .form-group.has-danger .form-control-feedback {
+    margin-top: 5px;
   }
 
   .social-area.pull-right {
@@ -4830,6 +4850,15 @@ textarea.form-control {
   }
   .presentation-page .section-icons .icons-nucleo .nc-icon:not(.ninth-left-icon):not(.seventh-left-icon):not(.third-left-icon) {
     display: none !important;
+  }
+
+  #typography .typography-line .note {
+    margin-left: 7px !important;
+  }
+
+  .section-nucleo-icons [class*='col-lg'] {
+    text-align: center !important;
+    margin-bottom: 2em;
   }
 }
 @media screen and (max-width: 991px) {
@@ -5187,6 +5216,11 @@ textarea.form-control {
   }
   .burger-menu .dropdown.show .dropdown-menu {
     display: block;
+  }
+}
+@media screen and (max-width: 1025px) {
+  .input-group .input-group-addon {
+    padding-right: 10px;
   }
 }
 /*!
