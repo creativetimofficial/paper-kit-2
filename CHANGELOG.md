@@ -1,5 +1,12 @@
 # Change Log
 
+
+## [2.0.1] 2017-08-27
+### Bug Fixing
+ - Bug fixes for responsive devices
+ - Added versions on CSS and JS files
+ - Optimization for all search engine
+
 ## [2.0.0] 2017-08-04 [current version]
 ### Major update to Bootstrap 4
  - Bootstrap 4 framework

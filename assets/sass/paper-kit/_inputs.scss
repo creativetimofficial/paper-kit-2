@@ -191,3 +191,13 @@ textarea.form-control{
         border: 0 !important;
     }
 }
+.register-form{
+    .input-group{
+        .input-group-addon{
+            padding-right: 2px;
+        }
+        .form-control{
+            margin-left: -1px;
+        }
+    }
+}
