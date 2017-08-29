@@ -201,3 +201,13 @@ textarea.form-control{
         }
     }
 }
+.has-success{
+    .form-control.form-control-success{
+        padding-right: 2.5em;
+    }
+}
+.has-danger{
+    .form-control.form-control-danger{
+        padding-right: 2.5em;
+    }
+}
