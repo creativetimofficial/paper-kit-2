@@ -54,8 +54,7 @@ $(document).ready(function(){
         });
     };
 
-    // activate bootstrap switch
-
+    // Activate bootstrap switch
     $('[data-toggle="switch"]').bootstrapSwitch();
 
     // Navbar color change on scroll
@@ -63,7 +62,7 @@ $(document).ready(function(){
         $(window).on('scroll', pk.checkScrollForTransparentNavbar)
     }
 
-
+    // Activate tooltips
     $('.btn-tooltip').tooltip();
     $('.label-tooltip').tooltip();
 
