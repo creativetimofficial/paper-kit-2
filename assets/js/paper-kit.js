@@ -54,6 +54,10 @@ $(document).ready(function(){
         });
     };
 
+    // activate bootstrap switch
+
+    $('[data-toggle="switch"]').bootstrapSwitch();
+
     // Navbar color change on scroll
     if($('.navbar[color-on-scroll]').length != 0){
         $(window).on('scroll', pk.checkScrollForTransparentNavbar)
