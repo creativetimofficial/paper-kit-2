@@ -1081,7 +1081,7 @@ textarea.form-control {
   margin-bottom: 1rem;
 }
 
-.card-form-horizontal .card-block .form-group {
+.card-form-horizontal .card-body .form-group {
   margin-bottom: 0;
 }
 
@@ -1095,6 +1095,14 @@ textarea.form-control {
 }
 .register-form .input-group .form-control {
   margin-left: -1px;
+}
+
+.has-success .form-control.form-control-success {
+  padding-right: 2.5em;
+}
+
+.has-danger .form-control.form-control-danger {
+  padding-right: 2.5em;
 }
 
 .progress {
@@ -1341,10 +1349,10 @@ textarea.form-control {
   top: 50%;
   margin-top: -22px;
 }
-.alert .alert-wrapper.message {
+.alert.message {
   padding-right: 60px;
 }
-.alert .alert-wrapper i {
+.alert i {
   position: relative;
   font-size: 20px;
   top: 5px;
@@ -1779,6 +1787,15 @@ textarea.form-control {
   border-bottom-color: #fff !important;
 }
 
+.popover-header {
+  background-color: rgba(255, 255, 255, 0) !important;
+  text-align: center;
+}
+
+.popover-body {
+  text-align: center;
+}
+
 .section {
   padding: 70px 0;
   position: relative;
@@ -2044,6 +2061,9 @@ textarea.form-control {
   background: #FFFFFF;
   box-shadow: 0 6px 10px -4px rgba(0, 0, 0, 0.15);
 }
+.navbar .navbar-toggler-right {
+  float: right;
+}
 .navbar .navbar-brand {
   font-weight: 600;
   margin: 5px 0px;
@@ -2269,7 +2289,7 @@ textarea.form-control {
   background-color: transparent;
   color: #51bcda;
 }
-.navbar-default .navbar-nav .navbar-toggle:hover, .navbar-default .navbar-nav .navbar-toggle:focus {
+.navbar-default .navbar-nav .navbar-toggler:hover, .navbar-default .navbar-nav .navbar-toggler:focus {
   background-color: transparent;
 }
 .navbar-default:not(.navbar-transparent) .btn-default:hover {
@@ -2318,19 +2338,19 @@ textarea.form-control {
   border-bottom: 1px solid rgba(255, 255, 255, 0.6);
 }
 
-.navbar-toggle {
+.navbar-toggler {
   margin-top: 19px;
   margin-bottom: 19px;
   border: 0;
 }
-.navbar-toggle .icon-bar {
+.navbar-toggler .icon-bar {
   background-color: #FFFFFF;
 }
-.navbar-toggle .navbar-collapse,
-.navbar-toggle .navbar-form {
+.navbar-toggler .navbar-collapse,
+.navbar-toggler .navbar-form {
   border-color: transparent;
 }
-.navbar-toggle.navbar-default .navbar-toggle:hover, .navbar-toggle.navbar-default .navbar-toggle:focus {
+.navbar-toggler.navbar-default .navbar-toggler:hover, .navbar-toggler.navbar-default .navbar-toggler:focus {
   background-color: transparent;
 }
 
@@ -2479,6 +2499,10 @@ textarea.form-control {
   background: #FFFFFF;
 }
 
+.nav-no-padding {
+  padding-top: 0 !important;
+}
+
 .img-rounded {
   border-radius: 12px;
   transition: opacity 0.5s ease 0s;
@@ -2592,10 +2616,10 @@ textarea.form-control {
 .card .card-footer .social-line .btn:last-child {
   border-radius: 0 0 6px 0;
 }
-.card .card-block .card-footer {
+.card .card-body .card-footer {
   padding: 0;
 }
-.card .card-block .card-description + .card-footer {
+.card .card-body .card-description + .card-footer {
   padding-top: 10px;
 }
 .card.no-transition:hover, .card.card-register:hover, .card.page-carousel:hover {
@@ -2623,10 +2647,10 @@ textarea.form-control {
   background-size: cover;
   border-radius: 12px 12px 0 0;
 }
-.card-profile .card-block .card-title {
+.card-profile .card-body .card-title {
   margin-top: 5px !important;
 }
-.card-profile .card-block .card-category {
+.card-profile .card-body .card-category {
   margin-bottom: 5px;
   margin-top: 5px;
 }
@@ -3174,7 +3198,7 @@ textarea.form-control {
   background-color: #cfcfca;
 }
 
-.dropdown-menu {
+.dropdown .dropdown-menu {
   background-color: #FFFCF5;
   border: 0 none;
   border-radius: 12px;
@@ -3188,30 +3212,25 @@ textarea.form-control {
   -webkit-box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1);
   box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1);
 }
-.show .dropdown-menu {
-  opacity: 1;
-  filter: alpha(opacity=100);
-  visibility: visible;
-}
-.dropdown-menu .divider {
+.dropdown .dropdown-menu .divider {
   background-color: #F1EAE0;
   margin: 0px;
 }
-.dropdown-menu .dropdown-header {
+.dropdown .dropdown-menu .dropdown-header {
   color: #9A9A9A;
   font-size: 12px;
   padding: 10px 15px;
 }
-.dropdown-menu .no-notification {
+.dropdown .dropdown-menu .no-notification {
   color: #9A9A9A;
   font-size: 1.2em;
   padding: 30px 30px;
   text-align: center;
 }
-.dropdown-menu .dropdown-item {
+.dropdown .dropdown-menu .dropdown-item {
   padding: 0 !important;
 }
-.dropdown-menu .dropdown-item a {
+.dropdown .dropdown-menu .dropdown-item a {
   color: #66615b;
   font-size: 14px;
   padding: 10px 45px 10px 15px;
@@ -3220,57 +3239,61 @@ textarea.form-control {
   width: 100%;
   display: block;
 }
-.dropdown-menu .dropdown-item a img {
+.dropdown .dropdown-menu .dropdown-item a img {
   margin-top: -3px;
 }
-.dropdown-menu .dropdown-item a:focus {
+.dropdown .dropdown-menu .dropdown-item a:focus {
   outline: 0 !important;
 }
-.btn-group.select .dropdown-menu {
+.btn-group.select .dropdown .dropdown-menu {
   min-width: 100%;
 }
-.dropdown-menu .dropdown-item:first-child a,
-.dropdown-menu .dropdown-item:first-child {
+.dropdown .dropdown-menu .dropdown-item:first-child a,
+.dropdown .dropdown-menu .dropdown-item:first-child {
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-.dropdown-menu .dropdown-item:last-child a,
-.dropdown-menu .dropdown-item:last-child {
+.dropdown .dropdown-menu .dropdown-item:last-child a,
+.dropdown .dropdown-menu .dropdown-item:last-child {
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
 }
-.select .dropdown-menu .dropdown-item:first-child a {
+.select .dropdown .dropdown-menu .dropdown-item:first-child a {
   border-radius: 0;
   border-bottom: 0 none;
 }
-.dropdown-menu .dropdown-item a:hover,
-.dropdown-menu .dropdown-item a:focus {
+.dropdown .dropdown-menu .dropdown-item a:hover,
+.dropdown .dropdown-menu .dropdown-item a:focus {
   color: #FFFFFF;
   opacity: 1;
   text-decoration: none;
 }
-.dropdown-menu .dropdown-item:hover,
-.dropdown-menu .dropdown-item:focus {
+.dropdown .dropdown-menu .dropdown-item:hover,
+.dropdown .dropdown-menu .dropdown-item:focus {
   background-color: #66615B;
 }
-.dropdown-menu.dropdown-primary .dropdown-item:hover, .dropdown-menu.dropdown-primary .dropdown-item:focus {
+.dropdown .dropdown-menu.dropdown-primary .dropdown-item:hover, .dropdown .dropdown-menu.dropdown-primary .dropdown-item:focus {
   background-color: #6dd3d6;
 }
-.dropdown-menu.dropdown-info .dropdown-item:hover, .dropdown-menu.dropdown-info .dropdown-item:focus {
+.dropdown .dropdown-menu.dropdown-info .dropdown-item:hover, .dropdown .dropdown-menu.dropdown-info .dropdown-item:focus {
   background-color: #6ec7e0;
 }
-.dropdown-menu.dropdown-success .dropdown-item:hover, .dropdown-menu.dropdown-success .dropdown-item:focus {
+.dropdown .dropdown-menu.dropdown-success .dropdown-item:hover, .dropdown .dropdown-menu.dropdown-success .dropdown-item:focus {
   background-color: #86d9ab;
 }
-.dropdown-menu.dropdown-warning .dropdown-item:hover, .dropdown-menu.dropdown-warning .dropdown-item:focus {
+.dropdown .dropdown-menu.dropdown-warning .dropdown-item:hover, .dropdown .dropdown-menu.dropdown-warning .dropdown-item:focus {
   background-color: #fcd27b;
 }
-.dropdown-menu.dropdown-danger .dropdown-item:hover, .dropdown-menu.dropdown-danger .dropdown-item:focus {
+.dropdown .dropdown-menu.dropdown-danger .dropdown-item:hover, .dropdown .dropdown-menu.dropdown-danger .dropdown-item:focus {
   background-color: #f7765f;
 }
-
-.dropdown-divider {
+.dropdown .dropdown-divider {
   margin: 0 !important;
+}
+.dropdown.show .dropdown-menu {
+  opacity: 1;
+  filter: alpha(opacity=100);
+  visibility: visible;
 }
 
 .btn-group.select.open {
@@ -5668,7 +5691,7 @@ textarea.form-control {
   bottom: -12px;
 }
 .bootstrap-datetimepicker-widget.open.top:after {
-  border-top: 11px solid #FFFCF5;
+  border-top: 11px solid #FFF;
   border-left: 11px solid transparent;
   border-right: 11px solid transparent;
   content: "";
@@ -5676,6 +5699,13 @@ textarea.form-control {
   position: absolute;
   right: 12px;
   bottom: -11px;
+}
+
+.bootstrap-datetimepicker-widget.dropdown-menu {
+  webkit-box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1);
+  box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1);
+  border: none !important;
+  border-radius: 12px !important;
 }
 
 .btn-twitter {

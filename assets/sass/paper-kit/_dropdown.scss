@@ -1,3 +1,4 @@
+.dropdown{
     .dropdown-menu{
         background-color: $pale-bg;
         border: 0 none;
@@ -11,10 +12,6 @@
         @include opacity(0);
         @include box-shadow($dropdown-shadow);
 
-        .show &{
-            @include opacity(1);
-            visibility: visible;
-        }
         .divider{
             background-color: $medium-pale-bg;
             margin: 0px;
@@ -113,6 +110,12 @@
     .dropdown-divider{
         margin: 0 !important;
     }
+    &.show .dropdown-menu{
+        @include opacity(1);
+        visibility: visible;
+    }
+}
+
 //fix bug for the select items in btn-group
 .btn-group.select{
     // overflow: hidden;

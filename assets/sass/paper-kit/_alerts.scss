@@ -34,18 +34,18 @@
         top: 50%;
         margin-top: -22px;
     }
-    .alert-wrapper {
-        &.message{
-            padding-right: 60px;
-        }
-        i{
-            position: relative;
-            font-size: 20px;
-            top: 5px;
-            margin-top: -5px;
-            font-weight: $font-weight-bold;
-        }
+
+    &.message{
+        padding-right: 60px;
     }
+    i{
+        position: relative;
+        font-size: 20px;
+        top: 5px;
+        margin-top: -5px;
+        font-weight: $font-weight-bold;
+    }
+
 }
 .alert-info{
     background-color: $bg-info;

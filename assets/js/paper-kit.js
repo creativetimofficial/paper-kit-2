@@ -51,6 +51,7 @@ $(document).ready(function(){
                 clear: 'fa fa-trash',
                 close: 'fa fa-remove'
             }
+            // debug: true
         });
     };
 
