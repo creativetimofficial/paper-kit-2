@@ -73,6 +73,13 @@
     left: auto;
     top: -11px;
 }
+.table-condensed{
+    .day:hover{
+        div{
+            @include transition(150ms, linear);
+        }
+    }
+}
 .bootstrap-datetimepicker-widget.dropdown-menu.top {
   margin-top: auto;
   margin-bottom: -20px;
