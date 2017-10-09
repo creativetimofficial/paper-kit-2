@@ -1,7 +1,7 @@
 /*!
 
  =========================================================
- * Paper Kit 2 - v2.0.1
+ * Paper Kit 2 - v2.1.0
  =========================================================
 
  * Product Page: http://www.creative-tim.com/product/paper-kit-2
@@ -50,8 +50,8 @@ $(document).ready(function(){
                 today: 'fa fa-screenshot',
                 clear: 'fa fa-trash',
                 close: 'fa fa-remove'
-            }
-            // debug: true
+            },
+            debug: true
         });
     };
 
@@ -234,7 +234,6 @@ pk = {
         }
 
     },
-
 
 }
 

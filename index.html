@@ -206,60 +206,67 @@
                             <div class="tim-title">
                                 <h3>Checkboxes</h3>
                             </div>
-                            <div class="checkbox">
-                                <input id="checkbox1" type="checkbox">
-                                <label for="checkbox1">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="">
                                     Unchecked
+                                    <span class="form-check-sign"></span>
                                 </label>
                             </div>
-                            <div class="checkbox">
-                               <input id="checkbox2" type="checkbox" checked="">
-                               <label for="checkbox2">
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="" checked>
                                     Checked
-                                </label>
-                             </div>
-                            <div class="checkbox">
-                                <input id="checkbox3" type="checkbox" disabled="">
-                                <label for="checkbox3">
-                                    Disabled unchecked
+                                    <span class="form-check-sign"></span>
                                 </label>
                             </div>
-                            <div class="checkbox">
-                               <input id="checkbox4" type="checkbox" checked="" disabled="">
-                               <label for="checkbox4">
-                                   Disabled checked
-                               </label>
+                            <div class="form-check disabled">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="" disabled>
+                                    Disabled unchecked
+                                    <span class="form-check-sign"></span>
+                                </label>
+                            </div>
+                            <div class="form-check disabled">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="checkbox" value="" disabled checked>
+                                    Disabled checked
+                                    <span class="form-check-sign"></span>
+                                </label>
                             </div>
                         </div>
                         <div class="col-sm-6 col-lg-3">
                             <div class="tim-title">
                                 <h3>Radio Buttons</h3>
                             </div>
-                            <div class="radio">
-                                <input type="radio" name="radio1" id="radio1" value="option1">
-                                <label for="radio1">
+                            <div class="form-check-radio">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" >
                                     Radio is off
+                                    <span class="form-check-sign"></span>
                                 </label>
                             </div>
-
-                            <div class="radio">
-                                <input type="radio" name="radio1" id="radio2" value="option2" checked="">
-                                <label for="radio2">
+                            <div class="form-check-radio">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2" checked>
                                     Radio is on
+                                    <span class="form-check-sign"></span>
                                 </label>
                             </div>
 
-                            <div class="radio">
-                                <input type="radio" name="radio3" id="radio3" value="option3" disabled="">
-                                <label for="radio3">
+                            <div class="form-check-radio disabled">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios3" value="option3" disabled>
                                     Disabled radio is off
+                                    <span class="form-check-sign"></span>
                                 </label>
                             </div>
 
-                            <div class="radio">
-                                <input type="radio" name="radio4" id="radio4" value="option4" checked="" disabled="">
-                                <label for="radio4">
+                            <div class="form-check-radio disabled">
+                                <label class="form-check-label">
+                                    <input class="form-check-input" type="radio" name="exampleRadioz" id="exampleRadios4" value="option4" checked disabled>
                                     Disabled radio is on
+                                    <span class="form-check-sign"></span>
                                 </label>
                             </div>
                         </div>
@@ -1102,6 +1109,6 @@
 <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
 
 <!--  Paper Kit Initialization and functons -->
-<script src="assets/js/paper-kit.js?v=2.0.1"></script>
+<script src="assets/js/paper-kit.js?v=2.1.0"></script>
 
 </html>

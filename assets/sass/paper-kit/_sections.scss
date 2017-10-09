@@ -90,3 +90,18 @@
 .section-login{
     min-height: 700px;
 }
+
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+    /* IE10+ CSS styles go here */
+    .page-header{
+        .content-center{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -75%);
+        }
+        .presentation-title{
+            background: none !important;
+        }
+    }
+}
