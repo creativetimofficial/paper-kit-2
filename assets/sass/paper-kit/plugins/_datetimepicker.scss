@@ -73,6 +73,13 @@
     left: auto;
     top: -11px;
 }
+.table-condensed{
+    .day:hover{
+        div{
+            @include transition(150ms, linear);
+        }
+    }
+}
 .bootstrap-datetimepicker-widget.dropdown-menu.top {
   margin-top: auto;
   margin-bottom: -20px;
@@ -374,7 +381,7 @@
         bottom: -12px;
     }
     &:after{
-        border-top: 11px solid #FFFCF5;
+        border-top: 11px solid #FFF;
         border-left: 11px solid transparent;
         border-right: 11px solid transparent;
         content: "";
@@ -383,4 +390,10 @@
         right: 12px;
         bottom: -11px;
     }
+}
+.bootstrap-datetimepicker-widget.dropdown-menu{
+    webkit-box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1);
+    box-shadow: 0 2px rgba(17, 16, 15, 0.1), 0 2px 10px rgba(17, 16, 15, 0.1);
+    border: none !important;
+    border-radius: 12px !important;
 }
