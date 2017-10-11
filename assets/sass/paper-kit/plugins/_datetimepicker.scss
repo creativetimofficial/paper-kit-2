@@ -355,6 +355,9 @@
         transform: translate3d(0, 10px, 0);
         transition: transform 0.5s cubic-bezier(0.215, 0.61, 0.355, 1) 0s;
     }
+    &.dropdown-menu{
+        background-color: $white-color;
+    }
 }
 .bootstrap-datetimepicker-widget.open.top{
     -webkit-transform: translate3d(0, -10px, 0);
