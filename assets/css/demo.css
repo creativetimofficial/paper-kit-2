@@ -1077,6 +1077,13 @@
     }
 }
 
+@media screen and (max-width: 991px){
+    .following .follows .row{
+        text-align: center;
+    }
+
+}
+
 /* for components and tutorial page */
     /*pre.prettyprint{
         background-color: #FFFCF5;

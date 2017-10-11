@@ -138,12 +138,7 @@
 #following h3{
     margin: 20px 0 40px 0;
 }
-.profile-content .tab-content .tab-pane.active{
-    height: 200px;
-}
-.follows .unfollow{
-    width: 15px;
-}
+
 #follows .follows .unfollow .checkbox{
     margin-top: -15px;
 }
@@ -185,6 +180,7 @@
     background: #fbf8ec;
     background: -moz-linear-gradient(top, #FFFFFF 35%, #4e6773 100%);
     background: -webkit-linear-gradient(top, #FFFFFF 35%,#4e6773 100%);
+    background: -ms-linear-gradient(top, #FFFFFF 35%,#4e6773 100%);
     background: linear-gradient(to bottom, #FFFFFF 35%,#4e6773 100%);
 
     -webkit-background-clip: text;

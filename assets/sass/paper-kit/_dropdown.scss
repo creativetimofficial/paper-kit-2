@@ -1,5 +1,6 @@
+.dropdown{
     .dropdown-menu{
-        background-color: $pale-bg;
+        background-color: $white-color;
         border: 0 none;
         border-radius: $border-radius-extreme;
         display: block;
@@ -11,10 +12,6 @@
         @include opacity(0);
         @include box-shadow($dropdown-shadow);
 
-        .show &{
-            @include opacity(1);
-            visibility: visible;
-        }
         .divider{
             background-color: $medium-pale-bg;
             margin: 0px;
@@ -34,17 +31,16 @@
         }
 
         .dropdown-item{
-           padding: 0 !important;
-
-        }
-        .dropdown-item a{
-            color: $font-color;
+            color: $font-color !important;
             font-size: $font-size-base;
             padding: 10px 45px 10px 15px;
             clear: both;
             white-space: nowrap;
             width: 100%;
             display: block;
+            &:hover{
+                color: $white-color !important;
+            }
 
            img{
                margin-top: -3px;
@@ -71,7 +67,7 @@
             border-bottom-right-radius: $border-radius-extreme;
         }
 
-        .select & .dropdown-item:first-child a{
+        .select & .dropdown-item:first-child{
             border-radius: 0;
             border-bottom: 0 none;
         }
@@ -113,6 +109,12 @@
     .dropdown-divider{
         margin: 0 !important;
     }
+    &.show .dropdown-menu{
+        @include opacity(1);
+        visibility: visible;
+    }
+}
+
 //fix bug for the select items in btn-group
 .btn-group.select{
     // overflow: hidden;
@@ -190,7 +192,7 @@
         transform: translate3d(0px, 0px, 0px);
     }
 
-    .navbar-nav li .dropdown-menu:before,
+    .navbar-nav .dropdown-menu:before,
     #dropdown-row .dropdown .dropdown-menu:before,
     .card.card-just-text .dropdown .dropdown-menu:before,
     .card-just-text .dropdown .dropdown-menu:before,
@@ -204,16 +206,17 @@
         right: 12px;
         top: -11px;
     }
+
     #dropdown-row .dropdown .dropdown-menu:before{
         left: 12px !important;
         right: auto;
     }
-    .navbar-nav li .dropdown-menu:after,
+    .navbar-nav .dropdown-menu:after,
     #dropdown-row .dropdown .dropdown-menu:after,
     .card.card-just-text .dropdown .dropdown-menu:after,
     .card-just-text .dropdown .dropdown-menu:after,
     .dropdown-btn .dropdown-menu:after{
-        border-bottom: 11px solid $pale-bg;
+        border-bottom: 11px solid $white-color;
         border-left: 11px solid rgba(0, 0, 0, 0);
         border-right: 11px solid rgba(0, 0, 0, 0);
         content: "";
@@ -278,7 +281,7 @@
         .social-line,
         a,
         .action-line{
-            background-color: $pale-bg;
+            background-color: $white-color;
             color: $font-color;
             opacity: 1;
             text-decoration: none;
@@ -341,7 +344,7 @@
     bottom: -12px;
 }
 .dropup .dropdown-menu:after{
-    border-top: 11px solid #FFFCF5;
+    border-top: 11px solid #FFF;
     border-left: 11px solid transparent;
     border-right: 11px solid transparent;
     content: "";
@@ -434,4 +437,9 @@
             }
         }
     }
+}
+.navbar-nav.mr-auto .dropdown-menu:before,
+.navbar-nav.mr-auto .dropdown-menu:after{
+    left: 12px !important;
+    right: auto;
 }
