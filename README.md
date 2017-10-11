@@ -12,7 +12,7 @@ Paper Kit 2 has a PRO version with a huge number of components, sections and exa
 
 **Bootstrap 4 support**
 
-Paper Kit 2 is built on top of Bootstrap 4, so it fully supports it. Most of the elements from the framework are re-designed to resemble sheets of paper and color pastels. If the are elements that we have not touched, they will gracefully fall back to the Bootstrap 4 default.
+Paper Kit 2 is built on top of Bootstrap 4 Beta, so it fully supports it. Most of the elements from the framework are re-designed to resemble sheets of paper and color pastels. If the are elements that we have not touched, they will gracefully fall back to the Bootstrap 4 default.
 
 **Examples**
 
@@ -66,7 +66,7 @@ paper-kit-2
 │   │   ├── moment.min.js
 │   │   ├── nouislider.js
 │   │   ├── paper-kit.js
-│   │   └── tether.min.js
+│   │   └── popper.min.js
 │   └── sass
 ├── documentation
 │   └── tutorial-components.html
@@ -110,5 +110,5 @@ Instagram: <https://instagram.com/creativetimofficial>
 
 [CHANGELOG]: ./CHANGELOG.md
 [LICENSE]: ./LICENSE.md
-[version-badge]: https://img.shields.io/badge/version-2.0.1-blue.svg
+[version-badge]: https://img.shields.io/badge/version-2.1.0-blue.svg
 [license-badge]: https://img.shields.io/badge/license-MIT-blue.svg
