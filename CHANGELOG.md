@@ -1,5 +1,16 @@
 # Change Log
 
+## [2.1.0] 2017-10-05
+### Bug Fixing & Bootstrap 4 Beta integration
+ - Class changes :  - .card-block to .card-body
+                    - .navbar-toggleable-* to .navbar-expand-*
+                    - .hidden-*-down to .d-none .d-*-block
+                    - .hidden-*-up to .d-*-none
+                    more class changes here:https://medium.com/@lukaszholeczek/how-to-upgrade-bootstrap-4-alpha-6-to-bootstrap-4-beta-d43b4210f2a3
+ - Bug fixes for responsive devices
+ - Change versions on CSS and JS files
+ - Small changes for components
+
 ## [2.0.1] 2017-08-27
 ### Bug Fixing
  - Bug fixes for responsive devices
