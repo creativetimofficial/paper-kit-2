@@ -50,7 +50,8 @@ $(document).ready(function(){
                 today: 'fa fa-screenshot',
                 clear: 'fa fa-trash',
                 close: 'fa fa-remove'
-            }
+            },
+            debug: true
         });
     };
 
