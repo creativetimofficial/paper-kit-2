@@ -1,5 +1,12 @@
 # Change Log
 
+## [2.2.0] 2019-03-29
+### Bug Fixing & Bootstrap 4.3.1 integration
+ - Plugins update
+ - Bug fixing
+ - Updated Bootstrap to the latest version
+ - Image compressed
+
 ## [2.1.0] 2017-10-05
 ### Bug Fixing & Bootstrap 4 Beta integration
  - Class changes :  - .card-block to .card-body
