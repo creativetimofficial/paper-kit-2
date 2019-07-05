@@ -7,7 +7,7 @@
  * Product Page: https://www.creative-tim.com/product/paper-kit
  * Copyright 2019 Creative Tim (http://www.creative-tim.com)
 
- * Designed by www.invisionapp.com Coded by www.creative-tim.com
+ * Coded by www.creative-tim.com
 
  =========================================================
 
